@@ -1,0 +1,46 @@
+Aug-21 15:33:15.600 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 15:33:15.817 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-21 15:33:15.855 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-21 15:33:15.881 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-21 15:33:15.882 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-21 15:33:15.889 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-21 15:33:15.933 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-21 15:33:15.976 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 15:33:15.978 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 15:33:15.978 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 15:33:15.979 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 15:33:16.027 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 15:33:20.238 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 15:33:20.299 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Aug-21 15:33:20.457 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Aug-21 15:33:20.477 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [naughty_khorana] DSL2 - revision: 355a9de890
+Aug-21 15:33:20.478 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
+Aug-21 15:33:20.479 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-21 15:33:20.479 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
+Aug-21 15:33:20.479 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
+Aug-21 15:33:20.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
+Aug-21 15:33:20.516 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
+Aug-21 15:33:20.542 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
+Aug-21 15:33:20.569 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/kaihu/.nextflow/secrets/store.json
+Aug-21 15:33:20.575 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3b0d3a63] - activable => nextflow.secret.LocalSecretsProvider@3b0d3a63
+Aug-21 15:33:20.664 [main] DEBUG nextflow.Session - Session UUID: c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 15:33:20.664 [main] DEBUG nextflow.Session - Run name: naughty_khorana
+Aug-21 15:33:20.667 [main] DEBUG nextflow.Session - Executor pool size: 12
+Aug-21 15:33:20.679 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-21 15:33:20.684 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-21 15:33:20.944 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Mac OS X 14.6.1
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10+7-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 21497@UMMSMAC-QVWQ97R33L [192.168.0.175]
+  CPUs: 12 - Mem: 16 GB (21.9 MB) - Swap: 6 GB (1.1 GB)
+Aug-21 15:33:21.017 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work [Mac OS X]
+Aug-21 15:33:21.034 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-21 15:33:21.042 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-21 15:33:21.110 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-21 15:33:21.126 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Aug-21 15:33:21.193 [main] DEBUG nextflow.Session - Session start
+Aug-21 15:33:21.200 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/results/pipeline_info/execution_trace_2024-08-21_15-33-19.txt
+Aug-21 15:33:21.667 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
