@@ -1,6 +1,6 @@
 ## Introduction
 
-**sikiclass** is a bioinformatics pipeline that performs downstream classification analysis for UMI-collapsed reads from sikipipe.
+**sikiclass** is a bioinformatics pipeline designed for downstream classification analysis of UMI-collapsed reads produced by **sikipipe**.
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
@@ -12,11 +12,26 @@
      workflows use the "tube map" design for that. See https://nf-co.re/docs/contributing/design_guidelines#examples for examples.   -->
 <!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->
 
-Implemented classification steps include `classify_tag` that divides reads according to tag fragment occurrence, `classify_single_tag` that further divides single-tag-containing reads into sub-categories like "precise_tag", "5' INDEL", "3' INDEL", etc., `classify_no_tag` that furhter divides no-tag-containing reads into sub-categories like "Deletion", "Insertion", etc. Moreover, for "precise_tag" class, reads with different SNPs are splitted and counted. Finally, statistical tables summarizing the fraction of each read category as well as the distribution of size and location of INDELs are generated. 
+The classification process involves several steps:
+- `classify_tag` (Step 1): This step categorizes reads based on the occurrence of tag fragments.  
+- `classify_single_tag` (Step 2): This step further subdivides reads containing a single tag into specific categories such as "precise_tag," "5' INDEL," "3' INDEL," etc.  
+- `classify_no_tag` (Step 3): This step further divides reads without tags into categories like "Deletion," "Insertion," etc.  
 
-The diagram below illustrates the method in detail. Specifially, for `classify_tag` (**Step1**), to determine if tag appears in each read sequence, we leverage short-read aligner BWA, use tag as query and each read as reference. By parsing the resulting BAM file, reads are classified as "without tag" if no tag appear in the read, "with single tag" if every tag segment only appears at most one time in the read, and "with multiple tag" if any tag segment appears more than one time in read. We further classify "without tag" reads (`classify_single_tag`, **Step2**) and "with single tag" reads (`classify_no_tag`, **Step3**) by adopting long-read aligner minimap2. For "with single tag" reads, they are mapped against a reference with precise tag inserted. By parsing the BAM file, for each read, if there are no INDELs occuring in tag plus a predefined flanking region, it will be regarded as read "with precise tag". Otherwise, it will be considered to be with INDELs. Similarly, for "without tag" reads, they are mapped against wild type reference that does not contain the tag insert. The read will be classified into sub-categories based on the occurrence of INDELs. In addition, for "precise tag" reads, they are splitted and counted (`stat_snp`, **Step4**) according to the base species at a particular SNP site. Besides the splitted fastq files, sikiclass also generates tables summarizing the sub-class fractions and INDEL distributions.
+Additionally, within the "precise_tag" category, reads are separated and counted based on different SNPs (Step 4). Finally, statistical tables are generated to summarize the proportions of each read category and to detail the size and distribution of INDELs.
 
-Refer to [Usage](#usage) on how to run sikipipe, and [Output](#output) for detailed description of result folders and files.
+The diagram below illustrates the method in detail. Specifially:
+- `classify_tag` (Step 1): To determine if a tag appears in each read sequence, we use the short-read aligner BWA, treating the tag as the query and each read as the reference. By parsing the resulting BAM file, reads are classified as follows:  
+   - "Without tag": No tag appears in the read.  
+   - "With single tag": Each tag segment appears at most once in the read.  
+   - "With multiple tags": Any tag segment appears more than once in the read.  
+- `classify_single_tag` (Step 2) and `classify_no_tag` (Step 3): For further classification of "with single tag" reads and "without tag" reads respectively.  
+   - "With single tag" reads are mapped against a reference with a precise tag inserted using the long-read aligner minimap2. Reads are classified as "with precise tag" if there are no INDELs in the tag and a predefined flanking region; otherwise, they are considered to have INDELs.  
+   - "Without tag" reads are mapped against a wild-type reference that lacks the tag insertion. These reads are classified into sub-categories based on the occurrence of INDELs.  
+- `stat_snp` (Step 4): For "precise tag" reads, they are split and counted according to the base species at a given SNP site.  
+
+In addition to the split FASTQ files, **sikiclass** generates tables summarizing the proportions of each sub-category and the distributions of INDELs.
+
+Refer to the [Usage](#usage) section for instructions on how to run **sikiclass**, and the [Output](#output) section for a detailed description of the result folders and files.
 
 <p align="center">
   <img src="docs/images/workflow.png" width="500" style="display: block; margin: 20px auto">
@@ -65,48 +80,48 @@ By default, all results are saved in the "./results" folder, as specified by the
 
 Nextflow implements a caching mechanism that stores all intermediate and final results in the "./work/" directory. By default, files in the "./results/" are symbolic links to that in the "./work/". To switch from `symlink` to `copy`, use `publish_dir_mode = copy` argument. Below summarizes the main contents of each result folder.
 
-- Subfolder: 00_stat  
-This directory contains summary tables generated using results from step 1-4.
+### 00_stat  
+This directory contains summary tables generated using the results of steps 1-4:
 
-* `fq_class_ratios.tsv`: Count fractions for each read class.
-* `precise_tag_snp_fraction.tsv`: Count fractions for different base species at given SNP site for "precise tag" reads.
-* `no_tag_indel_size_distribution.tsv`: INDEL size distribution for "no tag" reads.
-* `no_tag_indel_size_location_to_pam`: INDEL size and location to PAM site for "no tag" reads for each sample.
+* `fq_class_ratios.tsv`: Provides the count fractions of each read class for each sample.
+* `precise_tag_snp_fraction.tsv`: Provides the count fractions of different base species at given SNP site for "precise tag" reads for each sample.
+* `no_tag_indel_size_distribution.tsv`: Shows the distribution of INDEL sizes for "no tag" reads.
+* `no_tag_indel_size_location_to_pam`: Lists the INDEL size and their locations relative to the PAM site for "no tag" reads for each sample.
 
-- Subfolder: 01_classify_tag  
-This directory contains fastq files falling under each class determined by tag occurrence.
+### 01_classify_tag  
+This directory contains fastq files categorized based on tag occurrence:
 
-* `01a_no_tag`: Fastq file for reads with "no tag" for each sample.
-* `01b_single_tag`: Fastq file for reads with "single tag" for each sample.
-* `01c_multiple_tag`: Fastq file for reads with "multiple tag" for each sample.
-* `01d_any_tag`: Fastq file for reads with "any tag" for each sample (union of 01b and 01c).
+* `01a_no_tag`: Fastq file for reads classified as having "no tag" for each sample.
+* `01b_single_tag`: Fastq file for reads classified as having "single tag" for each sample.
+* `01c_multiple_tag`: Fastq file for reads classified as having "multiple tag" for each sample.
+* `01d_any_tag`: Fastq file for reads classified as having "any tag" for each sample (a union of 01b and 01c).
 * `01e_tmp_fasta`: Intermediate fasta file.
-* `01f_tmp_bam`: Intermedaite BAM (bwa) file.
+* `01f_tmp_bam`: Intermedaite BAM file (from BWA).
 
-- Subfolder: 02_classify_single_tag  
-This directory contains fastq files falling under each class determined by INDEL occurrence for "single tag" reads.
+### 02_classify_single_tag  
+This directory contains fastq files categorized based on INDEL occurrence for "single tag" reads.
 
 * `02a_precise_tag`: Fastq file for reads with "precise tag" for each sample.
-* `02a_precise_tag_snp_wt`: Fastq file for reads with "precise tag" that also contain WT base at given SNP site for each sample.
-* `02a_precise_tag_snp_mut`: Fastq file for reads with "precise tag" that also contain mutant base at given SNP site for each sample.
-* `02b_5indel`: Fastq file for reads with "INDELs in 5' region" for each sample.
-* `02c_3indel`: Fastq file for reads with "INDELs in 3' region" for each sample.
-* `02d_any_indel`: Fastq file for reads with "INDELs in any region" for each sample.
-* `02e_tmp_bam`: Intermedaite BAM (minimap2) file.
-* `02f_tmp_indel_pos`: Intermedaite INDEL size and location file for each sample.
+* `02a_precise_tag_snp_wt`: Fastq file for reads classified as having "precise tag" that also contain WT base at given SNP site for each sample.
+* `02a_precise_tag_snp_mut`: Fastq file for reads classified as having "precise tag" that also contain mutant base at given SNP site for each sample.
+* `02b_5indel`: Fastq file for reads classified as having "INDELs in 5' region" for each sample.
+* `02c_3indel`: Fastq file for reads classified as having "INDELs in 3' region" for each sample.
+* `02d_any_indel`: Fastq file for reads classified as having "INDELs in any region" for each sample.
+* `02e_tmp_bam`: Intermedaite BAM file (from minimap2).
+* `02f_tmp_indel_pos`: Intermedaite file containing INDEL size and location information for each sample.
 
-- Subfolder: 03_classify_no_tag  
-This directory contains fastq files falling under each class determined by INDEL occurrence for "no tag" reads.
+### 03_classify_no_tag  
+This directory contains fastq files categorized based on INDEL occurrence for "no tag" reads.
 
 * `03a_indel`: Fastq file for reads with "no tag" for each sample.
-* `03b_deletion`: Fastq file for reads with "deletions in any region" for each sample.
-* `03c_insertion`: Fastq file for reads with "insertions in any region" for each sample.
-* `03d_tmp_bam`: Intermedaite BAM (minimap2) file.
-* `03e_tmp_indel_pos`: Intermedaite INDEL size and location file for each sample.
+* `03b_deletion`: Fastq file for reads classified as having "deletions in any region" for each sample.
+* `03c_insertion`: Fastq file for reads classified as having "insertions in any region" for each sample.
+* `03d_tmp_bam`: Intermedaite BAM file (from minimap2).
+* `03e_tmp_indel_pos`: Intermedaite file containing INDEL size and location information for each sample.
 
 ## Credits
 
-sikiclass was originally designed and written by Kai Hu, Nathan Lawson, and Julie Zhu.
+**sikiclass** was originally designed and written by Kai Hu, Nathan Lawson, and Julie Zhu.
 
 ## Contributions and Support
 

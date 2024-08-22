@@ -29,9 +29,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.40704481"
-     inkscape:cx="120.37987"
-     inkscape:cy="619.09645"
-     inkscape:window-width="1167"
+     inkscape:cx="-278.83908"
+     inkscape:cy="-13020.679"
+     inkscape:window-width="1022"
      inkscape:window-height="736"
      inkscape:window-x="68"
      inkscape:window-y="415"
@@ -252,6 +252,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -305,6 +306,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -377,6 +379,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -416,6 +419,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -476,6 +480,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -532,6 +537,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -592,6 +598,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -648,6 +655,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -708,6 +716,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -759,6 +768,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -814,6 +824,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -856,6 +867,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -873,21 +885,21 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11151">Preprocessed<tspan
+               id="tspan3791">Preprocessed<tspan
    y="41"
-   id="tspan11153"> </tspan></tspan><tspan
+   id="tspan3793"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11155">sequencing reads
+               id="tspan3795">sequencing reads
 </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11157">(demultiplexed, filtered,<tspan
+               id="tspan3797">(demultiplexed, filtered,<tspan
    y="74.333251"
-   id="tspan11159"> </tspan></tspan><tspan
+   id="tspan3799"> </tspan></tspan><tspan
                x="356"
                y="90.999877"
-               id="tspan11161">UMI-collapsed)</tspan></text>
+               id="tspan3801">UMI-collapsed)</tspan></text>
         </switch>
       </g>
     </g>
@@ -915,6 +927,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -932,12 +945,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11163">&quot;BWA search&quot;<tspan
+               id="tspan3803">&quot;BWA search&quot;<tspan
    y="41"
-   id="tspan11165"> </tspan></tspan><tspan
+   id="tspan3805"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11167">approach</tspan></text>
+               id="tspan3807">approach</tspan></text>
         </switch>
       </g>
       <g
@@ -961,6 +974,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -978,27 +992,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11169">Divide reads into<tspan
+               id="tspan3809">Divide reads into<tspan
    y="41"
-   id="tspan11171"> </tspan></tspan><tspan
+   id="tspan3811"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11173">sub-groups<tspan
+               id="tspan3813">sub-groups<tspan
    y="57.666625"
-   id="tspan11175"> </tspan></tspan><tspan
+   id="tspan3815"> </tspan></tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11177">acoording to tag<tspan
+               id="tspan3817">acoording to tag<tspan
    y="74.333251"
-   id="tspan11179"> </tspan></tspan><tspan
+   id="tspan3819"> </tspan></tspan><tspan
                x="356"
                y="90.999877"
-               id="tspan11181">occurrence via<tspan
+               id="tspan3821">occurrence via<tspan
    y="90.999877"
-   id="tspan11183"> </tspan></tspan><tspan
+   id="tspan3823"> </tspan></tspan><tspan
                x="356"
                y="107.6665"
-               id="tspan11185">&quot;BWA search&quot;</tspan></text>
+               id="tspan3825">&quot;BWA search&quot;</tspan></text>
         </switch>
       </g>
     </g>
@@ -1026,6 +1040,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1043,12 +1058,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11187">&quot;minimap2 search&quot;<tspan
+               id="tspan3827">&quot;minimap2 search&quot;<tspan
    y="41"
-   id="tspan11189"> </tspan></tspan><tspan
+   id="tspan3829"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11191">approach</tspan></text>
+               id="tspan3831">approach</tspan></text>
         </switch>
       </g>
       <g
@@ -1070,6 +1085,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -1114,6 +1130,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1131,11 +1148,11 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11193">Read_x:
+               id="tspan3833">Read_x:
 </tspan><tspan
                x="356"
                y="52.666661"
-               id="tspan11195">Cigar2</tspan></text>
+               id="tspan3835">Cigar2</tspan></text>
         </switch>
       </g>
       <g
@@ -1157,6 +1174,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -1201,6 +1219,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1218,11 +1237,11 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11197">Read_x:
+               id="tspan3837">Read_x:
 </tspan><tspan
                x="356"
                y="52.666661"
-               id="tspan11199">Cigar1</tspan></text>
+               id="tspan3839">Cigar1</tspan></text>
         </switch>
       </g>
       <g
@@ -1244,6 +1263,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -1288,6 +1308,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1305,9 +1326,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11203">Cigar: <tspan
+               id="tspan3843">Cigar: <tspan
    style="font-size:8px"
-   id="tspan11201">unaligned    aligned</tspan></tspan></text>
+   id="tspan3841">unaligned    aligned</tspan></tspan></text>
         </switch>
       </g>
       <g
@@ -1329,6 +1350,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -1373,6 +1395,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1390,7 +1413,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11205">Reference (with tag)</tspan></text>
+               id="tspan3845">Reference (with tag)</tspan></text>
         </switch>
       </g>
     </g>
@@ -1418,6 +1441,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1435,7 +1459,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11207">Tag</tspan></text>
+               id="tspan3847">Tag</tspan></text>
         </switch>
       </g>
     </g>
@@ -1463,6 +1487,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1480,7 +1505,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11209">Aligment</tspan></text>
+               id="tspan3849">Aligment</tspan></text>
         </switch>
       </g>
     </g>
@@ -1508,6 +1533,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1525,13 +1551,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11213"><tspan
+               id="tspan3853"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11211">Read without tag 
+                 id="tspan3851">Read without tag 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11215">(tag does not appear in read)</tspan></text>
+               id="tspan3855">(tag does not appear in read)</tspan></text>
         </switch>
       </g>
     </g>
@@ -1614,6 +1640,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1652,6 +1679,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1669,27 +1697,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11217">Further divide single-tag<tspan
+               id="tspan3857">Further divide single-tag<tspan
    y="41"
-   id="tspan11219"> </tspan></tspan><tspan
+   id="tspan3859"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11221">reads into sub-groups<tspan
+               id="tspan3861">reads into sub-groups<tspan
    y="57.666625"
-   id="tspan11223"> </tspan></tspan><tspan
+   id="tspan3863"> </tspan></tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11225">acoording to INDEL<tspan
+               id="tspan3865">acoording to INDEL<tspan
    y="74.333251"
-   id="tspan11227"> </tspan></tspan><tspan
+   id="tspan3867"> </tspan></tspan><tspan
                x="356"
                y="90.999877"
-               id="tspan11229">occurrence via<tspan
+               id="tspan3869">occurrence via<tspan
    y="90.999877"
-   id="tspan11231"> </tspan></tspan><tspan
+   id="tspan3871"> </tspan></tspan><tspan
                x="356"
                y="107.6665"
-               id="tspan11233">&quot;minimap2 search&quot;</tspan></text>
+               id="tspan3873">&quot;minimap2 search&quot;</tspan></text>
         </switch>
       </g>
     </g>
@@ -1772,6 +1800,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1810,6 +1839,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1827,27 +1857,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11235">Further divide no-tag<tspan
+               id="tspan3875">Further divide no-tag<tspan
    y="41"
-   id="tspan11237"> </tspan></tspan><tspan
+   id="tspan3877"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11239">reads into sub-groups<tspan
+               id="tspan3879">reads into sub-groups<tspan
    y="57.666625"
-   id="tspan11241"> </tspan></tspan><tspan
+   id="tspan3881"> </tspan></tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11243">acoording to INDEL<tspan
+               id="tspan3883">acoording to INDEL<tspan
    y="74.333251"
-   id="tspan11245"> </tspan></tspan><tspan
+   id="tspan3885"> </tspan></tspan><tspan
                x="356"
                y="90.999877"
-               id="tspan11247">occurrence via<tspan
+               id="tspan3887">occurrence via<tspan
    y="90.999877"
-   id="tspan11249"> </tspan></tspan><tspan
+   id="tspan3889"> </tspan></tspan><tspan
                x="356"
                y="107.6665"
-               id="tspan11251">&quot;minimap2 search&quot;</tspan></text>
+               id="tspan3891">&quot;minimap2 search&quot;</tspan></text>
         </switch>
       </g>
     </g>
@@ -1930,6 +1960,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1947,7 +1978,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11253">Reference (with tag) </tspan></text>
+               id="tspan3893">Reference (with tag) </tspan></text>
         </switch>
       </g>
     </g>
@@ -1975,6 +2006,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1992,7 +2024,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11255">Deletion in aligned segment</tspan></text>
+               id="tspan3895">Deletion in aligned segment</tspan></text>
         </switch>
       </g>
     </g>
@@ -2020,6 +2052,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2037,7 +2070,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11257">Read</tspan></text>
+               id="tspan3897">Read</tspan></text>
         </switch>
       </g>
     </g>
@@ -2139,6 +2172,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2156,9 +2190,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11261"><tspan
+               id="tspan3901"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11259">Fastq file</tspan></tspan></text>
+                 id="tspan3899">Fastq file</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -2186,6 +2220,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2203,16 +2238,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11265"><tspan
+               id="tspan3905"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11263">Read with single tag 
+                 id="tspan3903">Read with single tag 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11267">(every tag segment only appears </tspan><tspan
+               id="tspan3907">(every tag segment only appears </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11269">at most one time in read)</tspan></text>
+               id="tspan3909">at most one time in read)</tspan></text>
         </switch>
       </g>
     </g>
@@ -2416,6 +2451,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2433,16 +2469,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11273"><tspan
+               id="tspan3913"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11271">Read with multiple tags 
+                 id="tspan3911">Read with multiple tags 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11275">(any tag segment appears more </tspan><tspan
+               id="tspan3915">(any tag segment appears more </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11277">than one time in read)</tspan></text>
+               id="tspan3917">than one time in read)</tspan></text>
         </switch>
       </g>
       <path
@@ -2545,6 +2581,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2564,14 +2601,14 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan11281"><tspan
+           id="tspan3921"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan11279">First infer INDEL coordinates </tspan></tspan><tspan
+             id="tspan3919">First infer INDEL coordinates </tspan></tspan><tspan
            x="356"
            y="57.666625"
-           id="tspan11285"><tspan
+           id="tspan3925"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan11283">on referecence
+             id="tspan3923">on referecence
 </tspan></tspan></text>
     </g>
     <g
@@ -2601,6 +2638,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2620,15 +2658,15 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan11289"><tspan
+           id="tspan3929"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan11287">Like Step2-1 but map reads
+             id="tspan3927">Like Step2-1 but map reads
 </tspan></tspan><tspan
            x="356"
            y="57.666625"
-           id="tspan11293"><tspan
+           id="tspan3933"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan11291">to WT reference without tag
+             id="tspan3931">to WT reference without tag
 </tspan></tspan></text>
     </g>
     <text
@@ -2697,6 +2735,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2714,16 +2753,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11297"><tspan
+               id="tspan3937"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11295">Read with precise tag 
+                 id="tspan3935">Read with precise tag 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11299">(no INDEL detected in tag </tspan><tspan
+               id="tspan3939">(no INDEL detected in tag </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11301">plus flanking region)</tspan></text>
+               id="tspan3941">plus flanking region)</tspan></text>
         </switch>
       </g>
     </g>
@@ -2768,6 +2807,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2785,16 +2825,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11305"><tspan
+               id="tspan3945"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11303">Read with 5' INDEL
+                 id="tspan3943">Read with 5' INDEL
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11307">(INDEL detected in 5'-flanking </tspan><tspan
+               id="tspan3947">(INDEL detected in 5'-flanking </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11309">region to the middle of tag)</tspan></text>
+               id="tspan3949">region to the middle of tag)</tspan></text>
         </switch>
       </g>
     </g>
@@ -2897,6 +2937,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2950,6 +2991,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3001,6 +3043,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -3069,6 +3112,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3086,9 +3130,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11313"><tspan
+               id="tspan3953"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11311">Analytical step</tspan></tspan></text>
+                 id="tspan3951">Analytical step</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -3116,6 +3160,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3133,9 +3178,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11317"><tspan
+               id="tspan3957"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11315">Method description</tspan></tspan></text>
+                 id="tspan3955">Method description</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -3228,6 +3273,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3245,7 +3291,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11319">Insertion in aligned segment</tspan></text>
+               id="tspan3959">Insertion in aligned segment</tspan></text>
         </switch>
       </g>
     </g>
@@ -3273,6 +3319,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3290,11 +3337,11 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11321">Deletion inferred from 
+               id="tspan3961">Deletion inferred from 
 </tspan><tspan
                x="356"
                y="51"
-               id="tspan11323">all unaligned segments</tspan></text>
+               id="tspan3963">all unaligned segments</tspan></text>
         </switch>
       </g>
     </g>
@@ -3396,6 +3443,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3413,16 +3461,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11327"><tspan
+               id="tspan3967"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11325">Read with 3' INDEL
+                 id="tspan3965">Read with 3' INDEL
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11329">(INDEL detected in the middle </tspan><tspan
+               id="tspan3969">(INDEL detected in the middle </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11331">of tag to 3'-flanking region)</tspan></text>
+               id="tspan3971">of tag to 3'-flanking region)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3467,6 +3515,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3484,13 +3533,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11335"><tspan
+               id="tspan3975"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11333">Read with any INDEL
+                 id="tspan3973">Read with any INDEL
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11337">(INDEL detected any region)</tspan></text>
+               id="tspan3977">(INDEL detected any region)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3518,6 +3567,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3535,12 +3585,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11339">&quot;minimap2 search&quot;<tspan
+               id="tspan3979">&quot;minimap2 search&quot;<tspan
    y="41"
-   id="tspan11341"> </tspan></tspan><tspan
+   id="tspan3981"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11343">approach</tspan></text>
+               id="tspan3983">approach</tspan></text>
         </switch>
       </g>
       <g
@@ -3562,6 +3612,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -3623,6 +3674,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3640,13 +3692,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11347"><tspan
+               id="tspan3987"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11345">Read with indel 
+                 id="tspan3985">Read with indel 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11349">(INDEL detected)</tspan></text>
+               id="tspan3989">(INDEL detected)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3691,6 +3743,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3708,13 +3761,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11353"><tspan
+               id="tspan3993"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11351">Read with deletion 
+                 id="tspan3991">Read with deletion 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11355">(Deletion detected)</tspan></text>
+               id="tspan3995">(Deletion detected)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3759,6 +3812,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3776,13 +3830,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11359"><tspan
+               id="tspan3999"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11357">Read with insertion 
+                 id="tspan3997">Read with insertion 
 </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11361">(Insertion detected)</tspan></text>
+               id="tspan4001">(Insertion detected)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3854,6 +3908,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3905,6 +3960,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -3960,6 +4016,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4011,6 +4068,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -4094,6 +4152,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4145,6 +4204,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -4224,6 +4284,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4262,6 +4323,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4279,17 +4341,17 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11363">Further divide precise-tag<tspan
+               id="tspan4003">Further divide precise-tag<tspan
    y="41"
-   id="tspan11365"> </tspan></tspan><tspan
+   id="tspan4005"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan11367">reads into sub-groups<tspan
+               id="tspan4007">reads into sub-groups<tspan
    y="57.666625"
-   id="tspan11369"> </tspan></tspan><tspan
+   id="tspan4009"> </tspan></tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan11371">acoording to SNP</tspan></text>
+               id="tspan4011">acoording to SNP</tspan></text>
         </switch>
       </g>
     </g>
@@ -4358,6 +4420,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4375,7 +4438,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11373">by parsing BAM</tspan></text>
+               id="tspan4013">by parsing BAM</tspan></text>
         </switch>
       </g>
       <g
@@ -4397,6 +4460,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
@@ -4458,6 +4522,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4475,9 +4540,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11377"><tspan
+               id="tspan4017"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11375">Read with WT SNP</tspan></tspan></text>
+                 id="tspan4015">Read with WT SNP</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -4522,6 +4587,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4539,9 +4605,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11381"><tspan
+               id="tspan4021"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11379">Read with Mut SNP</tspan></tspan></text>
+                 id="tspan4019">Read with Mut SNP</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -4602,6 +4668,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4619,9 +4686,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan11385"><tspan
+               id="tspan4025"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan11383">Result folder</tspan></tspan></text>
+                 id="tspan4023">Result folder</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -4682,6 +4749,7 @@
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
 
 
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4720,7 +4788,7 @@
     <g
        id="g5320-6-4-2-4-3-9"
        transform="matrix(0.2438056,0,0,0.2438056,-56.356377,274.57986)"
-       inkscape:export-filename="../../../../../../../../Downloads/workflow.png"
+       inkscape:export-filename="../../../../../../../../Downloads/workflow.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -4741,6 +4809,7 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
 
 
 )</xhtml:div>
