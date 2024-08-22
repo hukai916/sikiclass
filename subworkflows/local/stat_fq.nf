@@ -71,7 +71,7 @@ workflow STAT_FQ {
     CAT_COUNT10 ( COUNT_FQ10.out.fq_c.collect(), "00k_fq_single_tag_any_indel", "fq_single_tag_any_indel" )
 
     //  Make master tables 
-        // 000_master_table
+        // 00_stat/fq_class_ratios.tsv
     GET_TABLE_RATIO (
         CAT_COUNT.out.cat_count,
         CAT_COUNT1.out.cat_count,

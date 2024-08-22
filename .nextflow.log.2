@@ -1,261 +1,142 @@
-Aug-21 15:30:53.204 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:30:53.423 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Aug-21 15:30:53.453 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Aug-21 15:30:53.472 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Aug-21 15:30:53.473 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Aug-21 15:30:53.479 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Aug-21 15:30:53.517 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Aug-21 15:30:53.565 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:30:53.568 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:30:53.569 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:30:53.569 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:30:53.648 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:30:58.233 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:30:58.335 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
-Aug-21 15:30:58.434 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Aug-21 15:30:58.455 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [cranky_franklin] DSL2 - revision: 355a9de890
-Aug-21 15:30:58.456 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
-Aug-21 15:30:58.456 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Aug-21 15:30:58.457 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
-Aug-21 15:30:58.457 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
-Aug-21 15:30:58.487 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
-Aug-21 15:30:58.487 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
-Aug-21 15:30:58.515 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
-Aug-21 15:30:58.540 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/kaihu/.nextflow/secrets/store.json
-Aug-21 15:30:58.554 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3b0d3a63] - activable => nextflow.secret.LocalSecretsProvider@3b0d3a63
-Aug-21 15:30:58.717 [main] DEBUG nextflow.Session - Session UUID: c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:30:58.718 [main] DEBUG nextflow.Session - Run name: cranky_franklin
-Aug-21 15:30:58.720 [main] DEBUG nextflow.Session - Executor pool size: 12
-Aug-21 15:30:58.734 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Aug-21 15:30:58.737 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Aug-21 15:30:58.807 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 23.10.1 build 5891
-  Created: 12-01-2024 22:01 UTC (17:01 EDT)
-  System: Mac OS X 14.6.1
-  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10+7-LTS
-  Encoding: UTF-8 (UTF-8)
-  Process: 20348@UMMSMAC-QVWQ97R33L [192.168.0.175]
-  CPUs: 12 - Mem: 16 GB (27 MB) - Swap: 6 GB (1.1 GB)
-Aug-21 15:30:58.904 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work [Mac OS X]
-Aug-21 15:30:58.928 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Aug-21 15:30:58.943 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Aug-21 15:30:59.028 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Aug-21 15:30:59.044 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Aug-21 15:30:59.113 [main] DEBUG nextflow.Session - Session start
-Aug-21 15:30:59.125 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/results/pipeline_info/execution_trace_2024-08-21_15-30-57.txt
-Aug-21 15:30:59.665 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Aug-21 15:31:01.331 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
-Aug-21 15:31:01.363 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationSkipDuplicateCheck` -- Initialise it to a default value eg. `params.validationSkipDuplicateCheck = some_value`
-Aug-21 15:31:01.376 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:31:01.379 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationS3PathCheck` -- Initialise it to a default value eg. `params.validationS3PathCheck = some_value`
-Aug-21 15:31:01.524 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:31:01.762 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_TAG
-Aug-21 15:31:01.765 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_TAG` matches process SIKICLASS:CLASSIFY_TAG
-Aug-21 15:31:01.779 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:01.780 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:01.796 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Aug-21 15:31:01.801 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Aug-21 15:31:01.804 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Aug-21 15:31:01.940 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:31:01.941 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_SINGLE_TAG` matches process SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:31:01.944 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:01.945 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:01.964 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_NO_TAG
-Aug-21 15:31:01.965 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:01.965 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:01.972 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:31:01.973 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:31:01.973 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:01.973 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:01.993 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:31:01.993 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:31:01.994 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:01.995 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.003 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:31:02.003 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:31:02.004 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.004 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.009 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:31:02.010 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:31:02.011 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.011 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.018 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:31:02.020 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:31:02.022 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.023 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.032 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:31:02.037 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:31:02.038 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.038 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.041 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:31:02.041 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:31:02.043 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.043 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.050 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:31:02.051 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:31:02.053 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.053 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.055 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:31:02.056 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:31:02.059 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.060 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.068 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:31:02.069 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:31:02.070 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.071 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.074 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:31:02.075 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:31:02.078 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.078 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.081 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:31:02.082 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:31:02.083 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.083 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.086 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:31:02.087 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:31:02.087 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.087 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.092 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:31:02.093 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:31:02.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.095 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.098 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:31:02.098 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:31:02.099 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.100 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.102 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:31:02.104 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:31:02.105 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.105 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.107 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:31:02.108 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:31:02.108 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.108 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.110 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:31:02.110 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:31:02.111 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.111 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.113 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:31:02.113 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:31:02.114 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.114 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.120 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:31:02.120 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:31:02.121 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.121 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.123 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ10
-Aug-21 15:31:02.124 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ10
-Aug-21 15:31:02.126 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.126 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.130 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT10
-Aug-21 15:31:02.131 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT10
-Aug-21 15:31:02.131 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:31:02.131 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:31:02.155 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_5e024a2a104438de: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_no_tag.nf
-  Script_4ba798786ecd6418: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/nf-core/fastqc/main.nf
-  Script_d15170113a33e7ac: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/count_fq.nf
-  Script_d89042106720ae2b: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/cat_count.nf
-  Script_08b800317db7d42f: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_tag.nf
-  Script_61035523b9766069: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/main.nf
-  Script_b381e73eb856e339: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_single_tag.nf
-  Script_bc393b67320ea420: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/stat_fq.nf
-  Script_382ece94fdc58060: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/sikiclass.nf
-Aug-21 15:31:02.155 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function GET_TABLE_RATIO()
-Aug-21 15:31:02.199 [main] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] map
-  [operator] groupTuple
-  [operator] map
-  [operator] map
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
-  [operator] collect
+Aug-21 23:53:38.582 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 23:53:38.816 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-21 23:53:38.844 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-21 23:53:38.869 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-21 23:53:38.871 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-21 23:53:38.876 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-21 23:53:38.913 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-21 23:53:38.948 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:53:38.954 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:53:38.955 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:53:38.955 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:53:39.006 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 23:53:43.177 [main] DEBUG nextflow.config.ConfigBuilder - In the following config snippet the attribute `process.withName:COUNT_FQ` is empty:
+  cpus=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure2@3a3b10f4
+  memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure3@49580ca8
+  time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure4@525647f3
+  errorStrategy=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure5@42fc4ac4
+  maxRetries=1
+  maxErrors='-1'
+  withLabel:process_single {
+  	cpus=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure6$_closure15@20a24edf
+  	memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure6$_closure16@29962b2f
+  	time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure6$_closure17@491f8831
+  }
+  withLabel:process_low {
+  	cpus=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure7$_closure18@691541bc
+  	memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure7$_closure19@5b733ef7
+  	time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure7$_closure20@43a4a9e5
+  }
+  withLabel:process_medium {
+  	cpus=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure8$_closure21@764fffa0
+  	memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure8$_closure22@35145874
+  	time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure8$_closure23@77524ca7
+  }
+  withLabel:process_high {
+  	cpus=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure9$_closure24@11df2829
+  	memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure9$_closure25@18e4674d
+  	time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure9$_closure26@f245bdd
+  }
+  withLabel:process_long.time=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure10$_closure27@6af609ea
+  withLabel:process_high_memory.memory=ScriptA166ECECB9E21DE6E767FA08AFD440D7$_run_closure1$_closure11$_closure28@280fafd
+  withLabel:error_ignore.errorStrategy='ignore'
+  withLabel:error_retry {
+  	errorStrategy='retry'
+  	maxRetries=2
+  }
+  withName:CUSTOM_DUMPSOFTWAREVERSIONS {
+  	cache=false
+  	publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure13$_closure29@39e53bef, 'mode':'symlink', 'pattern':'*_versions.yml']
+  }
+  shell=['/bin/bash', '-euo', 'pipefail']
+  publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure2@14b275bd, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure3@4ed18798]
+  withName:FASTQC {
+  	ext.args='--quiet'
+  	publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure4$_closure15@4b03cbad, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure4$_closure16@5b29ab61]
+  }
+  withName:CLASSIFY_TAG {
+  	ext.args=''
+  	publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure5$_closure17@5c313224, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure5$_closure18@1e1e837d]
+  }
+  withName:CLASSIFY_SINGLE_TAG.publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure6$_closure19@4b957db0, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure6$_closure20@5d71b500]
+  withName:CLASSIFY_NO_TAG.publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure7$_closure21@8840c98, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure7$_closure22@626b639e]
+  withName:GET_TABLE_RATIO.publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure10$_closure23@273fa9e, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure10$_closure24@527a8665]
+  withName:STAT_NO_TAG.publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure11$_closure25@7ab2a07e, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure11$_closure26@437c4b25]
+  withName:STAT_SNP.publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure12$_closure27@5ec6fede, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure12$_closure28@580902cd]
+  withName:MULTIQC {
+  	ext.args=ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure14$_closure30@3757e8e2
+  	publishDir=['path':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure14$_closure31@1653b84e, 'mode':'symlink', 'saveAs':ScriptE8D9E190780C2E3C6718664691830C85$_run_closure1$_closure14$_closure32@7f8a9454]
+  }
 
-Aug-21 15:31:02.205 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Aug-21 15:31:02.204 [main] ERROR nextflow.cli.Launcher - @unknown
-nextflow.exception.MissingProcessException: Missing process or function GET_TABLE_RATIO()
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:191)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:102)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+Aug-21 23:53:43.183 [main] ERROR nextflow.cli.Launcher - Unknown config attribute `process.withName:COUNT_FQ` -- check config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+nextflow.exception.ConfigParseException: Unknown config attribute `process.withName:COUNT_FQ` -- check config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at nextflow.config.ConfigBuilder.validate(ConfigBuilder.groovy:460)
+	at jdk.internal.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at Script_382ece94fdc58060$_runScript_closure1$_closure2.doCall(Script_382ece94fdc58060:87)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at nextflow.config.ConfigBuilder.validate(ConfigBuilder.groovy:467)
+	at nextflow.config.ConfigBuilder.validate(ConfigBuilder.groovy:447)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at groovy.lang.Closure.call(Closure.java:406)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:102)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at Script_61035523b9766069$_runScript_closure2$_closure3.doCall(Script_61035523b9766069:111)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.config.ConfigBuilder.merge0(ConfigBuilder.groovy:421)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at groovy.lang.Closure.call(Closure.java:406)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at nextflow.script.IterableDef$invoke_a.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:183)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:242)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at nextflow.config.ConfigBuilder.buildConfig0(ConfigBuilder.groovy:370)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.config.ConfigBuilder.buildGivenFiles(ConfigBuilder.groovy:315)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at nextflow.config.ConfigBuilder.buildConfigObject(ConfigBuilder.groovy:806)
+	at nextflow.config.ConfigBuilder.build(ConfigBuilder.groovy:819)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:324)
 	at nextflow.cli.Launcher.run(Launcher.groovy:500)
 	at nextflow.cli.Launcher.main(Launcher.groovy:672)
-Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.WorkflowBinding.GET_TABLE_RATIO() is applicable for argument types: () values: []
-	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:110)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at Script_bc393b67320ea420$_runScript_closure1$_closure2.doCall(Script_bc393b67320ea420:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
-	at groovy.lang.Closure.call(Closure.java:427)
-	at groovy.lang.Closure.call(Closure.java:406)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	... 55 common frames omitted

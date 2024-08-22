@@ -18,7 +18,9 @@ process CLASSIFY_SINGLE_TAG {
     tuple val(meta), path("02c_3indel/*.fastq.gz"), emit: three_indel
     tuple val(meta), path("02d_any_indel/*.fastq.gz"), emit: any_indel
     tuple val(meta), path("02e_tmp_bam/*.bam"), emit: bam
-    tuple val(meta), path("02f_tmp_indel_pos/*.csv"), emit: indel_pos 
+    path "02e_tmp_bam/*.bam", emit: bam_pure
+    tuple val(meta), path("02f_tmp_indel_pos/*.tsv"), emit: indel_pos 
+    path "02a_precise_tag/*.fastq.gz", emit: precise_tag_pure
     
     when:
     task.ext.when == null || task.ext.when
@@ -36,11 +38,11 @@ process CLASSIFY_SINGLE_TAG {
 
     # Step2: parse bam to extract indel positions
     mkdir 02f_tmp_indel_pos
-    parse_bam_indel.py 02e_tmp_bam/${prefix}.bam $ref 02f_tmp_indel_pos/${prefix}.csv
+    parse_bam_indel.py 02e_tmp_bam/${prefix}.bam $ref 02f_tmp_indel_pos/${prefix}.tsv
 
     # Step3: split reads into precise_insert, any_indel, 5_indel, 3_indel using #2 results
     mkdir 02a_precise_tag 02b_5indel 02c_3indel 02d_any_indel
-    classify_single_tag.py 02f_tmp_indel_pos/${prefix}.csv $reads \
+    classify_single_tag.py 02f_tmp_indel_pos/${prefix}.tsv $reads \
     $tag_start \
     $tag_end \
     $tag_flanking \

@@ -1,911 +1,251 @@
-Aug-21 15:15:54.142 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:15:54.396 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Aug-21 15:15:54.440 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Aug-21 15:15:54.468 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Aug-21 15:15:54.469 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Aug-21 15:15:54.476 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Aug-21 15:15:54.515 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Aug-21 15:15:54.553 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:15:54.555 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:15:54.556 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:15:54.556 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:15:54.600 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:15:59.095 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:15:59.201 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
-Aug-21 15:15:59.283 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Aug-21 15:15:59.301 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [peaceful_gates] DSL2 - revision: 355a9de890
-Aug-21 15:15:59.302 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
-Aug-21 15:15:59.302 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Aug-21 15:15:59.302 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
-Aug-21 15:15:59.303 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
-Aug-21 15:15:59.332 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
-Aug-21 15:15:59.332 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
-Aug-21 15:15:59.416 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
-Aug-21 15:15:59.482 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/kaihu/.nextflow/secrets/store.json
-Aug-21 15:15:59.500 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6c951ada] - activable => nextflow.secret.LocalSecretsProvider@6c951ada
-Aug-21 15:15:59.626 [main] DEBUG nextflow.Session - Session UUID: c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:15:59.627 [main] DEBUG nextflow.Session - Run name: peaceful_gates
-Aug-21 15:15:59.628 [main] DEBUG nextflow.Session - Executor pool size: 12
-Aug-21 15:15:59.639 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Aug-21 15:15:59.643 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Aug-21 15:15:59.872 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 23.10.1 build 5891
-  Created: 12-01-2024 22:01 UTC (17:01 EDT)
-  System: Mac OS X 14.6.1
-  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10+7-LTS
-  Encoding: UTF-8 (UTF-8)
-  Process: 7961@UMMSMAC-QVWQ97R33L [192.168.0.175]
-  CPUs: 12 - Mem: 16 GB (21.7 MB) - Swap: 5 GB (824.4 MB)
-Aug-21 15:15:59.949 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work [Mac OS X]
-Aug-21 15:15:59.971 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Aug-21 15:15:59.985 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Aug-21 15:16:00.045 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Aug-21 15:16:00.060 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Aug-21 15:16:00.186 [main] DEBUG nextflow.Session - Session start
-Aug-21 15:16:00.192 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/results/pipeline_info/execution_trace_2024-08-21_15-15-58.txt
-Aug-21 15:16:00.803 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Aug-21 15:16:02.433 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
-Aug-21 15:16:02.488 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationSkipDuplicateCheck` -- Initialise it to a default value eg. `params.validationSkipDuplicateCheck = some_value`
-Aug-21 15:16:02.502 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:16:02.538 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationS3PathCheck` -- Initialise it to a default value eg. `params.validationS3PathCheck = some_value`
-Aug-21 15:16:02.715 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:16:02.907 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_TAG
-Aug-21 15:16:02.911 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_TAG` matches process SIKICLASS:CLASSIFY_TAG
-Aug-21 15:16:02.917 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:02.918 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:02.930 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Aug-21 15:16:02.935 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Aug-21 15:16:02.938 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Aug-21 15:16:03.005 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:16:03.006 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_SINGLE_TAG` matches process SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:16:03.009 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.009 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.025 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_NO_TAG
-Aug-21 15:16:03.027 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.029 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.039 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:16:03.039 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:16:03.040 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.040 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.052 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:16:03.052 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:16:03.053 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.053 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.056 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:16:03.056 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:16:03.056 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.057 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.061 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:16:03.061 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:16:03.062 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.062 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.067 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:16:03.067 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:16:03.068 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.069 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.082 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:16:03.083 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:16:03.084 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.084 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.086 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:16:03.088 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:16:03.089 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.089 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.096 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:16:03.097 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:16:03.098 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.098 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.102 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:16:03.103 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:16:03.105 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.105 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.117 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:16:03.117 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:16:03.120 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.122 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.127 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:16:03.129 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:16:03.132 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.132 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.135 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:16:03.136 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:16:03.136 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.136 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.138 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:16:03.139 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:16:03.140 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.140 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.147 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:16:03.147 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:16:03.149 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.150 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:16:03.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:16:03.155 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.155 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.158 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:16:03.159 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:16:03.161 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.161 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.165 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:16:03.165 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:16:03.165 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.165 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.169 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:16:03.170 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:16:03.171 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.171 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.173 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:16:03.173 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:16:03.175 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.175 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.181 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:16:03.181 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:16:03.182 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.182 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.189 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:16:03.189 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GET_TABLE_RATIO` matches process SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:16:03.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:16:03.191 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:16:03.202 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
-Aug-21 15:16:03.203 [main] DEBUG nextflow.Session - Igniting dataflow network (27)
-Aug-21 15:16:03.208 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_TAG
-Aug-21 15:16:03.213 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_NO_TAG
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:16:03.214 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:16:03.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:16:03.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:16:03.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:16:03.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:16:03.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:16:03.216 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:16:03.232 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:16:03.283 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:16:03.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:16:03.288 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:16:03.290 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_733d564bfc049827: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/sikiclass.nf
-  Script_5e024a2a104438de: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_no_tag.nf
-  Script_4ba798786ecd6418: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/nf-core/fastqc/main.nf
-  Script_4e5337db5243edc5: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/stat_fq.nf
-  Script_d15170113a33e7ac: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/count_fq.nf
-  Script_f25d01001d943150: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/get_table_ratio.nf
-  Script_08b800317db7d42f: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_tag.nf
-  Script_d89042106720ae2b: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/cat_count.nf
-  Script_61035523b9766069: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/main.nf
-  Script_b381e73eb856e339: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_single_tag.nf
-Aug-21 15:16:03.290 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Aug-21 15:16:03.290 [main] DEBUG nextflow.Session - Session await
-Aug-21 15:16:04.903 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [a5/52ba31] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:04.903 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [68/be76a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:04.903 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [c8/1ebb4b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:04.903 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [3d/35d663] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:04.922 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [74/8821cf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:04.922 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [6e/7f06d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:04.924 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [76/d0a574] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:04.924 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [90/0d1163] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:04.924 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [ec/db0101] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:04.924 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [94/3b34d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:04.925 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [28/841992] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:04.925 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [8c/b1216b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:04.983 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [44/15d5d9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:04.984 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [f3/2de807] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:04.990 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [3c/1591b8] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:05.012 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [2c/cf92db] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:05.012 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [3e/234cad] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:05.014 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [06/7b2139] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:05.017 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [d6/6f078d] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:05.017 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [1f/fbf8c7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:05.072 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [fe/f94062] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:05.072 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [b3/a68677] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:05.073 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [7c/f2941b] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:05.075 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [35/3bd168] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:06.058 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [b7/a2315c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:06.054 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [87/880fc4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:06.061 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [24/a4b38c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:06.057 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [e1/054587] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:06.055 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [56/82dbfd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:06.057 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [06/eb83d7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:06.060 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [67/c6562a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:06.058 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [a3/e65541] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:06.059 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [eb/0c7de9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:06.062 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [9d/8f066d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:06.062 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [3b/7013f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:06.054 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [17/ebc62d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:06.061 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [8e/95fadb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:06.060 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [5f/da1854] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:06.064 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [c2/58ff59] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:06.060 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [5c/5f67b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:06.060 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [f6/6a1870] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:06.060 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [9e/7927eb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:06.166 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [8c/9d9d1a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:06.166 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [10/b461da] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:06.166 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [54/488c74] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:06.175 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [73/da55f9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:06.178 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [36/2fe11f] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:06.186 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [48/114eb5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:06.307 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [72/e595b1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:06.362 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [df/4d74d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:06.366 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [61/aa5d9b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:06.363 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [c6/8377a9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:06.363 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [cd/3d8180] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:06.365 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [a8/630938] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:06.411 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [cd/08ea58] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:06.412 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [7c/1f27cc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:06.414 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [0a/e1abd4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:06.414 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [fb/c4bf2e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:06.416 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [23/78fd1b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:06.411 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [44/f3be65] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:06.421 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [ca/dc2bbf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:06.425 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [e0/1d60c0] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:06.434 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [50/b6d216] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:06.435 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [a6/2cb523] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:06.559 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [24/e97c39] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:06.569 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [f0/4af5df] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:06.562 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [c9/535c47] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:06.573 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [0e/80e0b4] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:06.572 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [f1/26cc5b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:06.572 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [d3/ca4b92] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:06.583 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [3f/906545] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:06.582 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [9a/87e26e] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:06.603 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [d2/d70b06] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:06.642 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [6d/41b284] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:06.643 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [0b/518c03] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:06.725 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [d1/f3839f] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:06.741 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [e1/ef81f3] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:06.734 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [3f/9376c9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:06.726 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [7d/cdad9f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:06.726 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [9e/4956a6] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:06.839 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [0f/db9e51] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:07.499 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [2d/9cb1cc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:07.489 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [aa/59f18a] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:07.499 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [b3/a0a93f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:07.486 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [1c/d78002] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:07.513 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [57/a0ffe9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:07.500 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [06/c7f8b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:07.513 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [64/8bb3a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:07.927 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [8f/e1596f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:07.930 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [81/b2843e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:07.931 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [3d/20cf0b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:07.935 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [c7/11c099] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:07.936 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [61/9369dd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:07.940 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [29/e819b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:07.942 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [40/2baf4a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:07.949 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [10/7c5857] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:07.941 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [95/214ee8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:07.947 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [8f/686a84] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:07.947 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [77/049f07] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:07.952 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [a7/374f27] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:07.952 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [df/b95184] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:07.954 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [33/884a18] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:07.955 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [62/076d7e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:07.956 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [c6/ac1234] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:07.935 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [b9/dbe772] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:07.942 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [af/4fe558] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:07.955 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [f7/1dde5a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:07.962 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [f5/0fe238] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:07.962 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [4b/445ae3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:07.933 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [5d/e244b7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:07.973 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [f6/50230c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:07.974 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [f7/2e3247] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:07.976 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [9f/2b126f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:07.976 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [3c/578521] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:07.977 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [e3/d3901b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:07.978 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [3a/d65f9a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:08.014 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [90/5d6d5c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:08.015 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [38/e5c8f7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:08.014 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [aa/82eee9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:08.015 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [68/8d1760] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:08.074 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [00/e0481e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:08.074 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [b4/5d9c0e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:08.074 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [a8/8a000f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:08.066 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [23/35ec0f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:08.074 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [ad/81ec21] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:08.076 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [2d/9f1c60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:08.066 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [d6/e69daa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:08.071 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [9d/a6e39a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:08.069 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [79/fc349a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:08.067 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [d5/2e8a2b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:08.069 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [d0/3c6384] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.067 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [ee/968869] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:08.105 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [a5/74a9ad] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:08.093 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [83/d837e7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:08.100 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [88/06e6e0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:08.107 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [b6/095e9e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:08.100 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [0d/d9bcf8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:08.225 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [8b/89a60d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:08.223 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [12/9960d7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:08.258 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [3f/86222c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:08.258 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [15/e241bf] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:08.258 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [94/7e80cb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:08.259 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [f1/91b362] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.259 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [2b/661974] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:08.259 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [17/4ba280] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:08.259 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [5d/5e39a3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:08.259 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [b0/c73227] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:08.259 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [c6/738025] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:08.259 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [dd/94084d] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:08.259 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [2c/0284ab] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:08.260 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [fd/070cfa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:08.260 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [22/4f9385] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:08.260 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [9b/a579ea] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:08.271 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [cd/ac8c98] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:08.267 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [f1/7c038a] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:08.363 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [8d/b63d92] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.366 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [24/e23249] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:08.418 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [29/b4bbfe] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:08.366 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [23/8d4932] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:08.363 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [7d/968adb] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:08.363 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [8e/8d8840] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:08.378 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [74/e5c3d0] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:08.367 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [66/b52515] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:08.793 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [f7/793672] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:08.793 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [41/64da26] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:08.772 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [54/2265a5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:08.766 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [7b/84ba50] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:08.766 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [6f/ff2833] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:08.775 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [cf/0516e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:08.768 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [a9/a72b59] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:08.792 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [83/5af846] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:08.774 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [cf/6f505c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.774 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [ed/9dfb82] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:08.802 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [1a/3d662a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.802 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [06/e0a18b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:08.954 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [45/fd9c25] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:08.956 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [12/5a7922] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:08.956 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [35/45ab32] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:08.957 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [be/96652e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:08.957 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [cc/3b350f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:08.959 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [4b/002a6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:08.964 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [5a/58689e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:08.971 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [25/d3fb54] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:08.977 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [90/3cc8af] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:08.979 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [aa/241f23] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:08.979 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [86/24e673] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:08.982 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [6f/b723c1] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:08.983 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [1f/b2d19b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:08.979 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [48/0dcf21] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:08.980 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [0a/0afe77] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:08.960 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [a7/9fb700] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:09.167 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [55/a32702] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:09.175 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [5c/4e4986] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:09.175 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [6a/070da5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:09.175 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [b0/8d1864] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:09.177 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [93/61478b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:09.180 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [09/3e7184] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:09.180 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [a3/42128a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:09.181 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [97/607c6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:09.190 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [79/0fc179] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.270 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:09.346 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [c5/ea0a98] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:09.346 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [22/5049da] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:09.346 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [28/f9f374] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:09.346 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [0c/652932] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:09.349 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [fe/2510ce] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:09.348 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [70/d67cd5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:09.349 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [e2/1fde86] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:09.348 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [b3/93ba0a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.348 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [dd/f37339] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:09.352 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [06/ebdd05] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:09.353 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [97/96d64e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:09.355 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [ce/0f8e1e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:09.368 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [f5/49261a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:09.365 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [f7/5f8f60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:09.366 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [b0/99d55e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:09.367 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [a8/6eb490] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:09.414 [Task submitter] INFO  nextflow.Session - [b0/a325b3] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:09.376 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [44/ccc124] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.444 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [50/fea82c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:09.444 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [10/2dcff8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:09.444 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [c4/072028] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:09.444 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [7d/61e006] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:09.452 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [4b/bbca15] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:09.456 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [8a/e0a0e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:09.516 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [75/c62687] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:09.522 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [1d/a529bc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:09.522 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [11/003d9d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:09.597 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [dd/144451] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:16:09.653 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [8b/62501d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:09.653 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [07/ef22f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:09.654 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [26/e5a36a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:09.655 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [52/f1c721] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:09.655 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [0f/af1253] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:09.655 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [29/1a8692] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:09.656 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [82/b4a49e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:09.665 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [ef/669b2f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:09.667 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [a2/840038] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:09.682 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [79/2e06c8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.683 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [6e/1374d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:09.686 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [6f/fe8bc5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:09.686 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [65/e1ad0c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.686 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [30/b55de1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:09.736 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [94/6021cf] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:16:09.736 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [a1/a80bed] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:16:09.747 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:09.749 [Task submitter] INFO  nextflow.Session - [13/d48d6c] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:09.815 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [6d/971582] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:16:09.815 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [31/e20a67] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:16:09.816 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [51/d14838] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:16:15.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b0/a325b38ff832d8fe403eb77db26c0d]
-Aug-21 15:16:15.290 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:15.307 [Task submitter] INFO  nextflow.Session - [1f/fc3147] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:16:15.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/13/d48d6c7de98e06d8c47a74db9b0634]
-Aug-21 15:16:15.993 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:15.994 [Task submitter] INFO  nextflow.Session - [41/5abf83] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:16:18.479 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/1f/fc314724e25472b70e4ec42385dc1f]
-Aug-21 15:16:18.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:18.503 [Task submitter] INFO  nextflow.Session - [ee/a3d84b] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:16:18.920 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/41/5abf83ca7bf91c3d58dd3e780ef9e0]
-Aug-21 15:16:18.933 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:18.936 [Task submitter] INFO  nextflow.Session - [45/606a40] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:16:21.837 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ee/a3d84bfc9bd60d3a03c27165eed8fa]
-Aug-21 15:16:21.841 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:21.842 [Task submitter] INFO  nextflow.Session - [8b/d57cd2] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:16:21.927 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/45/606a405844411ab4923172ac937361]
-Aug-21 15:16:21.935 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:21.935 [Task submitter] INFO  nextflow.Session - [64/9ba707] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:16:25.537 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/8b/d57cd2253306f9d3e8e552f345f8a0]
-Aug-21 15:16:25.545 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:25.547 [Task submitter] INFO  nextflow.Session - [29/4dd046] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:16:25.700 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/64/9ba707be44513281b154609b0c3381]
-Aug-21 15:16:25.712 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:25.714 [Task submitter] INFO  nextflow.Session - [95/222287] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:16:28.566 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/29/4dd0464c2e25e25da7096fa8fd3e90]
-Aug-21 15:16:28.575 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:28.576 [Task submitter] INFO  nextflow.Session - [11/3e3291] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:16:28.592 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/95/2222873ae0b70b0b2b523513343a47]
-Aug-21 15:16:28.599 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:28.599 [Task submitter] INFO  nextflow.Session - [23/f2293b] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:16:31.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/23/f2293ba57d67a6aefc5f663d09d233]
-Aug-21 15:16:31.533 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:31.533 [Task submitter] INFO  nextflow.Session - [e6/e8162d] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:16:32.027 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/11/3e329122789dae80e0d69901ecd7e9]
-Aug-21 15:16:32.047 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:32.048 [Task submitter] INFO  nextflow.Session - [95/cb4eb6] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:16:34.437 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 173; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_3_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/95/cb4eb6d6d27f6adee96d25592b0efb]
-Aug-21 15:16:34.445 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:34.445 [Task submitter] INFO  nextflow.Session - [f5/1d7575] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:16:34.528 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 115; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/e6/e8162d977684f6c3af44f95cfcc8de]
-Aug-21 15:16:34.535 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:34.537 [Task submitter] INFO  nextflow.Session - [ee/a3a6cd] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:16:37.313 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 181; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f5/1d7575297b0f5c551359f6905e2b65]
-Aug-21 15:16:37.321 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:37.322 [Task submitter] INFO  nextflow.Session - [83/108979] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:16:37.844 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 177; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ee/a3a6cdfcc5717a32527a35ef2a587b]
-Aug-21 15:16:37.858 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:37.859 [Task submitter] INFO  nextflow.Session - [c6/6deee7] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:16:40.431 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 182; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/83/108979bc841758124b567c6235679f]
-Aug-21 15:16:40.444 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:40.453 [Task submitter] INFO  nextflow.Session - [db/b1f6e1] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:16:41.133 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 183; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/c6/6deee7902b68d44817c17c1fc041b6]
-Aug-21 15:16:41.140 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:41.140 [Task submitter] INFO  nextflow.Session - [c4/55ec69] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:16:42.885 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 184; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_2_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/db/b1f6e13170ef7a33e3cc4963e40ccf]
-Aug-21 15:16:42.980 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:42.980 [Task submitter] INFO  nextflow.Session - [9a/8782c4] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:16:43.783 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 187; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_1_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/c4/55ec69cf7fa7d83dea1d6d426ad297]
-Aug-21 15:16:43.787 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:43.788 [Task submitter] INFO  nextflow.Session - [ee/9e8c49] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:16:46.078 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 186; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_1_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/9a/8782c408695b5f1a37497f3ac469b5]
-Aug-21 15:16:46.086 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:46.086 [Task submitter] INFO  nextflow.Session - [d5/76e90b] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:16:46.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 185; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ee/9e8c493d31ca63d0b964fa83e4a661]
-Aug-21 15:16:46.655 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:46.658 [Task submitter] INFO  nextflow.Session - [b3/5122f7] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:16:48.994 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 188; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_2_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/d5/76e90b5a826f0b5f3e19059f218cc6]
-Aug-21 15:16:48.999 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:49.000 [Task submitter] INFO  nextflow.Session - [a5/04ffe9] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:16:49.389 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 191; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_3_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b3/5122f7a9a0b2bca209e37577f14e65]
-Aug-21 15:16:49.397 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:49.397 [Task submitter] INFO  nextflow.Session - [6d/a271a5] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:16:51.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 215; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a5/04ffe9cc9fb4d64a5bd44c9bd13596]
-Aug-21 15:16:51.614 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:51.614 [Task submitter] INFO  nextflow.Session - [3a/26a0c1] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:16:51.873 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 205; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/6d/a271a52dda782873f5f13ed2a934c9]
-Aug-21 15:16:51.881 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:51.881 [Task submitter] INFO  nextflow.Session - [73/84dded] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:16:54.207 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 194; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/3a/26a0c141f54c219127755972eaac5f]
-Aug-21 15:16:54.212 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:54.212 [Task submitter] INFO  nextflow.Session - [ab/28b1b5] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:16:54.622 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 202; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/73/84ddedd798c3c7aca96296515fc56f]
-Aug-21 15:16:54.631 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:54.633 [Task submitter] INFO  nextflow.Session - [e8/c7807a] Submitted process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:16:56.775 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 213; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ab/28b1b5e8d23bf86cd9f1313c6a98dd]
-Aug-21 15:16:56.781 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:56.781 [Task submitter] INFO  nextflow.Session - [0a/3a8dfe] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:57.146 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 235; name: SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/e8/c7807a232e64d95d19fc5d24747d14]
-Aug-21 15:16:57.150 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:57.150 [Task submitter] INFO  nextflow.Session - [ce/af2bfc] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:58.267 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 278; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/0a/3a8dfe940f08230990d0cd288ee6ae]
-Aug-21 15:16:58.274 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:58.276 [Task submitter] INFO  nextflow.Session - [5b/6a976b] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:58.636 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 280; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ce/af2bfc7fd91f67c83de78f318e1577]
-Aug-21 15:16:58.640 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:58.641 [Task submitter] INFO  nextflow.Session - [85/37e46f] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:16:59.848 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 277; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/5b/6a976b62946eae6040eddb548350e2]
-Aug-21 15:16:59.858 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:59.858 [Task submitter] INFO  nextflow.Session - [cc/9f69e0] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:16:59.918 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 279; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/85/37e46faa9cb015d6167e134606fdcd]
-Aug-21 15:16:59.921 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:16:59.921 [Task submitter] INFO  nextflow.Session - [b6/2cf3b7] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:17:01.273 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 281; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/cc/9f69e0475b0289548ec9c04327ed62]
-Aug-21 15:17:01.288 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:01.288 [Task submitter] INFO  nextflow.Session - [3b/77bbce] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:17:01.307 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 284; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b6/2cf3b7ce80273f8655f8a705522832]
-Aug-21 15:17:01.314 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:01.314 [Task submitter] INFO  nextflow.Session - [b0/9fcc68] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:17:02.711 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 282; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/3b/77bbce3a32d60913ff2b042d88c4e0]
-Aug-21 15:17:02.721 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:02.721 [Task submitter] INFO  nextflow.Session - [69/a8ab34] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:17:02.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 283; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b0/9fcc687bc3377207cda7ca52039a64]
-Aug-21 15:17:02.728 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:02.729 [Task submitter] INFO  nextflow.Session - [b7/7e8e51] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:17:04.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 287; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b7/7e8e5188deebb912443ad165859676]
-Aug-21 15:17:04.273 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:04.274 [Task submitter] INFO  nextflow.Session - [7c/e6debf] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:17:04.279 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 288; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/69/a8ab34e6ccefeef61f606dbe60c6af]
-Aug-21 15:17:04.281 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:04.281 [Task submitter] INFO  nextflow.Session - [55/877a0c] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:17:05.786 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 286; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/55/877a0c0529673ce79f58bbdb8845b3]
-Aug-21 15:17:05.790 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:05.790 [Task submitter] INFO  nextflow.Session - [6e/b1b3d3] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:17:05.796 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 285; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/7c/e6debffae99c980fe53435bce251c3]
-Aug-21 15:17:05.801 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:05.801 [Task submitter] INFO  nextflow.Session - [29/3afd53] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:17:07.304 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 289; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/29/3afd534f2906771eff59bb41c4cc94]
-Aug-21 15:17:07.315 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:07.315 [Task submitter] INFO  nextflow.Session - [af/990388] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:17:07.407 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 290; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/6e/b1b3d3f9b8f0e296f22ff6380e8036]
-Aug-21 15:17:07.410 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:07.410 [Task submitter] INFO  nextflow.Session - [dc/a285a8] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:17:08.635 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 292; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/af/990388945b979bba62985ae21e8e19]
-Aug-21 15:17:08.639 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:08.639 [Task submitter] INFO  nextflow.Session - [75/defa36] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:17:08.762 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 291; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/dc/a285a854b59915f224913cec01c09a]
-Aug-21 15:17:08.768 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:08.768 [Task submitter] INFO  nextflow.Session - [ec/e9daf5] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:17:10.023 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 294; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/75/defa360ce0747eb7053db0eb5171fe]
-Aug-21 15:17:10.026 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:10.027 [Task submitter] INFO  nextflow.Session - [7b/13a157] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:17:10.100 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 295; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ec/e9daf55c0ed230bd3fb7053a1c3552]
-Aug-21 15:17:10.108 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:10.108 [Task submitter] INFO  nextflow.Session - [95/425beb] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:17:11.316 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 296; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/7b/13a157241e7850bd9646eacb38d0d7]
-Aug-21 15:17:11.322 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:11.322 [Task submitter] INFO  nextflow.Session - [e1/f68662] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:17:11.391 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 293; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/95/425bebb7edfe833922f1e2644b30f1]
-Aug-21 15:17:11.403 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:11.403 [Task submitter] INFO  nextflow.Session - [69/8b960c] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:17:12.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 298; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/e1/f686623da536bba165d51b5f832833]
-Aug-21 15:17:12.736 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:12.737 [Task submitter] INFO  nextflow.Session - [5c/46e64c] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:17:12.745 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 297; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/69/8b960ce407dfbbd3f15dd1665895fc]
-Aug-21 15:17:12.749 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:12.749 [Task submitter] INFO  nextflow.Session - [14/35b443] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:17:14.148 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 300; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/5c/46e64c0ecc52303846d4bb3f59e9f3]
-Aug-21 15:17:14.151 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:14.152 [Task submitter] INFO  nextflow.Session - [04/bc03a1] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:17:14.156 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 299; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/14/35b443fd87efce4db0b2c8b0b6e90a]
-Aug-21 15:17:14.160 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:14.161 [Task submitter] INFO  nextflow.Session - [9e/cea3d9] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:17:16.011 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 304; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/04/bc03a10ae5f7d68632f6d9d8230ce6]
-Aug-21 15:17:16.019 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:16.020 [Task submitter] INFO  nextflow.Session - [ba/e97a63] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:17:16.021 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 303; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/9e/cea3d9ba537b5d34bf79497d879fac]
-Aug-21 15:17:16.024 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:16.024 [Task submitter] INFO  nextflow.Session - [ff/165f03] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:17:17.512 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 302; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ba/e97a631ca4c3166bf846b2f9c250b4]
-Aug-21 15:17:17.514 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:17.515 [Task submitter] INFO  nextflow.Session - [d1/4c1887] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:17:17.522 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 301; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ff/165f03d880dc5001f703fbba289d8e]
-Aug-21 15:17:17.527 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:17.527 [Task submitter] INFO  nextflow.Session - [a3/528132] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:17:18.882 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 305; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/d1/4c1887855b4bbafe6d56a3b117f5c1]
-Aug-21 15:17:18.885 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:18.885 [Task submitter] INFO  nextflow.Session - [14/1d5305] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:17:18.895 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 307; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a3/528132b58a135d0dfa756a5883020e]
-Aug-21 15:17:18.901 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:18.902 [Task submitter] INFO  nextflow.Session - [15/b159f4] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:17:20.343 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 306; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/14/1d5305d15825816e050feae8d661fd]
-Aug-21 15:17:20.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:20.346 [Task submitter] INFO  nextflow.Session - [f9/87fdab] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:17:20.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 308; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/15/b159f477d46a7540505c922282dba8]
-Aug-21 15:17:20.352 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:20.353 [Task submitter] INFO  nextflow.Session - [b0/9a6c9e] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:17:21.796 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 309; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b0/9a6c9e329d1cfe713e7b9ba747907e]
-Aug-21 15:17:21.800 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:21.800 [Task submitter] INFO  nextflow.Session - [b4/5a6c29] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:17:21.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 310; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f9/87fdab0a5666bcba9061459406c444]
-Aug-21 15:17:21.810 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:21.811 [Task submitter] INFO  nextflow.Session - [8c/b3af98] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:17:23.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 311; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/8c/b3af98fb639fa731df8666b552d0fd]
-Aug-21 15:17:23.277 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:23.277 [Task submitter] INFO  nextflow.Session - [02/72d924] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:17:23.296 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 312; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b4/5a6c292947b2c5c55715f1e880f780]
-Aug-21 15:17:23.307 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:23.308 [Task submitter] INFO  nextflow.Session - [d0/a2c084] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:17:24.596 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 314; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/02/72d9246fe80f92a8b0ef028f4b6720]
-Aug-21 15:17:24.599 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:24.600 [Task submitter] INFO  nextflow.Session - [fe/049f29] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:17:24.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 313; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/d0/a2c0845dc965cb622006a3a4ec3c20]
-Aug-21 15:17:24.687 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:24.687 [Task submitter] INFO  nextflow.Session - [67/0326d6] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:17:25.946 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 316; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/fe/049f294d89c2cccd05f73961bec4b8]
-Aug-21 15:17:26.015 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:26.016 [Task submitter] INFO  nextflow.Session - [cb/ae5436] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:17:26.054 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 315; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/67/0326d64c7d79d563639b24d527b2fc]
-Aug-21 15:17:26.059 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:26.061 [Task submitter] INFO  nextflow.Session - [f3/071f12] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:17:27.270 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 318; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/cb/ae54362a4afde88e9835da30d6fd55]
-Aug-21 15:17:27.274 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:27.276 [Task submitter] INFO  nextflow.Session - [82/0f1bfd] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:17:27.351 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 320; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f3/071f12bcea333b0b9a0b397ceb7009]
-Aug-21 15:17:27.357 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:27.357 [Task submitter] INFO  nextflow.Session - [57/db3e87] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:17:28.629 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 319; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/82/0f1bfdd5b3ea4f802376aeadc40049]
-Aug-21 15:17:28.634 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:28.635 [Task submitter] INFO  nextflow.Session - [e4/7e85fd] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:17:28.774 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 317; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/57/db3e875aa21abd849cd97cdd39f7ba]
-Aug-21 15:17:28.781 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:28.782 [Task submitter] INFO  nextflow.Session - [b9/df38bb] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:17:29.948 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 324; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/e4/7e85fd63e5a822148c10fc2da0000c]
-Aug-21 15:17:29.953 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:29.953 [Task submitter] INFO  nextflow.Session - [15/c89a03] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:17:30.054 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 323; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b9/df38bb8309335c40b9f463745b8b58]
-Aug-21 15:17:30.057 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:30.058 [Task submitter] INFO  nextflow.Session - [2e/0e24b2] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:17:31.352 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 322; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/15/c89a03f75f3b938db39b5f6d103b64]
-Aug-21 15:17:31.356 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:31.356 [Task submitter] INFO  nextflow.Session - [ad/ee901e] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:17:31.365 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 321; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/2e/0e24b2b6d24f6ba1d201f4af51258e]
-Aug-21 15:17:31.373 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:31.374 [Task submitter] INFO  nextflow.Session - [13/ea02b1] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:17:32.729 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 327; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_3_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ad/ee901e8f96a552ba60704204e5929a]
-Aug-21 15:17:32.733 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:32.733 [Task submitter] INFO  nextflow.Session - [53/cb6241] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:17:32.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 328; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_3_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/13/ea02b1144344ae7b7579e01f7dbd69]
-Aug-21 15:17:32.757 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:32.757 [Task submitter] INFO  nextflow.Session - [6f/964c06] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:17:34.063 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 326; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_3_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/6f/964c06793fc84c344aab3cdd049d91]
-Aug-21 15:17:34.066 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:34.066 [Task submitter] INFO  nextflow.Session - [8c/4c07a7] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:17:34.067 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 325; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_3_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/53/cb62416684f954bd3cb6264b4abec9]
-Aug-21 15:17:34.071 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:34.071 [Task submitter] INFO  nextflow.Session - [9d/fc2a9d] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:17:35.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 330; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/9d/fc2a9d7258099fae418edee72c1c40]
-Aug-21 15:17:35.633 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:35.634 [Task submitter] INFO  nextflow.Session - [37/9df753] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:17:35.655 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 329; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/8c/4c07a7c7c8d575e60db5f121472461]
-Aug-21 15:17:35.659 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:35.660 [Task submitter] INFO  nextflow.Session - [2f/7a0333] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:17:36.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 331; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/37/9df753f028f07d19833c005a93350a]
-Aug-21 15:17:36.966 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:36.966 [Task submitter] INFO  nextflow.Session - [65/11a462] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:17:37.002 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 332; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_9); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/2f/7a0333817f6d984de09e530c249ae1]
-Aug-21 15:17:37.007 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:37.007 [Task submitter] INFO  nextflow.Session - [29/adea68] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:17:38.289 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 335; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/65/11a4628d0ae5df6d9be77467855eeb]
-Aug-21 15:17:38.294 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:38.294 [Task submitter] INFO  nextflow.Session - [a0/183ffb] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:17:38.353 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 336; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/29/adea68d34033e15f77877d9232ab39]
-Aug-21 15:17:38.359 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:38.360 [Task submitter] INFO  nextflow.Session - [16/e83a06] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:17:39.703 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 333; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/16/e83a06f41c8219fa8fd0a2be5d88d2]
-Aug-21 15:17:39.709 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:39.709 [Task submitter] INFO  nextflow.Session - [48/d7c7ad] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:17:39.721 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 334; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_2); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a0/183ffb7b5776385ee213ac4e061b8a]
-Aug-21 15:17:39.724 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:39.724 [Task submitter] INFO  nextflow.Session - [36/bf2bc3] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:17:41.175 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 339; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/48/d7c7ad8ff280e9ee19ba0af87485f9]
-Aug-21 15:17:41.178 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:41.178 [Task submitter] INFO  nextflow.Session - [21/edd923] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:17:41.184 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 340; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/36/bf2bc32b9e7f25533405373d1d9390]
-Aug-21 15:17:41.190 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:41.190 [Task submitter] INFO  nextflow.Session - [fb/7b98a9] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:17:42.611 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 338; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/21/edd92382238c37a3be0fac58210504]
-Aug-21 15:17:42.617 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:42.618 [Task submitter] INFO  nextflow.Session - [40/baee62] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:17:42.619 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 337; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_7); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/fb/7b98a969bb58e079cb54c8a98df1a3]
-Aug-21 15:17:42.625 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:42.625 [Task submitter] INFO  nextflow.Session - [46/e37498] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:17:44.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 344; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/40/baee62012d04a2db79b1d5c8935bf9]
-Aug-21 15:17:44.143 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:44.143 [Task submitter] INFO  nextflow.Session - [f4/7bf698] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:17:44.152 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 341; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/46/e37498de0c6bea335becf151eda916]
-Aug-21 15:17:44.156 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:44.156 [Task submitter] INFO  nextflow.Session - [18/239136] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:17:45.447 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 343; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/18/239136aab7458cceb7e3ed62d3bfa8]
-Aug-21 15:17:45.451 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:45.451 [Task submitter] INFO  nextflow.Session - [b3/40d729] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:17:45.465 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 342; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_1); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f4/7bf698365459ee64313ca481af4ba9]
-Aug-21 15:17:45.467 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:45.467 [Task submitter] INFO  nextflow.Session - [4c/733745] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:17:46.827 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 346; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b3/40d72956566645f217514599534396]
-Aug-21 15:17:46.831 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:46.831 [Task submitter] INFO  nextflow.Session - [07/c18c61] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:17:46.834 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 347; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/4c/7337451bb43bb7bd456f7f6ed69821]
-Aug-21 15:17:46.840 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:46.840 [Task submitter] INFO  nextflow.Session - [1e/e492cc] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:17:48.325 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 345; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/07/c18c6134acf90cdb6b8183440691f8]
-Aug-21 15:17:48.328 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:48.328 [Task submitter] INFO  nextflow.Session - [6d/9351e4] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:17:48.338 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 348; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_8); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/1e/e492cc1643cf5b3bc1f9c5fa40f69d]
-Aug-21 15:17:48.342 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:48.343 [Task submitter] INFO  nextflow.Session - [22/1c5602] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:17:49.753 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 352; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_2_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/22/1c560244086e8c41891f32a9b8a04c]
-Aug-21 15:17:49.756 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:49.756 [Task submitter] INFO  nextflow.Session - [53/086ca5] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:17:49.764 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 350; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_2_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/6d/9351e49d5b1e5b524b894f616ee9ef]
-Aug-21 15:17:49.769 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:49.769 [Task submitter] INFO  nextflow.Session - [91/aec291] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:17:51.254 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 349; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_2_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/91/aec2913b030421e521a1ceb2302a19]
-Aug-21 15:17:51.257 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:51.257 [Task submitter] INFO  nextflow.Session - [16/78f7a9] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:17:51.360 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 351; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_2_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/53/086ca5ccf3d67021ec86af03e95ef8]
-Aug-21 15:17:51.366 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:51.367 [Task submitter] INFO  nextflow.Session - [ff/c6501c] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:17:52.550 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 355; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_1_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/16/78f7a9366d398501fb75179967c983]
-Aug-21 15:17:52.553 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:52.553 [Task submitter] INFO  nextflow.Session - [10/111a40] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:17:52.722 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 356; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_1_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ff/c6501c489336b20ec23ca11d560bbe]
-Aug-21 15:17:52.724 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:52.724 [Task submitter] INFO  nextflow.Session - [f8/49b736] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:17:53.918 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 354; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_1_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/10/111a40acb46ac18f5cfec37fb5863e]
-Aug-21 15:17:53.921 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:53.921 [Task submitter] INFO  nextflow.Session - [af/2ce2c9] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:17:54.070 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 353; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_1_4); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f8/49b73667505a0c027e02df3ab43aa6]
-Aug-21 15:17:54.074 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:54.074 [Task submitter] INFO  nextflow.Session - [60/4ed50d] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:17:55.282 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 358; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_1_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/af/2ce2c9edc25e71ddb1262597ecf792]
-Aug-21 15:17:55.286 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:55.286 [Task submitter] INFO  nextflow.Session - [a0/29c547] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:17:55.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 357; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_1_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/60/4ed50dd6481c950c3c0b42462df88b]
-Aug-21 15:17:55.461 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:55.461 [Task submitter] INFO  nextflow.Session - [ca/28c7d8] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:17:56.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 359; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_1_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a0/29c547553ec87468dbf2241b3c6144]
-Aug-21 15:17:56.634 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:56.634 [Task submitter] INFO  nextflow.Session - [32/7158da] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:17:56.749 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 360; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_1_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ca/28c7d816563cb725a2bfd97cb15cc3]
-Aug-21 15:17:56.752 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:56.753 [Task submitter] INFO  nextflow.Session - [ac/0ebc7d] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:17:57.979 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 362; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/32/7158da7bac275c6ec652f7aba1393e]
-Aug-21 15:17:57.982 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:57.982 [Task submitter] INFO  nextflow.Session - [ed/7b21c0] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:17:58.087 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 364; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ac/0ebc7d1aa96c9e8c7135bf0141bf52]
-Aug-21 15:17:58.089 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:58.089 [Task submitter] INFO  nextflow.Session - [3d/100321] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:17:59.385 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 363; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ed/7b21c0075d81e37e2a5fcb4956c2a7]
-Aug-21 15:17:59.389 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:59.389 [Task submitter] INFO  nextflow.Session - [55/fa1309] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:17:59.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 361; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_6); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/3d/10032186b5aaab99164276171f1857]
-Aug-21 15:17:59.400 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:17:59.401 [Task submitter] INFO  nextflow.Session - [35/49f190] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:18:00.800 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 365; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_2_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/55/fa13090841daf9a72a2b5c1ddcb4e2]
-Aug-21 15:18:00.806 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:00.806 [Task submitter] INFO  nextflow.Session - [a3/ec10f1] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:18:00.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 368; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_2_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/35/49f190e4b06508117733fef2de2020]
-Aug-21 15:18:00.815 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:00.815 [Task submitter] INFO  nextflow.Session - [fd/2de673] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:18:02.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 366; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_2_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/fd/2de673058204888da002d221f7bf13]
-Aug-21 15:18:02.250 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:02.250 [Task submitter] INFO  nextflow.Session - [ea/bfae6d] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:18:02.257 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 367; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_2_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a3/ec10f17ec61bf562ffacfe79192a35]
-Aug-21 15:18:02.264 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:02.265 [Task submitter] INFO  nextflow.Session - [95/b016e6] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:18:03.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 370; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_3_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/ea/bfae6d82cb4e33c656fc81234fcf14]
-Aug-21 15:18:03.637 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:03.637 [Task submitter] INFO  nextflow.Session - [d9/e06cc9] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:18:03.639 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 371; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_3_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/95/b016e6b6a3fd636457d7721f4979b5]
-Aug-21 15:18:03.643 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:03.643 [Task submitter] INFO  nextflow.Session - [33/66e0a4] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:18:04.979 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 369; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_3_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/d9/e06cc960d5d3b4ef7c90f332ccbfd9]
-Aug-21 15:18:04.981 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:04.982 [Task submitter] INFO  nextflow.Session - [b1/982e65] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:18:05.006 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 372; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_3_3); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/33/66e0a4ebabb6cd956ff95b16207307]
-Aug-21 15:18:05.010 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:05.010 [Task submitter] INFO  nextflow.Session - [bd/4753bb] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:18:06.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 373; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/b1/982e65d1ac0b4cbbeac9e38bb5bb55]
-Aug-21 15:18:06.355 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:06.356 [Task submitter] INFO  nextflow.Session - [26/9a6e43] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:18:06.362 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 374; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/bd/4753bb0915647f93f0da7b4e9eaf6a]
-Aug-21 15:18:06.369 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:06.369 [Task submitter] INFO  nextflow.Session - [a8/4afe02] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:18:07.768 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 375; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a8/4afe02b3ef49a35f5d531063857ab6]
-Aug-21 15:18:07.772 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:07.772 [Task submitter] INFO  nextflow.Session - [fd/71cfb2] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:18:07.810 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 376; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/26/9a6e43599f9f72a9b8000d11ff7e86]
-Aug-21 15:18:07.812 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:07.812 [Task submitter] INFO  nextflow.Session - [05/229312] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:18:09.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 379; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/fd/71cfb2604ab3a11460f62cada6f34b]
-Aug-21 15:18:09.093 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:09.093 [Task submitter] INFO  nextflow.Session - [34/71ccbd] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:18:09.098 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 378; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/05/2293127d1ebb6376fb91b362005155]
-Aug-21 15:18:09.100 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:09.100 [Task submitter] INFO  nextflow.Session - [bf/e4c852] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:18:10.642 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 380; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/34/71ccbdc62053df0ed190b774df4142]
-Aug-21 15:18:10.648 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:10.648 [Task submitter] INFO  nextflow.Session - [0e/135981] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:18:10.663 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 377; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/bf/e4c8529c90271f79e1d0ba7360ef32]
-Aug-21 15:18:10.665 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:10.665 [Task submitter] INFO  nextflow.Session - [04/4e24d0] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:18:12.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 382; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/04/4e24d01057e838cf41137087310701]
-Aug-21 15:18:12.094 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:12.095 [Task submitter] INFO  nextflow.Session - [f6/28c9fe] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:18:12.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 381; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/0e/13598151f222e5155af855c4c14ee4]
-Aug-21 15:18:12.107 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:12.107 [Task submitter] INFO  nextflow.Session - [3e/883847] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:18:13.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 383; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/3e/883847acbc6073c8d684cc16224642]
-Aug-21 15:18:13.564 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:13.564 [Task submitter] INFO  nextflow.Session - [70/cea699] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:18:13.570 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 384; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/f6/28c9fe18ec07124800915cfb5d4a73]
-Aug-21 15:18:13.573 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:13.574 [Task submitter] INFO  nextflow.Session - [fa/b26526] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:18:15.006 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 387; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/fa/b26526117fc65f09c1941ebcdb1c20]
-Aug-21 15:18:15.010 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:15.010 [Task submitter] INFO  nextflow.Session - [da/409c62] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:18:15.112 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 385; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/70/cea6997cd6bf7db02d51f022c2cdd5]
-Aug-21 15:18:15.116 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:15.116 [Task submitter] INFO  nextflow.Session - [2e/0a61ae] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:18:16.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 388; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/2e/0a61aedd19f6680d15ff622f45b694]
-Aug-21 15:18:16.438 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:16.439 [Task submitter] INFO  nextflow.Session - [4b/122ec6] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:18:16.454 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 386; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/da/409c628b1631190fd3f40bd280f847]
-Aug-21 15:18:16.457 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:16.457 [Task submitter] INFO  nextflow.Session - [0b/c7370f] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:18:17.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 389; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/4b/122ec601b52ae24c0e311d14e5e735]
-Aug-21 15:18:17.858 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:17.858 [Task submitter] INFO  nextflow.Session - [cd/760080] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:18:17.868 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 391; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/0b/c7370f0219879888afaf199281fa18]
-Aug-21 15:18:17.874 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:17.874 [Task submitter] INFO  nextflow.Session - [14/6ea67e] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:18:19.273 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 392; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/cd/7600800bf40570db21048d66ccc70b]
-Aug-21 15:18:19.339 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:19.342 [Task submitter] INFO  nextflow.Session - [af/be72ea] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:18:19.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 390; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_10); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/14/6ea67e80f41c2a8d2c3801be90d5e4]
-Aug-21 15:18:19.354 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:19.355 [Task submitter] INFO  nextflow.Session - [21/0e7fbc] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:18:20.793 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 396; name: SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/21/0e7fbcce2633e4b5fc8f998ae7971b]
-Aug-21 15:18:20.796 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:20.797 [Task submitter] INFO  nextflow.Session - [c2/28ca76] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:18:20.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 395; name: SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/af/be72ea7ab1fb59ee399fd864bca56f]
-Aug-21 15:18:20.899 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:20.899 [Task submitter] INFO  nextflow.Session - [4e/729be8] Submitted process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:18:22.120 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 393; name: SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/c2/28ca76062e178b078af22b22a75eca]
-Aug-21 15:18:22.126 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:22.126 [Task submitter] INFO  nextflow.Session - [29/ac1527] Submitted process > SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:18:22.249 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 394; name: SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_5); status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/4e/729be81679894698685b1bc866a6ee]
-Aug-21 15:18:22.254 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:22.254 [Task submitter] INFO  nextflow.Session - [55/2ad2a4] Submitted process > SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:18:23.647 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 397; name: SIKICLASS:STAT_FQ:CAT_COUNT7; status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/29/ac1527ced9db8a8db74be80c78b8bf]
-Aug-21 15:18:23.664 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:23.665 [Task submitter] INFO  nextflow.Session - [a4/57361c] Submitted process > SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:18:23.777 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 398; name: SIKICLASS:STAT_FQ:CAT_COUNT9; status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/55/2ad2a44a4e15ff3a38a0e22f9f5ab1]
-Aug-21 15:18:23.784 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:23.784 [Task submitter] INFO  nextflow.Session - [20/1dc165] Submitted process > SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:18:25.152 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 399; name: SIKICLASS:STAT_FQ:CAT_COUNT6; status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/a4/57361c5ddb6b94549f0d5adfd58e30]
-Aug-21 15:18:25.306 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 400; name: SIKICLASS:STAT_FQ:CAT_COUNT8; status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/20/1dc165deae2aae241f4a4d42e521ab]
-Aug-21 15:18:25.325 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:18:25.325 [Task submitter] INFO  nextflow.Session - [75/712cef] Submitted process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:18:26.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 401; name: SIKICLASS:STAT_FQ:GET_TABLE_RATIO; status: COMPLETED; exit: 0; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/75/712cef794ef7ae8c5eaa2f87021d96]
-Aug-21 15:18:27.040 [main] DEBUG nextflow.Session - Session await > all processes finished
-Aug-21 15:18:27.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Aug-21 15:18:27.047 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Aug-21 15:18:27.062 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=155; failedCount=0; ignoredCount=0; cachedCount=246; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=13m 18s; failedDuration=0ms; cachedDuration=9h 10m 43s;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=12; peakMemory=16 GB; ]
-Aug-21 15:18:27.062 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
-Aug-21 15:18:27.065 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
-Aug-21 15:18:28.134 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
-Aug-21 15:18:28.571 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Aug-21 15:18:28.576 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@1.1.3'
-Aug-21 15:18:28.576 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
-Aug-21 15:18:28.637 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Aug-21 15:18:28.637 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Aug-21 23:49:58.798 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 23:49:59.046 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-21 23:49:59.099 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-21 23:49:59.129 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-21 23:49:59.130 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-21 23:49:59.138 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-21 23:49:59.192 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-21 23:49:59.238 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:49:59.241 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:49:59.242 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:49:59.242 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:49:59.313 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 23:50:03.944 [main] ERROR nextflow.cli.Launcher - Unable to parse config file: '/Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config'
+
+  No signature of method: nextflow.config.ConfigParser$_parse_closure5.publishDir() is applicable for argument types: (null) values: [null]
+
+groovy.lang.MissingMethodException: No signature of method: nextflow.config.ConfigParser$_parse_closure5.publishDir() is applicable for argument types: (null) values: [null]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:295)
+	at nextflow.config.ConfigParser$_parse_closure5.doCall(ConfigParser.groovy:450)
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.MetaObjectProtocol$invokeMethod$0.call(Unknown Source)
+	at nextflow.config.ConfigBase$_includeConfig_closure2.doCall(ConfigBase.groovy:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:814)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at groovy.lang.Script.invokeMethod(Script.java:96)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:814)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:348)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script51796EC7D774662B6C193A9C16ED51AB$_run_closure1$_closure8.doCall(Script51796EC7D774662B6C193A9C16ED51AB:61)
+	at Script51796EC7D774662B6C193A9C16ED51AB$_run_closure1$_closure8.doCall(Script51796EC7D774662B6C193A9C16ED51AB)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:38)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at nextflow.config.ConfigParser$_parse_closure5.doCall(ConfigParser.groovy:427)
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.MetaObjectProtocol$invokeMethod$0.call(Unknown Source)
+	at nextflow.config.ConfigBase$_includeConfig_closure2.doCall(ConfigBase.groovy:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:814)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at groovy.lang.Script.invokeMethod(Script.java:96)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:348)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script51796EC7D774662B6C193A9C16ED51AB$_run_closure1.doCall(Script51796EC7D774662B6C193A9C16ED51AB:55)
+	at Script51796EC7D774662B6C193A9C16ED51AB$_run_closure1.doCall(Script51796EC7D774662B6C193A9C16ED51AB)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:38)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at nextflow.config.ConfigParser$_parse_closure5.doCall(ConfigParser.groovy:427)
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at groovy.lang.MetaObjectProtocol$invokeMethod$0.call(Unknown Source)
+	at nextflow.config.ConfigBase$_includeConfig_closure2.doCall(ConfigBase.groovy:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script51796EC7D774662B6C193A9C16ED51AB.run(Script51796EC7D774662B6C193A9C16ED51AB:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1254)
+	at groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1042)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1128)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at java_util_concurrent_Callable$call.call(Unknown Source)
+	at nextflow.config.ConfigBase.includeConfig(ConfigBase.groovy:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.reflection.CachedMethod$invoke.call(Unknown Source)
+	at nextflow.config.ConfigParser$_parse_closure5.doCall(ConfigParser.groovy:448)
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:226)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at _nf_config_b6489210.run(_nf_config_b6489210:250)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.reflection.CachedMethod$invoke.call(Unknown Source)
+	at nextflow.config.ConfigParser$_parse_closure5.doCall(ConfigParser.groovy:448)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaMethod.invoke(ClosureMetaMethod.java:83)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1118)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:147)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:38)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+	at nextflow.config.ConfigParser.parse(ConfigParser.groovy:476)
+	at nextflow.config.ConfigParser$parse$4.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.config.ConfigParser.parse(ConfigParser.groovy:303)
+	at nextflow.config.ConfigParser$parse$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.config.ConfigBuilder.parse0(ConfigBuilder.groovy:434)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.config.ConfigBuilder.merge0(ConfigBuilder.groovy:420)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at nextflow.config.ConfigBuilder.buildConfig0(ConfigBuilder.groovy:370)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at nextflow.config.ConfigBuilder.buildGivenFiles(ConfigBuilder.groovy:315)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at nextflow.config.ConfigBuilder.buildConfigObject(ConfigBuilder.groovy:806)
+	at nextflow.config.ConfigBuilder.build(ConfigBuilder.groovy:819)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:324)
+	at nextflow.cli.Launcher.run(Launcher.groovy:500)
+	at nextflow.cli.Launcher.main(Launcher.groovy:672)

@@ -1,649 +1,658 @@
-Aug-21 15:00:43.425 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:00:43.616 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
-Aug-21 15:00:43.644 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
-Aug-21 15:00:43.672 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Aug-21 15:00:43.672 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Aug-21 15:00:43.684 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Aug-21 15:00:43.725 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Aug-21 15:00:43.762 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:00:43.764 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:00:43.764 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
-Aug-21 15:00:43.765 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
-Aug-21 15:00:43.809 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:00:48.247 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
-Aug-21 15:00:48.319 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
-Aug-21 15:00:48.409 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
-Aug-21 15:00:48.426 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [disturbed_curie] DSL2 - revision: 355a9de890
-Aug-21 15:00:48.426 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
-Aug-21 15:00:48.427 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Aug-21 15:00:48.427 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
-Aug-21 15:00:48.427 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
-Aug-21 15:00:48.449 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
-Aug-21 15:00:48.450 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
-Aug-21 15:00:48.475 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
-Aug-21 15:00:48.497 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/kaihu/.nextflow/secrets/store.json
-Aug-21 15:00:48.500 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3b0d3a63] - activable => nextflow.secret.LocalSecretsProvider@3b0d3a63
-Aug-21 15:00:48.576 [main] DEBUG nextflow.Session - Session UUID: c69705dd-41ed-4f62-864e-d70b045b4811
-Aug-21 15:00:48.576 [main] DEBUG nextflow.Session - Run name: disturbed_curie
-Aug-21 15:00:48.577 [main] DEBUG nextflow.Session - Executor pool size: 12
-Aug-21 15:00:48.587 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Aug-21 15:00:48.592 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Aug-21 15:00:48.791 [main] DEBUG nextflow.cli.CmdRun - 
+Aug-21 23:04:21.393 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 23:04:21.623 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-21 23:04:21.657 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/kaihu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-21 23:04:21.677 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-21 23:04:21.679 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-21 23:04:21.694 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-21 23:04:21.776 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-21 23:04:21.820 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:04:21.823 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:04:21.824 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/nextflow.config
+Aug-21 23:04:21.824 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/conf/test_local.config
+Aug-21 23:04:21.880 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 23:04:26.397 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,arm`
+Aug-21 23:04:26.473 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Aug-21 23:04:26.544 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Aug-21 23:04:26.569 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [serene_brahmagupta] DSL2 - revision: 02d6930ea9
+Aug-21 23:04:26.570 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
+Aug-21 23:04:26.571 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-21 23:04:26.571 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
+Aug-21 23:04:26.571 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
+Aug-21 23:04:26.628 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
+Aug-21 23:04:26.629 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
+Aug-21 23:04:26.683 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
+Aug-21 23:04:26.720 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/kaihu/.nextflow/secrets/store.json
+Aug-21 23:04:26.727 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3dfd6220] - activable => nextflow.secret.LocalSecretsProvider@3dfd6220
+Aug-21 23:04:26.821 [main] DEBUG nextflow.Session - Session UUID: c69705dd-41ed-4f62-864e-d70b045b4811
+Aug-21 23:04:26.821 [main] DEBUG nextflow.Session - Run name: serene_brahmagupta
+Aug-21 23:04:26.822 [main] DEBUG nextflow.Session - Executor pool size: 12
+Aug-21 23:04:26.831 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-21 23:04:26.835 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-21 23:04:26.911 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 23.10.1 build 5891
   Created: 12-01-2024 22:01 UTC (17:01 EDT)
   System: Mac OS X 14.6.1
   Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10+7-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 258@UMMSMAC-QVWQ97R33L [192.168.0.175]
-  CPUs: 12 - Mem: 16 GB (29.6 MB) - Swap: 4 GB (505.2 MB)
-Aug-21 15:00:48.874 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work [Mac OS X]
-Aug-21 15:00:48.901 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Aug-21 15:00:48.912 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Aug-21 15:00:49.033 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Aug-21 15:00:49.067 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Aug-21 15:00:49.215 [main] DEBUG nextflow.Session - Session start
-Aug-21 15:00:49.228 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/results/pipeline_info/execution_trace_2024-08-21_15-00-47.txt
-Aug-21 15:00:49.768 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Aug-21 15:00:51.349 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
-Aug-21 15:00:51.385 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationSkipDuplicateCheck` -- Initialise it to a default value eg. `params.validationSkipDuplicateCheck = some_value`
-Aug-21 15:00:51.395 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:00:51.398 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationS3PathCheck` -- Initialise it to a default value eg. `params.validationS3PathCheck = some_value`
-Aug-21 15:00:51.510 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: '/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/sikiclass/assets/samplesheet_local.csv' with 'assets/schema_input.json'
-Aug-21 15:00:51.657 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_TAG
-Aug-21 15:00:51.661 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_TAG` matches process SIKICLASS:CLASSIFY_TAG
-Aug-21 15:00:51.669 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.669 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.679 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Aug-21 15:00:51.684 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Aug-21 15:00:51.686 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Aug-21 15:00:51.752 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:00:51.753 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_SINGLE_TAG` matches process SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:00:51.756 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.756 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.777 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_NO_TAG
-Aug-21 15:00:51.779 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.780 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.788 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:00:51.789 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:00:51.789 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.789 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.799 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:00:51.799 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:00:51.800 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.800 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.801 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:00:51.802 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:00:51.802 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.802 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.807 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:00:51.807 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:00:51.808 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.808 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.813 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:00:51.813 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:00:51.814 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.815 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.863 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:00:51.863 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:00:51.864 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.864 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.866 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:00:51.867 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:00:51.868 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.868 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.874 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:00:51.875 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:00:51.876 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.876 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.879 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:00:51.880 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:00:51.882 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.882 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.888 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:00:51.888 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:00:51.889 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.890 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.895 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:00:51.896 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:00:51.898 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.899 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.905 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:00:51.906 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:00:51.911 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.911 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.920 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:00:51.925 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:00:51.928 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.928 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.935 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:00:51.935 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:00:51.935 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.935 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.938 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:00:51.940 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:00:51.942 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.942 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.946 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:00:51.947 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:00:51.948 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.948 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.950 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:00:51.950 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:00:51.951 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.951 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.952 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:00:51.953 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:00:51.953 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.953 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.955 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:00:51.955 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:00:51.956 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.960 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.966 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:00:51.966 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:00:51.966 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.966 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.974 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:00:51.974 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GET_TABLE_RATIO` matches process SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:00:51.975 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Aug-21 15:00:51.975 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Aug-21 15:00:51.988 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
-Aug-21 15:00:51.989 [main] DEBUG nextflow.Session - Igniting dataflow network (27)
-Aug-21 15:00:51.990 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_TAG
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_SINGLE_TAG
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_NO_TAG
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ1
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ2
-Aug-21 15:00:51.992 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:00:51.995 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ3
-Aug-21 15:00:51.997 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:00:51.997 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ4
-Aug-21 15:00:51.997 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:00:52.000 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ5
-Aug-21 15:00:52.001 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:00:52.004 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ6
-Aug-21 15:00:52.004 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ7
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ8
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ9
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:00:52.005 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:00:52.016 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_733d564bfc049827: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/sikiclass.nf
-  Script_5e024a2a104438de: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_no_tag.nf
+  Process: 49190@UMMSMAC-QVWQ97R33L [192.168.0.175]
+  CPUs: 12 - Mem: 16 GB (41.3 MB) - Swap: 23 GB (436.4 MB)
+Aug-21 23:04:26.982 [main] DEBUG nextflow.Session - Work-dir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work [Mac OS X]
+Aug-21 23:04:27.004 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-21 23:04:27.014 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-21 23:04:27.107 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-21 23:04:27.121 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Aug-21 23:04:27.257 [main] DEBUG nextflow.Session - Session start
+Aug-21 23:04:27.271 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/results/pipeline_info/execution_trace_2024-08-21_23-04-25.txt
+Aug-21 23:04:27.877 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-21 23:04:29.489 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [fromSamplesheet:fromSamplesheet]; plugin Id: nf-validation
+Aug-21 23:04:29.524 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationSkipDuplicateCheck` -- Initialise it to a default value eg. `params.validationSkipDuplicateCheck = some_value`
+Aug-21 23:04:29.534 [main] DEBUG nextflow.validation.SchemaValidator - Starting validation: './assets/samplesheet_local.csv' with 'assets/schema_input.json'
+Aug-21 23:04:29.537 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `validationS3PathCheck` -- Initialise it to a default value eg. `params.validationS3PathCheck = some_value`
+Aug-21 23:04:29.669 [main] DEBUG nextflow.validation.SchemaValidator - Validation passed: './assets/samplesheet_local.csv' with 'assets/schema_input.json'
+Aug-21 23:04:29.844 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_TAG
+Aug-21 23:04:29.847 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_TAG` matches process SIKICLASS:CLASSIFY_TAG
+Aug-21 23:04:29.855 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:29.855 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:29.865 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-21 23:04:29.870 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Aug-21 23:04:29.872 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-21 23:04:29.965 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_SINGLE_TAG
+Aug-21 23:04:29.966 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_SINGLE_TAG` matches process SIKICLASS:CLASSIFY_SINGLE_TAG
+Aug-21 23:04:29.971 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:29.972 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:29.994 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:CLASSIFY_NO_TAG
+Aug-21 23:04:29.995 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CLASSIFY_NO_TAG` matches process SIKICLASS:CLASSIFY_NO_TAG
+Aug-21 23:04:29.998 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:29.998 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.006 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ
+Aug-21 23:04:30.007 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ
+Aug-21 23:04:30.007 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.007 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.016 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT
+Aug-21 23:04:30.016 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT
+Aug-21 23:04:30.017 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.017 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.020 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ1
+Aug-21 23:04:30.020 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ1
+Aug-21 23:04:30.021 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.021 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.031 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT1
+Aug-21 23:04:30.031 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT1
+Aug-21 23:04:30.033 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.034 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.039 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ2
+Aug-21 23:04:30.041 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ2
+Aug-21 23:04:30.049 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.050 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.059 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT2
+Aug-21 23:04:30.059 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT2
+Aug-21 23:04:30.060 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.060 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.070 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ3
+Aug-21 23:04:30.071 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ3
+Aug-21 23:04:30.073 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.073 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.080 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT3
+Aug-21 23:04:30.082 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT3
+Aug-21 23:04:30.086 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.132 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ4
+Aug-21 23:04:30.133 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ4
+Aug-21 23:04:30.135 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.135 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.146 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT4
+Aug-21 23:04:30.147 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT4
+Aug-21 23:04:30.148 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.148 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ5
+Aug-21 23:04:30.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ5
+Aug-21 23:04:30.153 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.153 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.157 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT5
+Aug-21 23:04:30.158 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT5
+Aug-21 23:04:30.159 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.159 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.163 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ6
+Aug-21 23:04:30.164 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ6
+Aug-21 23:04:30.166 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.167 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.171 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT6
+Aug-21 23:04:30.172 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT6
+Aug-21 23:04:30.172 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.172 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ7
+Aug-21 23:04:30.176 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ7
+Aug-21 23:04:30.176 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.176 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.182 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT7
+Aug-21 23:04:30.182 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT7
+Aug-21 23:04:30.183 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.183 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.185 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ8
+Aug-21 23:04:30.186 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ8
+Aug-21 23:04:30.187 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.188 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.195 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT8
+Aug-21 23:04:30.195 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT8
+Aug-21 23:04:30.196 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.196 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.203 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ9
+Aug-21 23:04:30.204 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ9
+Aug-21 23:04:30.205 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.205 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.211 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT9
+Aug-21 23:04:30.212 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT9
+Aug-21 23:04:30.213 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.213 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.216 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:COUNT_FQ10
+Aug-21 23:04:30.216 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COUNT_FQ` matches process SIKICLASS:STAT_FQ:COUNT_FQ10
+Aug-21 23:04:30.218 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.218 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.221 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:CAT_COUNT10
+Aug-21 23:04:30.222 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_COUNT` matches process SIKICLASS:STAT_FQ:CAT_COUNT10
+Aug-21 23:04:30.222 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.222 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.229 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_FQ:GET_TABLE_RATIO
+Aug-21 23:04:30.229 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GET_TABLE_RATIO` matches process SIKICLASS:STAT_FQ:GET_TABLE_RATIO
+Aug-21 23:04:30.230 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.230 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.250 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_NO_TAG
+Aug-21 23:04:30.251 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:STAT_NO_TAG` matches process SIKICLASS:STAT_NO_TAG
+Aug-21 23:04:30.253 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.253 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.262 [main] INFO  nextflow.Nextflow - params.snp_pos supplied!
+Aug-21 23:04:30.275 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name SIKICLASS:STAT_SNP
+Aug-21 23:04:30.276 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:STAT_SNP` matches process SIKICLASS:STAT_SNP
+Aug-21 23:04:30.278 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-21 23:04:30.278 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-21 23:04:30.282 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Aug-21 23:04:30.283 [main] DEBUG nextflow.Session - Igniting dataflow network (31)
+Aug-21 23:04:30.284 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_TAG
+Aug-21 23:04:30.285 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_SINGLE_TAG
+Aug-21 23:04:30.285 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:CLASSIFY_NO_TAG
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ1
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT1
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ2
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT2
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ3
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT3
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ4
+Aug-21 23:04:30.286 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT4
+Aug-21 23:04:30.289 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ5
+Aug-21 23:04:30.291 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT5
+Aug-21 23:04:30.293 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ6
+Aug-21 23:04:30.295 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT6
+Aug-21 23:04:30.304 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ7
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT7
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ8
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT8
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ9
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT9
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:COUNT_FQ10
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:CAT_COUNT10
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_NO_TAG
+Aug-21 23:04:30.312 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SIKICLASS:STAT_SNP
+Aug-21 23:04:30.325 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ee6ed724390780cb: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/stat_snp.nf
+  Script_f9ac271eecf880a9: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/sikiclass.nf
+  Script_cb89c1aae02d21b2: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/get_table_ratio.nf
   Script_4ba798786ecd6418: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/nf-core/fastqc/main.nf
-  Script_4e5337db5243edc5: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/stat_fq.nf
+  Script_177a4b4c96a57c22: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_single_tag.nf
+  Script_c47f9c414e7ee098: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/stat_fq.nf
+  Script_92e71e686fc4d44b: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/stat_no_tag.nf
+  Script_a50db5f8123bf7a7: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_no_tag.nf
+  Script_2cd5ad2dbea7bcc4: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/main.nf
   Script_d15170113a33e7ac: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/count_fq.nf
   Script_08b800317db7d42f: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_tag.nf
   Script_d89042106720ae2b: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/cat_count.nf
-  Script_61035523b9766069: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/main.nf
-  Script_b381e73eb856e339: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../modules/local/classify_single_tag.nf
-  Script_8a7b3181feff7acb: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/./workflows/../subworkflows/local/../../modules/local/get_table_ratio.nf
-Aug-21 15:00:52.016 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Aug-21 15:00:52.016 [main] DEBUG nextflow.Session - Session await
-Aug-21 15:00:53.652 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [8c/b1216b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:53.651 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [6e/7f06d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:53.652 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [76/d0a574] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:53.651 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [94/3b34d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:53.651 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [90/0d1163] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:53.652 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [68/be76a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:53.652 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [c8/1ebb4b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:53.652 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [a5/52ba31] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:53.652 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [3d/35d663] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:53.652 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [ec/db0101] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:53.652 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [28/841992] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:53.651 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [74/8821cf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:53.681 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [7c/f2941b] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:53.713 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [b3/a68677] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:53.712 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [44/15d5d9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:53.716 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [06/7b2139] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:53.716 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [1f/fbf8c7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:53.729 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [d6/6f078d] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:53.732 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [f3/2de807] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:53.729 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [35/3bd168] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:53.727 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [2c/cf92db] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:53.732 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [3e/234cad] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:53.747 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [fe/f94062] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:53.747 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [3c/1591b8] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:55.001 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [06/eb83d7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:54.999 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [48/114eb5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:55.005 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [56/82dbfd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:55.002 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [a3/e65541] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:55.009 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [b7/a2315c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:54.999 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [87/880fc4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:55.002 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [44/f3be65] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:55.088 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [f6/6a1870] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:55.088 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [c2/58ff59] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:55.087 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [eb/0c7de9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:55.087 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [3b/7013f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:55.090 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [e1/054587] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:55.090 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [67/c6562a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:55.090 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [a8/630938] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:55.091 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [9d/8f066d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:55.090 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [df/4d74d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:55.094 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [17/ebc62d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:55.422 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [0a/e1abd4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:55.434 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [24/e97c39] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:55.422 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [9e/7927eb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:55.444 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [fb/c4bf2e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:55.440 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [7c/1f27cc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:55.445 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [24/a4b38c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:55.707 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [10/b461da] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:55.708 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [5f/da1854] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:55.709 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [54/488c74] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:55.711 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [c6/8377a9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:55.713 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [cd/08ea58] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:55.719 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [8c/9d9d1a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:55.724 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [72/e595b1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:55.726 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [73/da55f9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:55.726 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [cd/3d8180] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:55.726 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [61/aa5d9b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:55.745 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [d3/ca4b92] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:55.747 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [d2/d70b06] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:55.750 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [8e/95fadb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:55.760 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [5c/5f67b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:55.763 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [f2/8c30f3] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:55.763 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [b1/b51aac] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:55.764 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [9a/87e26e] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:55.829 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [50/b6d216] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:55.847 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [a6/2cb523] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:55.869 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [dd/7598ab] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:55.875 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [36/2fe11f] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:55.874 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [0e/80e0b4] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:55.877 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [d1/f3839f] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:55.883 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [83/c603e2] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:55.953 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [ca/dc2bbf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:55.962 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [f1/26cc5b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:55.958 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [3f/906545] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:56.124 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [d6/916fb5] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:56.212 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [32/861394] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:56.259 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [e1/ef81f3] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:56.255 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [30/c3112b] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:56.254 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [b7/f26e7c] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:56.256 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [97/31ebb2] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:56.254 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [23/78fd1b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:56.259 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [e0/1d60c0] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:56.341 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [aa/59f18a] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:56.363 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [ca/d76a3b] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:56.356 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [9b/2945f0] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:56.386 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [3f/9376c9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:56.387 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [7d/cdad9f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:56.384 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [f0/4af5df] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:56.384 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [6d/41b284] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:56.394 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [0f/db9e51] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:56.384 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [8f/67bcd4] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:56.379 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [8f/e1596f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:56.431 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [23/35ec0f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:56.396 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [0b/518c03] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:56.431 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [62/076d7e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:00:56.454 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [94/7e80cb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:00:56.401 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [29/e819b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:56.386 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [9e/4956a6] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:56.386 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [5d/e244b7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:56.431 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [64/8bb3a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:00:56.400 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [d5/2e8a2b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:56.400 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [4d/de6323] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:56.450 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [9d/ff3c2d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:56.400 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [c6/ac1234] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:00:56.402 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [06/c7f8b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:56.400 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [a7/e09827] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:56.385 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [c9/535c47] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:56.431 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [b3/a0a93f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:56.431 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [81/b2843e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:00:56.454 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [33/884a18] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:56.450 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [57/a0ffe9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:56.400 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [79/fc349a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:56.450 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [c0/405446] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:56.450 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [f5/0fe238] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:56.450 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [1c/d78002] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:56.450 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [e3/d3901b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:00:56.522 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [77/049f07] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:57.110 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [f6/95365a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.121 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [82/7cf3ef] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:57.139 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [15/34d66c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:57.130 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [f4/e3bb21] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.129 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [2a/cb2889] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:57.142 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [c4/bbd187] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.124 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [c8/88d53c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:57.150 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [ee/968869] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:57.143 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [83/d837e7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:57.142 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [8f/686a84] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:57.150 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [4b/445ae3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:57.129 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [6e/9aefa1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:57.130 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [af/4fe558] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:57.142 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [59/d88b1c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:57.125 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [6d/9d2960] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_2)
-Aug-21 15:00:57.143 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [6f/d2dc9b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.150 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [f7/1dde5a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:57.098 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [22/660274] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:57.412 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [61/9369dd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:57.548 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [7b/a3f444] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:57.549 [Actor Thread 108] INFO  nextflow.processor.TaskProcessor - [cd/ac8c98] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:57.557 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [12/9960d7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:57.563 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [78/a5cde0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.565 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [9d/a6e39a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.821 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [1f/87d81a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.821 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [aa/82eee9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:57.821 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [38/e5c8f7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:57.872 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [9f/2b126f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:57.822 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [1d/13e87a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.822 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [c7/11c099] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.873 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [df/b95184] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.879 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [00/e0481e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_2)
-Aug-21 15:00:57.865 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [d6/e69daa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:57.873 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [3f/86222c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:57.875 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [40/2baf4a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:57.877 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [2d/9cb1cc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:57.865 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [a5/74a9ad] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.881 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [8b/89a60d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:57.881 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [b4/5d9c0e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:57.896 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [0d/d9bcf8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:57.898 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [cd/477a02] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:57.904 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [90/5d6d5c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:57.945 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [74/e5c3d0] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:00:57.947 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [95/ce8d72] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:57.898 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [83/5af846] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:57.944 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [9b/a579ea] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:57.896 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [fd/99cf2a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:57.904 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [f7/793672] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:57.906 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [50/4e13a6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:57.899 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [a7/374f27] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:57.909 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [88/06e6e0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:57.904 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [fd/39b674] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:57.904 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [3c/578521] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:57.904 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [ad/81ec21] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:57.904 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [02/f58a93] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:57.899 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [fd/070cfa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.000 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [a9/41a702] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:58.083 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [a8/8a000f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:58.083 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [23/8d4932] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:00:58.083 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [17/4ba280] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:58.083 [Actor Thread 116] INFO  nextflow.processor.TaskProcessor - [95/214ee8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:58.083 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [74/9f20df] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:58.083 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [8d/ebc61a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:58.084 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [3a/792dda] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:58.084 [Actor Thread 130] INFO  nextflow.processor.TaskProcessor - [ac/368b2c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:58.083 [Actor Thread 142] INFO  nextflow.processor.TaskProcessor - [ac/d7f83d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:58.084 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [ac/2c63b6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:58.085 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [3a/d65f9a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:58.086 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [66/b52515] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:00:58.086 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [d0/3c6384] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:58.086 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [71/084372] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:58.087 [Actor Thread 110] INFO  nextflow.processor.TaskProcessor - [c6/738025] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:58.087 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [2b/661974] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:58.087 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [a1/d80aa9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_9)
-Aug-21 15:00:58.087 [Actor Thread 141] INFO  nextflow.processor.TaskProcessor - [51/024a6b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:58.088 [Actor Thread 146] INFO  nextflow.processor.TaskProcessor - [66/ad4f91] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:58.089 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [6e/06137a] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:58.089 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [e4/57ca5e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:58.089 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [24/e23249] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:00:58.089 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [2c/0284ab] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:58.089 [Actor Thread 124] INFO  nextflow.processor.TaskProcessor - [69/ca6acf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:58.089 [Actor Thread 131] INFO  nextflow.processor.TaskProcessor - [b9/dbe772] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_8)
-Aug-21 15:00:58.091 [Actor Thread 132] INFO  nextflow.processor.TaskProcessor - [f7/2e3247] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.097 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [10/7c5857] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_8)
-Aug-21 15:00:58.090 [Actor Thread 126] INFO  nextflow.processor.TaskProcessor - [82/eb2af4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:58.125 [Actor Thread 117] INFO  nextflow.processor.TaskProcessor - [c0/5fe80f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:58.127 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [3d/20cf0b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:58.125 [Actor Thread 144] INFO  nextflow.processor.TaskProcessor - [2d/9f1c60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:58.125 [Actor Thread 121] INFO  nextflow.processor.TaskProcessor - [c6/e6a954] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:58.151 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [ab/b80f71] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_6)
-Aug-21 15:00:58.154 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [b0/6d9217] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:58.153 [Actor Thread 129] INFO  nextflow.processor.TaskProcessor - [7b/dc4eb7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_1)
-Aug-21 15:00:58.127 [Actor Thread 140] INFO  nextflow.processor.TaskProcessor - [15/90469e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:58.151 [Actor Thread 136] INFO  nextflow.processor.TaskProcessor - [f6/50230c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:58.151 [Actor Thread 112] INFO  nextflow.processor.TaskProcessor - [5d/5e39a3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:58.142 [Actor Thread 118] INFO  nextflow.processor.TaskProcessor - [7d/968adb] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:00:58.152 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [22/4f9385] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:58.158 [Actor Thread 138] INFO  nextflow.processor.TaskProcessor - [40/56de3d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:58.158 [Actor Thread 123] INFO  nextflow.processor.TaskProcessor - [b1/53b3d6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_6)
-Aug-21 15:00:58.155 [Actor Thread 106] INFO  nextflow.processor.TaskProcessor - [f1/91b362] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:58.159 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [68/8d1760] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:58.157 [Actor Thread 111] INFO  nextflow.processor.TaskProcessor - [8d/b63d92] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:58.159 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [37/81a9b6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_7)
-Aug-21 15:00:58.157 [Actor Thread 137] INFO  nextflow.processor.TaskProcessor - [a3/07c100] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_9)
-Aug-21 15:00:58.158 [Actor Thread 128] INFO  nextflow.processor.TaskProcessor - [b6/095e9e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:00:58.160 [Actor Thread 122] INFO  nextflow.processor.TaskProcessor - [fc/4805ac] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_1)
-Aug-21 15:00:58.196 [Actor Thread 133] INFO  nextflow.processor.TaskProcessor - [29/b4bbfe] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:00:58.195 [Actor Thread 145] INFO  nextflow.processor.TaskProcessor - [e5/1c6bab] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_7)
-Aug-21 15:00:58.577 [Actor Thread 115] INFO  nextflow.processor.TaskProcessor - [dd/94084d] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:58.577 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [8e/8d8840] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:58.640 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [90/3cc8af] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:00:58.640 [Actor Thread 114] INFO  nextflow.processor.TaskProcessor - [a9/a72b59] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:58.645 [Actor Thread 127] INFO  nextflow.processor.TaskProcessor - [b0/c73227] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:00:58.646 [Actor Thread 119] INFO  nextflow.processor.TaskProcessor - [15/e241bf] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.648 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [f1/7c038a] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:58.648 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [2c/033db6] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:00:58.650 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [94/6a1f90] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:58.650 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [3b/319e5c] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:00:58.651 [Actor Thread 120] INFO  nextflow.processor.TaskProcessor - [5c/cc206a] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:00:58.753 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [06/e0a18b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:00:58.753 [Actor Thread 135] INFO  nextflow.processor.TaskProcessor - [6f/b723c1] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:58.756 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [9b/2968e1] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:00:58.760 [Actor Thread 113] INFO  nextflow.processor.TaskProcessor - [33/5d0fe4] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:58.765 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [fb/ad2ccd] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:00:58.852 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [dc/b974d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.853 [Actor Thread 149] INFO  nextflow.processor.TaskProcessor - [be/96652e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:00:58.854 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [a3/42128a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:58.856 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [66/b02d6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:00:58.858 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [12/5a7922] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:00:58.858 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [21/c1dc28] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.859 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [71/88dfe7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.860 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [cc/3b350f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:58.860 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [41/64da26] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:58.863 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [8b/41b3f1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:00:58.886 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [b0/8d1864] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:58.886 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [09/3e7184] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:00:58.893 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [25/d3fb54] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:00:59.049 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [97/607c6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:00:59.221 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [dd/144451] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT
-Aug-21 15:01:00.149 [Actor Thread 130] INFO  nextflow.processor.TaskProcessor - [cf/0516e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.150 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [56/9ebc7f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:01:00.150 [Actor Thread 129] INFO  nextflow.processor.TaskProcessor - [4a/40239a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.149 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [61/8b4d34] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.156 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [0a/0afe77] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.152 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [55/a32702] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.149 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [93/61478b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.150 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [ff/d10309] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.149 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [e0/c77ff1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.147 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [a8/ede369] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:01:00.149 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [75/c62687] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.147 [Actor Thread 112] INFO  nextflow.processor.TaskProcessor - [1a/3d662a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.144 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [50/fea82c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.152 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [0c/652932] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.143 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [24/01dbef] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.151 [Actor Thread 108] INFO  nextflow.processor.TaskProcessor - [52/cf1e89] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:01:00.158 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [06/ebdd05] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:01:00.150 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [1f/0d3c21] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.152 [Actor Thread 117] INFO  nextflow.processor.TaskProcessor - [b3/93ba0a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.158 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [1c/5d0795] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.152 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [39/880a10] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:01:00.151 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [21/bc7219] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.151 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [5c/4e4986] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:01:00.149 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [bc/feefdf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.141 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [e0/1ccfac] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.147 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [23/a2d0e5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.143 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [86/24e673] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.160 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [48/0dcf21] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.151 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [24/ecf977] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.143 [Actor Thread 135] INFO  nextflow.processor.TaskProcessor - [55/3d4f41] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.151 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [8d/538750] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.152 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [78/ced721] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.152 [Actor Thread 110] INFO  nextflow.processor.TaskProcessor - [35/45ab32] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.143 [Actor Thread 121] INFO  nextflow.processor.TaskProcessor - [cc/b1a9b6] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.150 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [cf/6f505c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.143 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [35/ea2ba2] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.141 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [79/0fc179] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.149 [Actor Thread 142] INFO  nextflow.processor.TaskProcessor - [f7/5f8f60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_1_4)
-Aug-21 15:01:00.144 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [10/2dcff8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.147 [Actor Thread 118] INFO  nextflow.processor.TaskProcessor - [ad/272f58] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_1_3)
-Aug-21 15:01:00.150 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [7d/61e006] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.143 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [7b/84ba50] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.146 [Actor Thread 128] INFO  nextflow.processor.TaskProcessor - [97/96d64e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.142 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [4b/bbca15] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.141 [Actor Thread 136] INFO  nextflow.processor.TaskProcessor - [20/eceb22] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.149 [Actor Thread 113] INFO  nextflow.processor.TaskProcessor - [ca/3af836] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.150 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [6b/f8b397] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.160 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [89/105566] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.150 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [82/b4a49e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.152 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [5a/58689e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.148 [Actor Thread 141] INFO  nextflow.processor.TaskProcessor - [ce/0f8e1e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.150 [Actor Thread 137] INFO  nextflow.processor.TaskProcessor - [1d/a529bc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.147 [Actor Thread 116] INFO  nextflow.processor.TaskProcessor - [7b/b0b1e7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.149 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [54/2265a5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.147 [Actor Thread 144] INFO  nextflow.processor.TaskProcessor - [1f/b2d19b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.152 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [6a/070da5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.143 [Actor Thread 132] INFO  nextflow.processor.TaskProcessor - [dd/f37339] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.147 [Actor Thread 149] INFO  nextflow.processor.TaskProcessor - [22/5049da] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.144 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [ed/9dfb82] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_7)
-Aug-21 15:01:00.150 [Actor Thread 122] INFO  nextflow.processor.TaskProcessor - [6f/3f104e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.152 [Actor Thread 124] INFO  nextflow.processor.TaskProcessor - [70/d67cd5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.142 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [c8/907de6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.149 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [28/f9f374] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.150 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [65/fb6c32] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.150 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [a2/82242a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.158 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [7b/3a6c32] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.152 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [c4/072028] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.147 [Actor Thread 133] INFO  nextflow.processor.TaskProcessor - [a7/9fb700] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.152 [Actor Thread 145] INFO  nextflow.processor.TaskProcessor - [44/ccc124] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.143 [Actor Thread 111] INFO  nextflow.processor.TaskProcessor - [51/04731c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.150 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [9d/f2eb96] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.151 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [f5/49261a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.152 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [b3/154a48] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.146 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [b4/13e58d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:01:00.142 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [a8/6eb490] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.150 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [80/261bd0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.158 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [6f/ff2833] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.142 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [07/83c87f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_3_4)
-Aug-21 15:01:00.147 [Actor Thread 120] INFO  nextflow.processor.TaskProcessor - [07/850254] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_3_3)
-Aug-21 15:01:00.147 [Actor Thread 106] INFO  nextflow.processor.TaskProcessor - [8a/e0a0e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.148 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [a8/fe8e74] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:01:00.155 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [2f/d37d98] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.152 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [49/05a65d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_9)
-Aug-21 15:01:00.148 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [8c/02a6f6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.152 [Actor Thread 146] INFO  nextflow.processor.TaskProcessor - [62/0e7738] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_6)
-Aug-21 15:01:00.148 [Actor Thread 131] INFO  nextflow.processor.TaskProcessor - [4f/351e66] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.142 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [aa/241f23] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.151 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [80/40e07f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_2)
-Aug-21 15:01:00.158 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [5c/8bbe96] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_1)
-Aug-21 15:01:00.169 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [c0/df7ef6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_8)
-Aug-21 15:01:00.152 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [98/e8f817] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_2_3)
-Aug-21 15:01:00.169 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [4b/002a6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.150 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [45/fd9c25] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_2_4)
-Aug-21 15:01:00.529 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [19/975360] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.530 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [6f/fe8bc5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.531 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [6f/8884ac] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.526 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [c5/ea0a98] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.542 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [30/b55de1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.575 [Actor Thread 138] INFO  nextflow.processor.TaskProcessor - [65/e1ad0c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.558 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [79/2e06c8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.563 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [31/231808] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.563 [Actor Thread 123] INFO  nextflow.processor.TaskProcessor - [b0/99d55e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.602 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [5e/fe52c9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.602 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [34/c0390c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_5)
-Aug-21 15:01:00.649 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [14/c9e721] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.648 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [fe/2510ce] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.648 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [e2/1fde86] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.664 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [78/f32f10] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.684 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [52/f1c721] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.684 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [11/003d9d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.684 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [29/1a8692] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.684 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [7c/b8cb6e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.684 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [8c/2e3903] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.685 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [42/546c27] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.686 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [0f/af1253] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.686 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [8b/62501d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.686 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [03/a228f1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.686 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [2d/5c510a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_10)
-Aug-21 15:01:00.687 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [05/fc463e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_10)
-Aug-21 15:01:00.687 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [07/ef22f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.689 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [ad/28b407] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.690 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [a2/840038] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.693 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [30/baa980] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.776 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [62/42069e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_5)
-Aug-21 15:01:00.776 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [6e/1374d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.786 [Actor Thread 124] INFO  nextflow.processor.TaskProcessor - [c1/b89551] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.790 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [e1/cdd054] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.793 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [c0/68b6ad] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.866 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [94/6021cf] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT4
-Aug-21 15:01:00.867 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [28/143adf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.867 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [d7/b4af27] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.868 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [c5/8c9a85] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.870 [Actor Thread 145] INFO  nextflow.processor.TaskProcessor - [86/1e65f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.871 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [87/742f60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_10)
-Aug-21 15:01:00.870 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [26/e5a36a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.870 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [ef/669b2f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_5)
-Aug-21 15:01:00.910 [Actor Thread 141] INFO  nextflow.processor.TaskProcessor - [a1/a80bed] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT5
-Aug-21 15:01:00.910 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [31/e20a67] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT2
-Aug-21 15:01:00.988 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [6d/971582] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT3
-Aug-21 15:01:01.014 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [25/cc520a] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT8
-Aug-21 15:01:01.014 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [51/d14838] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT1
-Aug-21 15:01:01.014 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [81/d8acbe] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT6
-Aug-21 15:01:01.023 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [6a/fb2664] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT7
-Aug-21 15:01:01.026 [Actor Thread 122] INFO  nextflow.processor.TaskProcessor - [0d/20f2f5] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT9
-Aug-21 15:01:01.318 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Aug-21 15:01:01.341 [Task submitter] INFO  nextflow.Session - [38/52ee9a] Submitted process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
-Aug-21 15:01:05.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 401; name: SIKICLASS:STAT_FQ:GET_TABLE_RATIO; status: COMPLETED; exit: 1; error: -; workDir: /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/38/52ee9a5142d6623d755439e97a68e3]
-Aug-21 15:01:05.648 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=SIKICLASS:STAT_FQ:GET_TABLE_RATIO; work-dir=/Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/38/52ee9a5142d6623d755439e97a68e3
-  error [nextflow.exception.ProcessFailedException]: Process `SIKICLASS:STAT_FQ:GET_TABLE_RATIO` terminated with an error exit status (1)
-Aug-21 15:01:05.689 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'SIKICLASS:STAT_FQ:GET_TABLE_RATIO'
-
-Caused by:
-  Process `SIKICLASS:STAT_FQ:GET_TABLE_RATIO` terminated with an error exit status (1)
-
-Command executed:
-
-  mkdir 000_master_table
-  get_table_ratio.py 000_master_table/fq_class_ratios.tsv     csv_total total     csv_no_tag_indel no_tag_indel     csv_no_tag_deletion no_tag_deletion     csv_no_tag_insertion no_tag_insertion     csv_single_tag single_tag     csv_multiple_tag multiple_tag     csv_single_tag_precise_tag single_tag_precise_tag     csv_single_tag_5indel single_tag_5indel     csv_single_tag_3indel single_tag_3indel     csv_single_tag_anyindel single_tag_anyindel
-
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  Traceback (most recent call last):
-    File "/Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/bin/get_table_ratio.py", line 31, in <module>
-      df_total = pd.read_csv(tsv_total, sep="\t", header = None)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-      return _read(filepath_or_buffer, kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-      parser = TextFileReader(filepath_or_buffer, **kwds)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-      self._engine = self._make_engine(f, self.engine)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "/opt/conda/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-      self.handles = get_handle(
-                     ^^^^^^^^^^^
-    File "/opt/conda/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
-      handle = open(
-               ^^^^^
-  FileNotFoundError: [Errno 2] No such file or directory: 'csv_total'
-
-Work dir:
-  /Users/kaihu/Dropbox (UMass Medical School)/Kai_Hu_MCCB_Nathan_Lawson/work/sikiproject/new_strategy/sikiclass/work/38/52ee9a5142d6623d755439e97a68e3
-
-Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
-Aug-21 15:01:05.703 [main] DEBUG nextflow.Session - Session await > all processes finished
-Aug-21 15:01:05.734 [Task monitor] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
-Aug-21 15:01:05.750 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Aug-21 15:01:05.750 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Aug-21 15:01:05.771 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=400; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=25.2s; cachedDuration=9h 23m 54s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=6; peakMemory=8 GB; ]
-Aug-21 15:01:05.771 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
-Aug-21 15:01:05.774 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
-Aug-21 15:01:06.671 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
-Aug-21 15:01:07.089 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Aug-21 15:01:07.089 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@1.1.3'
-Aug-21 15:01:07.089 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
-Aug-21 15:01:07.134 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Aug-21 15:01:07.134 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Aug-21 23:04:30.325 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-21 23:04:30.325 [main] DEBUG nextflow.Session - Session await
+Aug-21 23:04:31.917 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [6e/7f06d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:31.916 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [28/841992] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:31.918 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [74/8821cf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:31.922 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [ec/db0101] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:31.923 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [94/3b34d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:31.922 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [a5/52ba31] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:31.922 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [8c/b1216b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:31.922 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [3d/35d663] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:31.922 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [c8/1ebb4b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:31.917 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [68/be76a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:31.923 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [90/0d1163] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:31.919 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [76/d0a574] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:32.025 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [b3/a68677] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:32.027 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [1f/fbf8c7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:32.028 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [44/15d5d9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:32.031 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [fe/f94062] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:32.031 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [f3/2de807] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:32.031 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [2c/cf92db] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:32.032 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [d6/6f078d] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:32.130 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [06/7b2139] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:32.130 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [3e/234cad] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:32.136 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [7c/f2941b] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:32.137 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [3c/1591b8] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:32.137 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [35/3bd168] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:32.684 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [24/e97c39] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:32.708 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [66/9dd844] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:32.708 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [cd/08ea58] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:32.708 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [c9/cec588] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:32.709 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [b7/a2315c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:32.717 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [a8/630938] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:32.717 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [a3/e65541] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:32.720 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [48/114eb5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:32.727 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [67/c6562a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:32.729 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [17/ebc62d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:32.729 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [a9/901402] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:32.730 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [c2/58ff59] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:32.999 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [3b/7013f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:33.001 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [9e/7927eb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:33.012 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [24/a4b38c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:32.999 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [e1/054587] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:33.026 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [5f/da1854] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:33.028 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [f2/fbbf4e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:33.030 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [8e/95fadb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:33.030 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [df/4d74d5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:33.030 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [0d/fbf1a0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:33.030 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [5c/5f67b5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:33.030 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [f6/6a1870] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:33.030 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [9d/8f066d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:33.030 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [23/78fd1b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:33.031 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [f3/969800] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:33.031 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [90/1c886e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:33.031 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [d1/e454cf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:33.033 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [eb/0c7de9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:33.033 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [06/eb83d7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:33.037 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [72/97ed2c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:33.075 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [87/880fc4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:33.077 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [ca/9ff9df] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:33.080 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [ca/dc2bbf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:33.082 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [ea/8bebeb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:33.308 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [56/82dbfd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:33.362 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [44/f3be65] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:33.368 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [54/488c74] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:33.362 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [c6/8377a9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:33.372 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [7c/1f27cc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:33.370 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [73/da55f9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:33.371 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [c8/a5f08a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:33.625 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [72/e595b1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:33.627 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [fb/c4bf2e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:33.625 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [10/b461da] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:33.683 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [0a/e1abd4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:33.825 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [cd/3d8180] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:33.849 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [8c/9d9d1a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:34.024 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [9e/4956a6] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:34.032 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [3a/3be5c7] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:34.036 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [2e/b12c98] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:34.037 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [b6/5b8602] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:34.121 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [94/7e80cb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:34.122 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [aa/59f18a] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:34.123 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [8f/e1596f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:34.127 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [2c/28d92e] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:34.127 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [81/b2843e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:34.142 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [c6/ac1234] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:34.143 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [e1/ef81f3] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:34.146 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [0b/518c03] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:34.146 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [e3/d3901b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:34.146 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [3f/9376c9] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:34.130 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [62/076d7e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:34.130 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [64/8bb3a4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:34.583 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [5d/e244b7] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:34.587 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [f0/4af5df] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:34.581 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [d4/9ed3a2] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:34.587 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [7d/cdad9f] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:34.581 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [6d/41b284] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:34.580 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [f3/198870] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:34.588 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [f5/34f018] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:34.581 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [bc/dd7baf] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:34.771 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [7c/55428d] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:34.771 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [c9/535c47] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:34.771 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [af/15a2a4] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:34.771 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [fa/5159f4] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:34.771 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [30/162266] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:34.776 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [e8/d0adee] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:34.782 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [df/68577c] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:34.792 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [0f/db9e51] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:34.792 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [04/1e4484] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:34.794 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [48/8e5d24] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:34.942 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [b6/1294bd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:34.943 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [bc/2db6cb] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:34.945 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [ff/21683f] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:34.946 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [aa/a048f2] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:34.947 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [dc/d3096c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:34.947 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [79/c8269e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:34.947 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [e9/a440e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:34.947 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [6b/253859] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:34.947 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [3f/86222c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:34.950 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [4b/f5c6c6] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:34.950 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [b6/095e9e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:34.951 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [fd/070cfa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:35.065 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [d3/005a62] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:35.166 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [00/486bf2] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:36.469 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [0f/fd4f2e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:36.469 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [ad/81ec21] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:36.470 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [a6/45f370] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:36.450 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [72/a3a0d8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.458 [Actor Thread 115] INFO  nextflow.processor.TaskProcessor - [8c/2af66c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.470 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [cd/f7bd9a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:36.469 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [aa/82eee9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:36.469 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [54/dc41bf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.470 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [bf/ed80f6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.470 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [e6/97eb77] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.469 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [2d/9f1c60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:36.469 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [ce/f51cbd] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:36.469 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [0d/d9bcf8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:36.470 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [73/862eca] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:36.470 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [78/23064f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:36.458 [Actor Thread 42] INFO  nextflow.processor.TaskProcessor - [20/fb589a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:36.470 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [68/8d1760] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:36.470 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [c4/f02949] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:36.470 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [e6/992b90] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.470 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [55/492e84] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:36.470 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [97/a24511] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:36.450 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [7f/889a21] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:36.470 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [3a/d65f9a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:36.469 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [ec/cd5a60] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.470 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [e9/efe188] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:36.470 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [07/e40fdb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:36.450 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [cd/87d0c7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:36.469 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [39/2aab91] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.457 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [f7/2e3247] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:36.450 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [7f/20c7c1] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:36.470 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [39/90d963] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.470 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [87/348481] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.470 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [d0/3c6384] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:36.470 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [70/0ec088] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.470 [Actor Thread 129] INFO  nextflow.processor.TaskProcessor - [ef/195fa9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.478 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [9f/2b126f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:36.499 [Actor Thread 112] INFO  nextflow.processor.TaskProcessor - [a7/374f27] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:36.482 [Actor Thread 133] INFO  nextflow.processor.TaskProcessor - [ff/61b84d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.482 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [4f/48a1c5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.697 [Actor Thread 117] INFO  nextflow.processor.TaskProcessor - [ab/80565b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.597 [Actor Thread 132] INFO  nextflow.processor.TaskProcessor - [bc/e45861] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.631 [Actor Thread 131] INFO  nextflow.processor.TaskProcessor - [c6/0e7924] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.482 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [f6/50230c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:36.661 [Actor Thread 128] INFO  nextflow.processor.TaskProcessor - [fe/763e96] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.482 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [3d/20cf0b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:36.736 [Actor Thread 124] INFO  nextflow.processor.TaskProcessor - [e3/ffc98c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:36.495 [Actor Thread 120] INFO  nextflow.processor.TaskProcessor - [32/be28f2] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.494 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [6c/b05380] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:36.482 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [f1/91b362] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:36.482 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [16/9f2170] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:36.631 [Actor Thread 113] INFO  nextflow.processor.TaskProcessor - [b8/43cb40] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.492 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [3c/578521] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:36.493 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [9a/eb714a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:36.631 [Actor Thread 127] INFO  nextflow.processor.TaskProcessor - [a5/4859ea] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:36.482 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [cd/ac8c98] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:36.633 [Actor Thread 122] INFO  nextflow.processor.TaskProcessor - [fd/d7c464] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.636 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [a7/374e3a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.470 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [8e/8d8840] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:36.478 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [ca/a782f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:36.698 [Actor Thread 138] INFO  nextflow.processor.TaskProcessor - [06/433b15] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:36.489 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [8b/89a60d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:36.482 [Actor Thread 110] INFO  nextflow.processor.TaskProcessor - [40/2baf4a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:36.494 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [a2/736294] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.733 [Actor Thread 106] INFO  nextflow.processor.TaskProcessor - [51/74c468] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:36.491 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [b1/843d79] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:36.639 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [59/607bab] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.482 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [ae/db1df6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.482 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [55/bb8dc5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.482 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [5d/5e39a3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:36.494 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [83/5af846] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:36.482 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [9c/dc644f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:36.482 [Actor Thread 119] INFO  nextflow.processor.TaskProcessor - [93/a0ce08] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_2)
+Aug-21 23:04:36.494 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [f1/67ae12] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:36.675 [Actor Thread 114] INFO  nextflow.processor.TaskProcessor - [60/e0f0ca] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_2)
+Aug-21 23:04:36.482 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [ec/869b47] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:36.494 [Actor Thread 108] INFO  nextflow.processor.TaskProcessor - [f7/793672] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:36.482 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [56/5a3714] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_9)
+Aug-21 23:04:36.494 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [ce/70f9aa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:36.741 [Actor Thread 116] INFO  nextflow.processor.TaskProcessor - [66/bab76f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.482 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [76/539ac6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.638 [Actor Thread 126] INFO  nextflow.processor.TaskProcessor - [6f/1fc09b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:36.729 [Actor Thread 123] INFO  nextflow.processor.TaskProcessor - [b6/8897c6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.632 [Actor Thread 136] INFO  nextflow.processor.TaskProcessor - [53/a5e7ac] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:36.491 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [81/eb235c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_8)
+Aug-21 23:04:36.686 [Actor Thread 135] INFO  nextflow.processor.TaskProcessor - [cc/88243d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:36.482 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [b9/42a3fc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:37.009 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [e0/ed4f0e] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:37.005 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [b0/c73227] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:37.005 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [a4/9c82ce] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:37.004 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [a1/a97e3b] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:37.014 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [e8/ef5ddd] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:37.009 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [23/8d4932] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:37.013 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [5c/aa9d29] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:37.010 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [97/3a1cf0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:37.005 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [ce/5c0cfe] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:37.008 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [d8/222623] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:37.006 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [c5/227cf6] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:37.005 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [66/b52515] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:37.014 [Actor Thread 151] INFO  nextflow.processor.TaskProcessor - [a0/647090] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:37.005 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [db/4b07a5] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:37.003 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [29/b4bbfe] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:37.007 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [36/c4aba0] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:37.009 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [74/e5c3d0] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:37.013 [Actor Thread 149] INFO  nextflow.processor.TaskProcessor - [41/03bb1a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:37.013 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [31/ea7a2f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_1)
+Aug-21 23:04:37.009 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [1e/b50fd3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:37.004 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [89/25b479] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:37.007 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [cb/ff9445] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:37.005 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [7d/968adb] Cached process > SIKICLASS:CLASSIFY_TAG (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:37.009 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [b4/a656b4] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:37.009 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [15/40e3e1] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:37.008 [Actor Thread 130] INFO  nextflow.processor.TaskProcessor - [e1/f8c59a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:37.007 [Actor Thread 121] INFO  nextflow.processor.TaskProcessor - [d9/6d5ada] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:37.005 [Actor Thread 118] INFO  nextflow.processor.TaskProcessor - [8a/70c0cd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_1_7)
+Aug-21 23:04:37.005 [Actor Thread 150] INFO  nextflow.processor.TaskProcessor - [56/281a5b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:37.009 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [53/99a78b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:37.014 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [72/df62d4] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:37.004 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [b3/4e875f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:37.105 [Actor Thread 142] INFO  nextflow.processor.TaskProcessor - [7c/76dbad] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_9)
+Aug-21 23:04:37.108 [Actor Thread 148] INFO  nextflow.processor.TaskProcessor - [4f/bffff5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:37.115 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [1d/8298fa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:37.120 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [ec/bdaadb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:37.121 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [41/49a07f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_1_6)
+Aug-21 23:04:37.122 [Actor Thread 140] INFO  nextflow.processor.TaskProcessor - [b6/d11cb9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:37.122 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [38/c23515] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_1_1)
+Aug-21 23:04:37.122 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [c9/a50e2f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_2_6)
+Aug-21 23:04:37.161 [Actor Thread 144] INFO  nextflow.processor.TaskProcessor - [76/f920b8] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:37.162 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [3f/d8c7ba] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:37.161 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [fa/3887ee] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:37.164 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [9f/0aac9c] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:37.358 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [dd/144451] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT
+Aug-21 23:04:37.378 [Actor Thread 83] INFO  nextflow.processor.TaskProcessor - [4a/665917] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:37.372 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [32/d86203] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:37.425 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [9e/49be3f] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:37.442 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [f0/839803] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:37.477 [Actor Thread 45] INFO  nextflow.processor.TaskProcessor - [21/58a9db] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.084 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [25/d3fb54] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:39.084 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [66/7643f6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.084 [Actor Thread 122] INFO  nextflow.processor.TaskProcessor - [cc/7c3ee4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.089 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [12/5a7922] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:39.089 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [6f/a3e955] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.089 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [d9/05cd14] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:39.115 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [79/0fc179] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:39.116 [Actor Thread 138] INFO  nextflow.processor.TaskProcessor - [05/f7b9fb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.116 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [cb/e23aa8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.117 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [92/8fe8f9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.117 [Actor Thread 146] INFO  nextflow.processor.TaskProcessor - [2f/09138a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:39.119 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [35/1fe3d9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.120 [Actor Thread 58] INFO  nextflow.processor.TaskProcessor - [e4/2322fb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.120 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [7c/dbf446] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.121 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [02/16ddba] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.121 [Actor Thread 140] INFO  nextflow.processor.TaskProcessor - [ad/4795be] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.124 [Actor Thread 106] INFO  nextflow.processor.TaskProcessor - [02/fbb494] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.124 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [3f/18ec38] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.125 [Actor Thread 120] INFO  nextflow.processor.TaskProcessor - [52/b14fe3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.147 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [83/2c73c5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:39.147 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [75/221254] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:39.147 [Actor Thread 63] INFO  nextflow.processor.TaskProcessor - [79/ddb1fb] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:39.147 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [86/868375] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:39.147 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [93/61478b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:39.150 [Actor Thread 131] INFO  nextflow.processor.TaskProcessor - [b9/6424fa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.156 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [4b/002a6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:39.176 [Actor Thread 15] INFO  nextflow.processor.TaskProcessor - [4d/4f1795] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:39.149 [Actor Thread 13] INFO  nextflow.processor.TaskProcessor - [98/bd9d99] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.149 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [06/462708] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.159 [Actor Thread 88] INFO  nextflow.processor.TaskProcessor - [f0/aa43aa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.149 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [b3/93ba0a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:39.154 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [90/3cc8af] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:39.148 [Actor Thread 116] INFO  nextflow.processor.TaskProcessor - [bd/ecc615] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.176 [Actor Thread 136] INFO  nextflow.processor.TaskProcessor - [6c/af2ac4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.149 [Actor Thread 100] INFO  nextflow.processor.TaskProcessor - [35/1a3c33] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.156 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [cd/d32ffe] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.175 [Actor Thread 97] INFO  nextflow.processor.TaskProcessor - [96/747972] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.156 [Actor Thread 114] INFO  nextflow.processor.TaskProcessor - [9e/28ed00] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.159 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [9c/b77ecd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.164 [Actor Thread 133] INFO  nextflow.processor.TaskProcessor - [5c/d8901d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.149 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [4a/f6b1ed] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.149 [Actor Thread 126] INFO  nextflow.processor.TaskProcessor - [e4/f5954b] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.149 [Actor Thread 52] INFO  nextflow.processor.TaskProcessor - [be/b94030] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:39.159 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [ef/a82467] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.150 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [2c/093f38] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.149 [Actor Thread 40] INFO  nextflow.processor.TaskProcessor - [de/074320] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:39.157 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [a9/5a51cd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.150 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [f9/07517c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.149 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [a7/a96bfa] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.187 [Actor Thread 151] INFO  nextflow.processor.TaskProcessor - [83/000bc0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.203 [Actor Thread 103] INFO  nextflow.processor.TaskProcessor - [6a/a1d527] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.191 [Actor Thread 129] INFO  nextflow.processor.TaskProcessor - [6b/23c8a9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:39.209 [Actor Thread 56] INFO  nextflow.processor.TaskProcessor - [57/7c5960] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.201 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [9f/3af1e4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.192 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [f3/f109bf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.193 [Actor Thread 128] INFO  nextflow.processor.TaskProcessor - [c0/bf26fc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:39.198 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [b0/8eafab] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.206 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [6b/d98ea3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:39.223 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [66/0bada4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.187 [Actor Thread 47] INFO  nextflow.processor.TaskProcessor - [33/0c228f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.236 [Actor Thread 51] INFO  nextflow.processor.TaskProcessor - [5b/7611bc] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:39.186 [Actor Thread 108] INFO  nextflow.processor.TaskProcessor - [36/edbf02] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.204 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [0b/f1de18] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:39.194 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [ce/8dda0c] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:39.230 [Actor Thread 121] INFO  nextflow.processor.TaskProcessor - [c1/3f8d26] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.195 [Actor Thread 149] INFO  nextflow.processor.TaskProcessor - [0d/95cd81] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.234 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [78/39c42e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.192 [Actor Thread 117] INFO  nextflow.processor.TaskProcessor - [5f/c3ce69] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.237 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [7b/9ecdc9] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:39.300 [Actor Thread 124] INFO  nextflow.processor.TaskProcessor - [a8/8b7633] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:39.177 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [d8/7f54e0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:39.197 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [02/65f518] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.211 [Actor Thread 91] INFO  nextflow.processor.TaskProcessor - [9d/85bedf] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.212 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [6a/070da5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:39.154 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [4c/75e1a7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.159 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [48/c96fa4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.243 [Actor Thread 113] INFO  nextflow.processor.TaskProcessor - [6b/581131] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.150 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [e1/ddbdd9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uniPCR_SIKI2_1_3)
+Aug-21 23:04:39.149 [Actor Thread 142] INFO  nextflow.processor.TaskProcessor - [6f/ff2833] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:39.316 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [63/cce78f] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:39.159 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [35/45ab32] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:39.149 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [cf/0516e9] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ4 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:39.149 [Actor Thread 127] INFO  nextflow.processor.TaskProcessor - [06/7a8bdd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.228 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [8d/ac4cf5] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.164 [Actor Thread 102] INFO  nextflow.processor.TaskProcessor - [8f/5094e2] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_2_7)
+Aug-21 23:04:39.179 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [bb/633706] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uniPCR_SIKI2_2_3)
+Aug-21 23:04:39.179 [Actor Thread 110] INFO  nextflow.processor.TaskProcessor - [e3/2e84fe] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.314 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [45/7e1ee7] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:39.208 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [8c/64bd19] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_no_donor_SIKI2_3_4)
+Aug-21 23:04:39.187 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [2b/dbdc37] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.239 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [ac/eb4343] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uniPCR_SIKI2_3_3)
+Aug-21 23:04:39.213 [Actor Thread 17] INFO  nextflow.processor.TaskProcessor - [52/56febc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_gspPCR_SIKI2_3_1)
+Aug-21 23:04:39.324 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [4a/dfdcd9] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:39.290 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [42/998665] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:39.149 [Actor Thread 115] INFO  nextflow.processor.TaskProcessor - [17/4fe704] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.317 [Actor Thread 144] INFO  nextflow.processor.TaskProcessor - [ba/8d0054] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:39.179 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [3d/26f23e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_1_4)
+Aug-21 23:04:39.164 [Actor Thread 112] INFO  nextflow.processor.TaskProcessor - [2f/4a575e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.230 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [3b/654d23] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:39.149 [Actor Thread 119] INFO  nextflow.processor.TaskProcessor - [05/1c98fd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_2_8)
+Aug-21 23:04:39.316 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [c1/a2ea22] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:39.197 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [be/96652e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ5 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:39.243 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [35/671926] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.326 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [fd/4c447a] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:39.220 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [8d/d19e0a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_8)
+Aug-21 23:04:39.149 [Actor Thread 84] INFO  nextflow.processor.TaskProcessor - [00/3ca383] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.330 [Actor Thread 148] INFO  nextflow.processor.TaskProcessor - [87/12b355] Cached process > SIKICLASS:CLASSIFY_NO_TAG (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:39.187 [Actor Thread 132] INFO  nextflow.processor.TaskProcessor - [ec/7638ee] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:39.193 [Actor Thread 150] INFO  nextflow.processor.TaskProcessor - [ac/d3c5fd] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.178 [Actor Thread 94] INFO  nextflow.processor.TaskProcessor - [cd/4e57c4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_7)
+Aug-21 23:04:39.159 [Actor Thread 37] INFO  nextflow.processor.TaskProcessor - [3c/e6a786] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_gspPCR_SIKI2_3_6)
+Aug-21 23:04:39.180 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [30/28ed13] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ6 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:39.149 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [81/aa6dc7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_no_donor_SIKI2_2_4)
+Aug-21 23:04:39.327 [Actor Thread 118] INFO  nextflow.processor.TaskProcessor - [07/541c81] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:39.329 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [a4/2a15a4] Cached process > SIKICLASS:CLASSIFY_SINGLE_TAG (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:40.288 [Actor Thread 148] INFO  nextflow.processor.TaskProcessor - [3a/234b8e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.294 [Actor Thread 121] INFO  nextflow.processor.TaskProcessor - [cd/54f6ef] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.287 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [1e/48db85] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.293 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [d0/96313a] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:40.303 [Actor Thread 129] INFO  nextflow.processor.TaskProcessor - [57/beb619] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:40.299 [Actor Thread 33] INFO  nextflow.processor.TaskProcessor - [9c/c5d867] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:40.299 [Actor Thread 116] INFO  nextflow.processor.TaskProcessor - [de/70a45f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.301 [Actor Thread 128] INFO  nextflow.processor.TaskProcessor - [7e/fcf633] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.301 [Actor Thread 44] INFO  nextflow.processor.TaskProcessor - [b3/ed3969] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.301 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [f0/e5cd6f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_2)
+Aug-21 23:04:40.372 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [ef/fc3f13] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.383 [Actor Thread 142] INFO  nextflow.processor.TaskProcessor - [a2/4e9d62] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.383 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [78/14e489] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.412 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [42/66313e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:40.412 [Actor Thread 93] INFO  nextflow.processor.TaskProcessor - [14/0c332f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.414 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [0a/b011f4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.419 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [9d/a92934] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.522 [Actor Thread 140] INFO  nextflow.processor.TaskProcessor - [0e/c16c40] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.523 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [04/5cdd50] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.523 [Actor Thread 149] INFO  nextflow.processor.TaskProcessor - [33/a4a733] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.523 [Actor Thread 107] INFO  nextflow.processor.TaskProcessor - [a4/899be7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.523 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [b4/4005f3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.523 [Actor Thread 146] INFO  nextflow.processor.TaskProcessor - [8d/dfe168] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.523 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [3c/844f26] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.523 [Actor Thread 48] INFO  nextflow.processor.TaskProcessor - [26/ee9ea8] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.524 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [b1/119302] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.524 [Actor Thread 133] INFO  nextflow.processor.TaskProcessor - [5a/2ba877] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.524 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [ec/0d6715] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:40.524 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [10/c9d77e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.524 [Actor Thread 59] INFO  nextflow.processor.TaskProcessor - [f3/9f0574] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.524 [Actor Thread 54] INFO  nextflow.processor.TaskProcessor - [88/10fcb6] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ3 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.524 [Actor Thread 55] INFO  nextflow.processor.TaskProcessor - [5f/aff749] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.524 [Actor Thread 86] INFO  nextflow.processor.TaskProcessor - [01/c816a0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:40.524 [Actor Thread 18] INFO  nextflow.processor.TaskProcessor - [86/db7dbc] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.524 [Actor Thread 92] INFO  nextflow.processor.TaskProcessor - [36/fd8dc4] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.525 [Actor Thread 101] INFO  nextflow.processor.TaskProcessor - [e5/7bf418] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ1 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.525 [Actor Thread 16] INFO  nextflow.processor.TaskProcessor - [1c/0207f0] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.526 [Actor Thread 106] INFO  nextflow.processor.TaskProcessor - [e9/b0bfb7] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.526 [Actor Thread 115] INFO  nextflow.processor.TaskProcessor - [1f/30dade] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.526 [Actor Thread 110] INFO  nextflow.processor.TaskProcessor - [bd/216176] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.526 [Actor Thread 99] INFO  nextflow.processor.TaskProcessor - [61/7c0c56] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.526 [Actor Thread 89] INFO  nextflow.processor.TaskProcessor - [76/e6dc10] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_1_10)
+Aug-21 23:04:40.526 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [3e/977672] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.526 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [02/7e9dfd] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT6
+Aug-21 23:04:40.526 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [b7/64916d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ9 (SpCas9_gspPCR_SIKI2_3_9)
+Aug-21 23:04:40.527 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [22/190140] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ7 (SpCas9_uninjected_SIKI2_2_5)
+Aug-21 23:04:40.527 [Actor Thread 104] INFO  nextflow.processor.TaskProcessor - [df/4fe4b3] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_1_5)
+Aug-21 23:04:40.527 [Actor Thread 19] INFO  nextflow.processor.TaskProcessor - [61/16d31f] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.528 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [f7/d39e4d] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ10 (SpCas9_uninjected_SIKI2_2_10)
+Aug-21 23:04:40.528 [Actor Thread 111] INFO  nextflow.processor.TaskProcessor - [a1/a80bed] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT5
+Aug-21 23:04:40.532 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [93/33aa6e] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ2 (SpCas9_uninjected_SIKI2_3_10)
+Aug-21 23:04:40.530 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [94/6021cf] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT4
+Aug-21 23:04:40.537 [Actor Thread 43] INFO  nextflow.processor.TaskProcessor - [c6/cc5d31] Cached process > SIKICLASS:STAT_FQ:COUNT_FQ8 (SpCas9_uninjected_SIKI2_3_5)
+Aug-21 23:04:40.853 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [f2/734a09] Cached process > SIKICLASS:STAT_NO_TAG
+Aug-21 23:04:40.861 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [e9/494238] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT1
+Aug-21 23:04:40.861 [Actor Thread 98] INFO  nextflow.processor.TaskProcessor - [6a/d20f25] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT10
+Aug-21 23:04:40.891 [Actor Thread 108] INFO  nextflow.processor.TaskProcessor - [fe/72646b] Cached process > SIKICLASS:STAT_SNP
+Aug-21 23:04:40.895 [Actor Thread 111] INFO  nextflow.processor.TaskProcessor - [81/9b468b] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT7
+Aug-21 23:04:40.895 [Actor Thread 49] INFO  nextflow.processor.TaskProcessor - [cb/764406] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT2
+Aug-21 23:04:40.895 [Actor Thread 46] INFO  nextflow.processor.TaskProcessor - [24/afe650] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT8
+Aug-21 23:04:40.896 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [c0/ad1445] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT9
+Aug-21 23:04:40.896 [Actor Thread 31] INFO  nextflow.processor.TaskProcessor - [0b/29bb29] Cached process > SIKICLASS:STAT_FQ:CAT_COUNT3
+Aug-21 23:04:40.935 [Actor Thread 95] INFO  nextflow.processor.TaskProcessor - [37/a3c476] Cached process > SIKICLASS:STAT_FQ:GET_TABLE_RATIO
+Aug-21 23:04:40.948 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-21 23:04:40.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-21 23:04:40.993 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-21 23:04:41.032 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=434; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=9h 32m 17s;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Aug-21 23:04:41.033 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Aug-21 23:04:41.045 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Aug-21 23:04:42.345 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Aug-21 23:04:42.816 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-21 23:04:42.818 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@1.1.3'
+Aug-21 23:04:42.819 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
+Aug-21 23:04:42.888 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-21 23:04:42.888 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

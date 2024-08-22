@@ -9,6 +9,8 @@ include { CLASSIFY_TAG           } from '../modules/local/classify_tag'
 include { CLASSIFY_SINGLE_TAG    } from '../modules/local/classify_single_tag'
 include { CLASSIFY_NO_TAG        } from '../modules/local/classify_no_tag'
 include { STAT_FQ                } from '../subworkflows/local/stat_fq'
+include { STAT_NO_TAG            } from '../modules/local/stat_no_tag'
+include { STAT_SNP               } from '../modules/local/stat_snp'
 
 // include { MULTIQC                } from '../modules/nf-core/multiqc/main'
 // include { paramsSummaryMap       } from 'plugin/nf-validation'
@@ -33,6 +35,9 @@ workflow SIKICLASS {
     tag_end_ref_with_tag
     tag_flanking
     pam_start_ref_wt
+    snp_pos 
+    snp_wt
+    snp_mut
     
 
     main:
@@ -50,7 +55,7 @@ workflow SIKICLASS {
 
     // 
     // MODULE: split reads according to tag occurence with BWA
-    // 01_tag/
+    // 01_classify_tag/
     //  01a_no_tag, 01b_single_tag, 01c_multiple_tag, 01d_any_tag, 01e_tmp_fasta, 01f_tmp_bam
     CLASSIFY_TAG ( 
         ch_samplesheet,
@@ -59,7 +64,7 @@ workflow SIKICLASS {
 
     // 
     // MODULE: classify reads with single tag with minimap2
-    // 02_single_tag/
+    // 02_classify_single_tag/
     //  02a_precise_tag, 02b_5indel, 02c_3indel, 02d_any_indel, 02e_tmp_bam, 02f_tmp_indel_pos
     CLASSIFY_SINGLE_TAG (
         CLASSIFY_TAG.out.single_tag,
@@ -71,7 +76,7 @@ workflow SIKICLASS {
 
     // 
     // MODULE: classify reads without tag with minimap2
-    // 03_no_tag/
+    // 03_classify_no_tag/
     //  03a_indel, 03b_deletion, 03c_insertion, 03d_tmp_bam, 03e_tmp_indel_pos
     CLASSIFY_NO_TAG (
         CLASSIFY_TAG.out.no_tag,
@@ -79,11 +84,11 @@ workflow SIKICLASS {
         pam_start_ref_wt
     )
 
-
     // 
     // SUBWORKFLOW: stat fastq counts 
     // 00_stat/
-    //  00a_fq_total, 00b_fq_no_tag_indel, 00c_fq_no_tag_del, 00d_fq_no_tag_insertion, 00e_fq_single_tag, 00f_fq_multiple_tag, 00g_fq_single_tag_precise, 00h_fq_single_tag_any_del, 00i_fq_single_tag_5del, 00j_fq_single_tag_3del, 00k_fq_single_tag_any_indel 000_master_table
+    //  00a_fq_total, 00b_fq_no_tag_indel, 00c_fq_no_tag_del, 00d_fq_no_tag_insertion, 00e_fq_single_tag, 00f_fq_multiple_tag, 00g_fq_any_tag, 00h_fq_single_tag_precise, 00i_fq_single_tag_5del, 00j_fq_single_tag_3del, 00k_fq_single_tag_any_indel
+    //  000_master_table/fq_class_ratios.tsv
     STAT_FQ (
         ch_samplesheet,
         CLASSIFY_NO_TAG.out.indel,
@@ -98,6 +103,34 @@ workflow SIKICLASS {
         CLASSIFY_SINGLE_TAG.out.any_indel
     )
 
+    // 
+    // MODULE: stat no tag reads regarding indel distribution 
+    // 00_stat/
+    //  000_master_table/no_tag_indel_size_location_to_pam.tsv
+    //  000_master_table/no_tag_indel_size_distribution.tsv
+    STAT_NO_TAG (
+        CLASSIFY_NO_TAG.out.indel_pos_pure.collect(),
+        pam_start_ref_wt
+    )
+
+    if (params.snp_pos != null) {
+        log.info "params.snp_pos supplied!"
+        // MODULE: split and count SNP occurrences for precise_tag reads
+        // 00_stat/000_master_table/precise_tag_snp_fraction.tsv
+        // 02_classify_single_tag/02a_precise_tag_snp_wt/*.fastq.gz
+        // 02_classify_single_tag/02a_precise_tag_snp_mut/*.fastq.gz
+        // 02_classify_single_tag/02a_precise_tag_snp_other/*.fastq.gz
+        STAT_SNP (
+            CLASSIFY_SINGLE_TAG.out.precise_tag_pure.collect(),
+            CLASSIFY_SINGLE_TAG.out.bam_pure.collect(),
+            snp_pos,
+            snp_wt,
+            snp_mut
+        )
+        
+    } else {
+        log.info "params.snp_pos not supplied, end!"
+    }
 
     // 
     // MODULE: stat fastq counts 

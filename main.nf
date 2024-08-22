@@ -112,7 +112,10 @@ workflow {
         params.tag_start_ref_with_tag,
         params.tag_end_ref_with_tag,
         params.tag_flanking,
-        params.pam_start_ref_wt
+        params.pam_start_ref_wt,
+        params.snp_pos,
+        params.snp_wt,
+        params.snp_mut
     )
 
     //
