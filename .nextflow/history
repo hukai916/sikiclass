@@ -145,3 +145,4 @@
 2024-08-21 23:51:20	-	confident_torvalds	-	02d6930ea98098feeed6cb59dc86dde0	c69705dd-41ed-4f62-864e-d70b045b4811	nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
 2024-08-21 23:54:12	20.5s	chaotic_curry	OK	02d6930ea98098feeed6cb59dc86dde0	c69705dd-41ed-4f62-864e-d70b045b4811	nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
 2024-08-22 00:05:36	15.8s	soggy_dalembert	OK	02d6930ea98098feeed6cb59dc86dde0	c69705dd-41ed-4f62-864e-d70b045b4811	nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811
+2024-08-22 15:08:42	15.3s	berserk_cajal	OK	02d6930ea98098feeed6cb59dc86dde0	c69705dd-41ed-4f62-864e-d70b045b4811	nextflow run main.nf -profile docker,arm -c conf/test_local.config -resume c69705dd-41ed-4f62-864e-d70b045b4811 --outdir results_sikiclass --publish_dir_mode copy
