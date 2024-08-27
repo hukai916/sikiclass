@@ -115,7 +115,10 @@ workflow {
         params.pam_start_ref_wt,
         params.snp_pos,
         params.snp_wt,
-        params.snp_mut
+        params.snp_mut,
+        params.indel_range_to_scan_no_tag,
+        params.indel_range_to_scan_single_tag,
+        params.classify_no_tag_filter_control_indel
     )
 
     //

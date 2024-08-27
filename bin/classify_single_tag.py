@@ -15,7 +15,7 @@ import pandas as pd
 import gzip
 import numpy as np
 
-csv = sys.argv[1]
+tsv = sys.argv[1]
 fastq = sys.argv[2]
 tag_start = int(sys.argv[3])
 tag_end = int(sys.argv[4])
@@ -39,7 +39,7 @@ out_any_del = sys.argv[9]
 # out_3del = "/Users/kaihu/Projects/Nathan/work/sikiproject/new_strategy/h3f3d_umi_correct_cutoff_5/workflow/res/fastq/02_with_tag_3del/three_del.fastq.g"
 
 #%% 
-df = pd.read_csv(csv)
+df = pd.read_csv(tsv, sep = "\t")
 # print("\n" + csv + "\n")
 if len(df) == 0:
     df["del_range"] = None

@@ -8,8 +8,12 @@ include { FASTQC                 } from '../modules/nf-core/fastqc/main'
 include { CLASSIFY_TAG           } from '../modules/local/classify_tag'
 include { CLASSIFY_SINGLE_TAG    } from '../modules/local/classify_single_tag'
 include { CLASSIFY_NO_TAG        } from '../modules/local/classify_no_tag'
+include { CLASSIFY_NO_TAG_FILTER_CONTROL } from '../modules/local/classify_no_tag_filter_control'
+include { GET_CONTROL_INDEL      } from '../modules/local/get_control_indel'
 include { STAT_FQ                } from '../subworkflows/local/stat_fq'
+include { STAT_FQ as STAT_FQ_INDEL_FILTER_CONTROL } from '../subworkflows/local/stat_fq'
 include { STAT_NO_TAG            } from '../modules/local/stat_no_tag'
+include { STAT_NO_TAG as STAT_NO_TAG_FILTER_CONTROL } from '../modules/local/stat_no_tag'
 include { STAT_SNP               } from '../modules/local/stat_snp'
 
 // include { MULTIQC                } from '../modules/nf-core/multiqc/main'
@@ -38,7 +42,9 @@ workflow SIKICLASS {
     snp_pos 
     snp_wt
     snp_mut
-    
+    indel_range_to_scan_no_tag
+    indel_range_to_scan_single_tag
+    classify_no_tag_filter_control_indel
 
     main:
 
@@ -71,49 +77,121 @@ workflow SIKICLASS {
         ref_with_tag,
         tag_start_ref_with_tag,
         tag_end_ref_with_tag,
-        tag_flanking
+        tag_flanking,
+        indel_range_to_scan_single_tag
     )
 
     // 
     // MODULE: classify reads without tag with minimap2
     // 03_classify_no_tag/
-    //  03a_indel, 03b_deletion, 03c_insertion, 03d_tmp_bam, 03e_tmp_indel_pos
+    //  03a_indel, 03b_deletion_only, 03c_insertion_only, 03d_complex, 03e_tmp_bam, 03f_tmp_indel_pos
     CLASSIFY_NO_TAG (
         CLASSIFY_TAG.out.no_tag,
         ref_wt,
-        pam_start_ref_wt
+        pam_start_ref_wt,
+        indel_range_to_scan_no_tag
     )
 
     // 
     // SUBWORKFLOW: stat fastq counts 
     // 00_stat/
-    //  00a_fq_total, 00b_fq_no_tag_indel, 00c_fq_no_tag_del, 00d_fq_no_tag_insertion, 00e_fq_single_tag, 00f_fq_multiple_tag, 00g_fq_any_tag, 00h_fq_single_tag_precise, 00i_fq_single_tag_5del, 00j_fq_single_tag_3del, 00k_fq_single_tag_any_indel
-    //  000_master_table/fq_class_ratios.tsv
+    //  fq_class_ratios.tsv
     STAT_FQ (
         ch_samplesheet,
         CLASSIFY_NO_TAG.out.indel,
-        CLASSIFY_NO_TAG.out.deletion,
-        CLASSIFY_NO_TAG.out.insertion,
+        CLASSIFY_NO_TAG.out.deletion_only,
+        CLASSIFY_NO_TAG.out.insertion_only,
+        CLASSIFY_NO_TAG.out.complex,
         CLASSIFY_TAG.out.single_tag,
         CLASSIFY_TAG.out.multiple_tag,
         CLASSIFY_TAG.out.any_tag,
         CLASSIFY_SINGLE_TAG.out.precise_tag,
         CLASSIFY_SINGLE_TAG.out.five_indel,
         CLASSIFY_SINGLE_TAG.out.three_indel,
-        CLASSIFY_SINGLE_TAG.out.any_indel
+        CLASSIFY_SINGLE_TAG.out.any_indel,
+        "fq_class_ratios.tsv"
     )
 
     // 
     // MODULE: stat no tag reads regarding indel distribution 
     // 00_stat/
-    //  000_master_table/no_tag_indel_size_location_to_pam.tsv
-    //  000_master_table/no_tag_indel_size_distribution.tsv
+    //  no_tag_reads_indel_info/no_tag_indel_size_location_to_pam
+    //  no_tag_reads_indel_info/no_tag_indel_size_distribution.tsv
     STAT_NO_TAG (
         CLASSIFY_NO_TAG.out.indel_pos_pure.collect(),
-        pam_start_ref_wt
+        pam_start_ref_wt,
+        "no_tag_reads_indel_info"
     )
 
-    if (params.snp_pos != null) {
+    // for "no tag" reads, if configured to filter out natural INDELS inferred from uninjected samples 
+    if (classify_no_tag_filter_control_indel != null) {
+        // 
+        // MODULE: obtain natural INDELs from control samples
+        // 03_classify_no_tag/
+            // control_indels.tsv
+        GET_CONTROL_INDEL ( CLASSIFY_NO_TAG.out.indel_pos_pure.collect(), classify_no_tag_filter_control_indel )
+
+        // 
+        // MODULE: classify reads without tag with minimap2 after excluding control indels, allow tuning minimum indel freq in control samples to be considered as real natural indels.
+        // 03_classify_no_tag/
+        //  03a_indel_filter_control, 03b_deletion_only_filter_control, 03c_insertion_only_filter_control, 03d_complex_filter_control, 03f_tmp_indel_pos_filter_control
+        CLASSIFY_NO_TAG_FILTER_CONTROL (
+            CLASSIFY_TAG.out.no_tag,
+            ref_wt,
+            pam_start_ref_wt,
+            GET_CONTROL_INDEL.out.tsv
+        )
+
+        // 
+        // MODULE: stat no tag reads regarding indel distribution 
+        // 00_stat/
+        //  no_tag_reads_indel_info_filter_control/no_tag_indel_size_location_to_pam_filter_control
+        //  no_tag_reads_indel_info_filter_control/no_tag_indel_size_distribution_filter_control.tsv
+        STAT_NO_TAG_FILTER_CONTROL (
+            CLASSIFY_NO_TAG_FILTER_CONTROL.out.indel_pos_pure.collect(),
+            pam_start_ref_wt,
+            "no_tag_reads_indel_info_filter_control"
+        )
+
+        // 
+        // SUBWORKFLOW: stat fastq counts 
+        // 00_stat/
+        //  fq_class_ratios_indel_filter_control.tsv
+        STAT_FQ_INDEL_FILTER_CONTROL (
+            ch_samplesheet,
+            CLASSIFY_NO_TAG_FILTER_CONTROL.out.indel,
+            CLASSIFY_NO_TAG_FILTER_CONTROL.out.deletion_only,
+            CLASSIFY_NO_TAG_FILTER_CONTROL.out.insertion_only,
+            CLASSIFY_NO_TAG_FILTER_CONTROL.out.complex,
+            CLASSIFY_TAG.out.single_tag,
+            CLASSIFY_TAG.out.multiple_tag,
+            CLASSIFY_TAG.out.any_tag,
+            CLASSIFY_SINGLE_TAG.out.precise_tag,
+            CLASSIFY_SINGLE_TAG.out.five_indel,
+            CLASSIFY_SINGLE_TAG.out.three_indel,
+            CLASSIFY_SINGLE_TAG.out.any_indel,
+            "fq_class_ratios_indel_filter_control.tsv"
+        )
+    }
+
+
+    // 
+    // MODULE: gather natural INDELs 
+    // 03_classify_no_tag/
+    //  03
+
+
+    // 
+    // MODULE: classify reads without tag with minimap2
+    // 03_classify_no_tag/
+    //  03a_indel, 03b_deletion, 03c_insertion, 03d_tmp_bam, 03e_tmp_indel_pos
+    // CLASSIFY_NO_TAG (
+    //     CLASSIFY_TAG.out.no_tag,
+    //     ref_wt,
+    //     pam_start_ref_wt
+    // )
+
+    if (snp_pos != null) {
         log.info "params.snp_pos supplied!"
         // MODULE: split and count SNP occurrences for precise_tag reads
         // 00_stat/000_master_table/precise_tag_snp_fraction.tsv

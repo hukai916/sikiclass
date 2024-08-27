@@ -10,6 +10,7 @@ process CLASSIFY_SINGLE_TAG {
     val tag_start 
     val tag_end 
     val tag_flanking
+    val indel_range_to_scan
 
     output:
       
@@ -38,7 +39,10 @@ process CLASSIFY_SINGLE_TAG {
 
     # Step2: parse bam to extract indel positions
     mkdir 02f_tmp_indel_pos
-    parse_bam_indel.py 02e_tmp_bam/${prefix}.bam $ref 02f_tmp_indel_pos/${prefix}.tsv
+    parse_bam_indel.py 02e_tmp_bam/${prefix}.bam $ref 02f_tmp_indel_pos/${prefix}.tem.tsv
+
+    # Step2-1: filter indel positions by range
+    filter_indel_by_range.py 02f_tmp_indel_pos/${prefix}.tem.tsv "$indel_range_to_scan" 02f_tmp_indel_pos/${prefix}.tsv
 
     # Step3: split reads into precise_insert, any_indel, 5_indel, 3_indel using #2 results
     mkdir 02a_precise_tag 02b_5indel 02c_3indel 02d_any_indel

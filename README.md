@@ -42,7 +42,7 @@ Refer to the [Usage](#usage) section for instructions on how to run **sikiclass*
 > [!NOTE]
 > If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/usage/installation) on how to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline) with `-profile test` before running the workflow on actual data.
 
-<!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
+<!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, E.g., how to prepare samplesheets.
      Explain what rows and columns represent. For instance (please edit as appropriate):
 
 First, prepare a samplesheet with your input data that looks as follows:
@@ -74,9 +74,42 @@ nextflow run main.nf -profile docker,arm -c conf/test_local.config
 > Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_;
 > see [docs](https://nf-co.re/usage/configuration#custom-configuration-files).
 
+Core sikiclass parameters are described below. 
+
+```
+input [null] String. Path to input sample sheet in CSV format. E.g., 'assets/samplesheet_local.csv'.
+
+ref_with_tag   [null] String. Path to reference fasta file containing precise tag insert. E.g., 'assets/test/h3f3d_preciseInsert.fa'.
+
+ref_wt   [null] String. Path to reference fasta file without precise tag insert. E.g., 'assets/test/h3f3d_wt.fa'.
+
+tag_fq   [null] Path to an artifical fastq file containing the tag sequence. E.g., './assets/test/tag.fastq'.
+
+tag_start_ref_with_tag  [int] Integer. 1-based coordinate of tag start pos in ref_with_tag. E.g., 1003.
+
+tag_end_ref_with_tag [int] Integer. 1-based coordinate of tag end pos in ref_with_tag. E.g., 1089.
+
+tag_flanking [int] Integer. Number of tag-flanking bases to check to determine "precise tag" reads. E.g., 60.
+
+pam_start_ref_wt [int] Integer. 1-based coordinate of pam pos in ref_wt. E.g., 1113.
+
+snp_pos  [null] Integer or null. Specifies whether to count ratio of reads with different SNPs for reads with precise tag. Supply 1-based coordinate on ref_with_tag or null to skip this step. If set, must also supply "snp_wt" and "snp_mut" argument below.
+
+snp_wt [str] String. The base species at the "snp_pos" site in the wild type reference. E.g., 'A'.
+
+snp_mut [str] String. The base species at the "snp_pos" site in the mutant reference. E.g., 'G'.
+
+indel_range_to_scan_single_tag   [str] String. Specifies whether to restrict indels within a given range on ref_with_tag for classifying "single tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '950:1116'.
+
+indel_range_to_scan_no_tag [str] String. Specifies whether to restrict indels within a given range on ref_wt for classifying "no tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '980:1003'.
+
+classify_no_tag_filter_control_indel [null] String or null. String or null. Specifies the names of control (uninjected) samples separated by comma. When provided, indels occurring in these control samples will be filtered out during the classification of "no tag" reads. Set to null to skip this filtering. E.g., 'SpCas9_uninjected_SIKI2_1_10, SpCas9_uninjected_SIKI2_1_5, SpCas9_uninjected_SIKI2_2_10, SpCas9_uninjected_SIKI2_2_5, SpCas9_uninjected_SIKI2_3_10, SpCas9_uninjected_SIKI2_3_5'. The sample names must match those specified in the sample sheet.
+
+```
+
 ## Output
 
-By default, all results are saved in the "./results" folder, as specified by the `outdir = "./results"` parameter in the master configuration file "nextflow.config". Results from different steps are organized into corresponding subdirectories (e.g. "./results/01_classify_tag", "./results/02_classify_single_tag", *etc.*), the "./results/00_stat" folder contains summary statistical tables.
+By default, all results are saved in the "./results" folder, as specified by the `outdir = "./results"` parameter in the master configuration file "nextflow.config". Results from different steps are organized into corresponding subdirectories (E.g., "./results/01_classify_tag", "./results/02_classify_single_tag", *etc.*), the "./results/00_stat" folder contains summary statistical tables.
 
 Nextflow implements a caching mechanism that stores all intermediate and final results in the "./work/" directory. By default, files in the "./results/" are symbolic links to that in the "./work/". To switch from `symlink` to `copy`, use `publish_dir_mode = copy` argument. Below summarizes the main contents of each result folder.
 
@@ -84,40 +117,52 @@ Nextflow implements a caching mechanism that stores all intermediate and final r
 This directory contains summary tables generated using the results of steps 1-4:
 
 * `fq_class_ratios.tsv`: Provides the count fractions of each read class for each sample.
+* `fq_class_ratios_indel_filter_control.tsv`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Provides the count fractions of each read class for each sample. For "no tag" reads, classify them using indels after excluding those that appear in control samples.
 * `precise_tag_snp_fraction.tsv`: Provides the count fractions of different base species at given SNP site for "precise tag" reads for each sample.
-* `no_tag_indel_size_distribution.tsv`: Shows the distribution of INDEL sizes for "no tag" reads.
-* `no_tag_indel_size_location_to_pam`: Lists the INDEL size and their locations relative to the PAM site for "no tag" reads for each sample.
+* `no_tag_reads_indel_info/`: Provides indel information for "no tag" reads.
+   * `no_tag_indel_size_distribution.tsv`: Shows the distribution of INDEL sizes for "no tag" reads.
+   * `no_tag_indel_size_location_to_pam`: Lists the INDEL size and their locations relative to the PAM site for "no tag" reads for each sample.
+* `no_tag_reads_indel_info_filter_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Provides indel information for "no tag" reads classified using indels after excluding those that appear in control samples.
+   * `no_tag_indel_size_distribution.tsv`: Shows the distribution of INDEL sizes for "no tag" reads.
+   * `no_tag_indel_size_location_to_pam`: Lists the INDEL size and their locations relative to the PAM site for "no tag" reads for each sample.
 
 ### 01_classify_tag  
 This directory contains fastq files categorized based on tag occurrence:
 
-* `01a_no_tag`: Fastq file for reads classified as having "no tag" for each sample.
-* `01b_single_tag`: Fastq file for reads classified as having "single tag" for each sample.
-* `01c_multiple_tag`: Fastq file for reads classified as having "multiple tag" for each sample.
-* `01d_any_tag`: Fastq file for reads classified as having "any tag" for each sample (a union of 01b and 01c).
-* `01e_tmp_fasta`: Intermediate fasta file.
-* `01f_tmp_bam`: Intermedaite BAM file (from BWA).
+* `01a_no_tag/`: Fastq file for reads classified as having "no tag" for each sample.
+* `01b_single_tag/`: Fastq file for reads classified as having "single tag" for each sample.
+* `01c_multiple_tag/`: Fastq file for reads classified as having "multiple tag" for each sample.
+* `01d_any_tag/`: Fastq file for reads classified as having "any tag" for each sample (a union of 01b and 01c).
+* `01e_tmp_fasta/`: Intermediate fasta file.
+* `01f_tmp_bam/`: Intermedaite BAM file (from BWA).
 
 ### 02_classify_single_tag  
 This directory contains fastq files categorized based on INDEL occurrence for "single tag" reads.
 
-* `02a_precise_tag`: Fastq file for reads with "precise tag" for each sample.
-* `02a_precise_tag_snp_wt`: Fastq file for reads classified as having "precise tag" that also contain WT base at given SNP site for each sample.
-* `02a_precise_tag_snp_mut`: Fastq file for reads classified as having "precise tag" that also contain mutant base at given SNP site for each sample.
-* `02b_5indel`: Fastq file for reads classified as having "INDELs in 5' region" for each sample.
-* `02c_3indel`: Fastq file for reads classified as having "INDELs in 3' region" for each sample.
-* `02d_any_indel`: Fastq file for reads classified as having "INDELs in any region" for each sample.
-* `02e_tmp_bam`: Intermedaite BAM file (from minimap2).
-* `02f_tmp_indel_pos`: Intermedaite file containing INDEL size and location information for each sample.
+* `02a_precise_tag/`: Fastq file for reads with "precise tag" for each sample.
+* `02a_precise_tag_snp_wt/`: Fastq file for reads classified as having "precise tag" that also contain WT base at given SNP site for each sample.
+* `02a_precise_tag_snp_mut/`: Fastq file for reads classified as having "precise tag" that also contain mutant base at given SNP site for each sample.
+* `02b_5indel/`: Fastq file for reads classified as having "INDELs in 5' region" for each sample.
+* `02c_3indel/`: Fastq file for reads classified as having "INDELs in 3' region" for each sample.
+* `02d_any_indel/`: Fastq file for reads classified as having "INDELs in any region" for each sample.
+* `02e_tmp_bam/`: Intermedaite BAM file (from minimap2).
+* `02f_tmp_indel_pos/`: Intermedaite file containing INDEL size and location information for each sample.
 
 ### 03_classify_no_tag  
 This directory contains fastq files categorized based on INDEL occurrence for "no tag" reads.
 
-* `03a_indel`: Fastq file for reads with "no tag" for each sample.
-* `03b_deletion`: Fastq file for reads classified as having "deletions in any region" for each sample.
-* `03c_insertion`: Fastq file for reads classified as having "insertions in any region" for each sample.
-* `03d_tmp_bam`: Intermedaite BAM file (from minimap2).
-* `03e_tmp_indel_pos`: Intermedaite file containing INDEL size and location information for each sample.
+* `control_indels.tsv`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Stores the indel information retrieved from control (uninjected) samples.
+* `03a_indel/`: Fastq file for reads with "no tag" with indels for each sample.
+* `03a_indel_filter_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Fastq file for reads with "no tag" with indels after excluding those appear in control samples for each sample.
+* `03b_deletion_only/`: Fastq file for reads classified as having "deletions in any region" for each sample. Those contain insertions are excluded.
+* `03b_deletion_only_filter_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Fastq file for reads classified as having "deletions in any region" after excluding those appear in control samples for each sample. Those contain insertions are excluded.
+* `03c_insertion_only/`: Fastq file for reads classified as having "insertions in any region" for each sample. Those contain deletions are excluded.
+* `03c_insertion_only_filter_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Fastq file for reads classified as having "insertions in any region" after excluding those appear in control samples for each sample. Those contain deletions are excluded.
+* `03d_complex/`: Fastq file for reads classified as having "both deletions and insertions in any region" for each sample.
+* `03d_complex_filter_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Fastq file for reads classified as having "both deletions and insertions in any region" after excluding those appear in control samples for each sample.
+* `03e_tmp_bam/`: Intermedaite BAM file (from minimap2).
+* `03f_tmp_indel_pos/`: Intermedaite file containing INDEL size and location information for each sample.
+* `03f_tmp_indel_pos_control/`: Relevant when `classify_no_tag_filter_control_indel` argument is set. Intermedaite file containing INDEL (after excluding those appear in control samples) size and location information for each sample.
 
 ## Credits
 

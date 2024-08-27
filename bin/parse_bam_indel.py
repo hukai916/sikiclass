@@ -135,11 +135,11 @@ for k in d_clip:
 
 os.makedirs(os.path.dirname(outfile), exist_ok=True)
 with open(outfile, "w") as f:
-    f.write("ref_pos,ref_base,indel,read_id\n")
+    f.write("ref_pos\tref_base\tindel\tread_id\n")
     for pos in dict:
         if not len(dict[pos]) == 0:
             for hit in dict[pos]:
-                f.write(",".join([str(pos), ref_fa[pos], str(hit[1]), str(hit[0])]))
+                f.write("\t".join([str(pos), ref_fa[pos], str(hit[1]), str(hit[0])]))
                 f.write("\n")
                 # print(",".join([str(pos), ref_fa[pos], str(hit[1]), str(hit[0])]))
                 # print("\n")
