@@ -76,36 +76,20 @@ nextflow run main.nf -profile docker,arm -c conf/test_local.config
 
 Core sikiclass parameters are described below. 
 
-```
-input [null] String. Path to input sample sheet in CSV format. E.g., 'assets/samplesheet_local.csv'.
-
-ref_with_tag   [null] String. Path to reference fasta file containing precise tag insert. E.g., 'assets/test/h3f3d_preciseInsert.fa'.
-
-ref_wt   [null] String. Path to reference fasta file without precise tag insert. E.g., 'assets/test/h3f3d_wt.fa'.
-
-tag_fq   [null] Path to an artifical fastq file containing the tag sequence. E.g., './assets/test/tag.fastq'.
-
-tag_start_ref_with_tag  [int] Integer. 1-based coordinate of tag start pos in ref_with_tag. E.g., 1003.
-
-tag_end_ref_with_tag [int] Integer. 1-based coordinate of tag end pos in ref_with_tag. E.g., 1089.
-
-tag_flanking [int] Integer. Number of tag-flanking bases to check to determine "precise tag" reads. E.g., 60.
-
-pam_start_ref_wt [int] Integer. 1-based coordinate of pam pos in ref_wt. E.g., 1113.
-
-snp_pos  [null] Integer or null. Specifies whether to count ratio of reads with different SNPs for reads with precise tag. Supply 1-based coordinate on ref_with_tag or null to skip this step. If set, must also supply "snp_wt" and "snp_mut" argument below.
-
-snp_wt [str] String. The base species at the "snp_pos" site in the wild type reference. E.g., 'A'.
-
-snp_mut [str] String. The base species at the "snp_pos" site in the mutant reference. E.g., 'G'.
-
-indel_range_to_scan_single_tag   [str] String. Specifies whether to restrict indels within a given range on ref_with_tag for classifying "single tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '950:1116'.
-
-indel_range_to_scan_no_tag [str] String. Specifies whether to restrict indels within a given range on ref_wt for classifying "no tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '980:1003'.
-
-classify_no_tag_filter_control_indel [null] String or null. String or null. Specifies the names of control (uninjected) samples separated by comma. When provided, indels occurring in these control samples will be filtered out during the classification of "no tag" reads. Set to null to skip this filtering. E.g., 'SpCas9_uninjected_SIKI2_1_10, SpCas9_uninjected_SIKI2_1_5, SpCas9_uninjected_SIKI2_2_10, SpCas9_uninjected_SIKI2_2_5, SpCas9_uninjected_SIKI2_3_10, SpCas9_uninjected_SIKI2_3_5'. The sample names must match those specified in the sample sheet.
-
-```
++ **input** [null] String. Path to input sample sheet in CSV format. E.g., 'assets/samplesheet_local.csv'.  
++ **ref_with_tag**   [null] String. Path to reference fasta file containing precise tag insert. E.g., 'assets/test/h3f3d_preciseInsert.fa'.
++ **ref_wt**   [null] String. Path to reference fasta file without precise tag insert. E.g., 'assets/test/h3f3d_wt.fa'.
++ **tag_fq**   [null] Path to an artifical fastq file containing the tag sequence. E.g., './assets/test/tag.fastq'.
++ **tag_start_ref_with_tag**  [int] Integer. 1-based coordinate of tag start pos in ref_with_tag. E.g., 1003.
++ **tag_end_ref_with_tag** [int] Integer. 1-based coordinate of tag end pos in ref_with_tag. E.g., 1089.
++ **tag_flanking** [int] Integer. Number of tag-flanking bases to check to determine "precise tag" reads. E.g., 60.
++ **pam_start_ref_wt** [int] Integer. 1-based coordinate of pam pos in ref_wt. E.g., 1113.
++ **snp_pos**  [null] Integer or null. Specifies whether to count ratio of reads with different SNPs for reads with precise tag. Supply 1-based coordinate on ref_with_tag or null to skip this step. If set, must also supply "snp_wt" and "snp_mut" argument below.
++ **snp_wt** [str] String. The base species at the "snp_pos" site in the wild type reference. E.g., 'A'.
++ **snp_mut** [str] String. The base species at the "snp_pos" site in the mutant reference. E.g., 'G'.
++ **indel_range_to_scan_single_tag**   [str] String. Specifies whether to restrict indels within a given range on ref_with_tag for classifying "single tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '950:1116'.
++ **indel_range_to_scan_no_tag** [str] String. Specifies whether to restrict indels within a given range on ref_wt for classifying "no tag" reads. Define the range using the pattern 'start:end' with 1-based coordinates. Defaults to ':', which means the full range will be used. E.g., '980:1003'.
++ **classify_no_tag_filter_control_indel** [null] String or null. String or null. Specifies the names of control (uninjected) samples separated by comma. When provided, indels occurring in these control samples will be filtered out during the classification of "no tag" reads. Set to null to skip this filtering. E.g., 'SpCas9_uninjected_SIKI2_1_10, SpCas9_uninjected_SIKI2_1_5, SpCas9_uninjected_SIKI2_2_10, SpCas9_uninjected_SIKI2_2_5, SpCas9_uninjected_SIKI2_3_10, SpCas9_uninjected_SIKI2_3_5'. The sample names must match those specified in the sample sheet.
 
 ## Output
 
