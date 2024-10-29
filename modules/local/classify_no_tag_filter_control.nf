@@ -29,19 +29,16 @@ process CLASSIFY_NO_TAG_FILTER_CONTROL {
     """
     
     # Step1: filter out control indels from raw indel tsv
-    mkdir 03e_tmp_bam
-    minimap2 -ax map-pb $ref ${reads} | samtools sort --threads ${task.cpus} -o 03e_tmp_bam/${prefix}.bam
+    mkdir 03e_tmp_bam && minimap2 -ax map-pb $ref ${reads} | samtools sort --threads ${task.cpus} -o 03e_tmp_bam/${prefix}.bam
 
     # Step2: parse bam to extract indel positions
-    mkdir 03f_tmp_indel_pos
-    parse_bam_indel.py 03e_tmp_bam/${prefix}.bam $ref 03f_tmp_indel_pos/${prefix}.tsv
+    mkdir 03f_tmp_indel_pos && parse_bam_indel.py 03e_tmp_bam/${prefix}.bam $ref 03f_tmp_indel_pos/${prefix}.tsv
 
     # Step3: filter out control INDELs
-    mkdir 03f_tmp_indel_pos_filter_control
-    filter_control_indel.py $control_indel 03f_tmp_indel_pos/${prefix}.tsv 03f_tmp_indel_pos_filter_control/${prefix}.tsv $prefix $control_indel_freq_cutoff
+    mkdir 03f_tmp_indel_pos_filter_control && filter_control_indel.py $control_indel 03f_tmp_indel_pos/${prefix}.tsv 03f_tmp_indel_pos_filter_control/${prefix}.tsv $prefix $control_indel_freq_cutoff
 
     # Step4: split reads into indel, deletion, and insertion using #3 results
-    mkdir 03a_indel_filter_control 03b_deletion_only_filter_control 03c_insertion_only_filter_control 03d_complex_filter_control
+    mkdir 03a_indel_filter_control 03b_deletion_only_filter_control 03c_insertion_only_filter_control 03d_complex_filter_control && \
     classify_no_tag.py 03f_tmp_indel_pos_filter_control/${prefix}.tsv $reads \
     $pam_start \
     03a_indel_filter_control/${prefix}.fastq.gz \

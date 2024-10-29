@@ -28,16 +28,16 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.53553009"
-     inkscape:cx="457.49064"
-     inkscape:cy="658.22633"
-     inkscape:window-width="1675"
-     inkscape:window-height="1027"
-     inkscape:window-x="1312"
-     inkscape:window-y="25"
+     inkscape:zoom="3.177703"
+     inkscape:cx="574.94361"
+     inkscape:cy="571.95403"
+     inkscape:window-width="1597"
+     inkscape:window-height="851"
+     inkscape:window-x="1422"
+     inkscape:window-y="33"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
-     showguides="true" />
+     showguides="false" />
   <defs
      id="defs2">
     <rect
@@ -409,7 +409,7 @@
          style="fill:#56ff00;fill-opacity:0.02;stroke-width:0.28338;stroke-dasharray:none" />
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-5"
        width="24.646875"
        height="1.2657616"
@@ -608,6 +608,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -627,23 +629,16 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan3474"><tspan
+           id="tspan8844"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3472">Optionally filter out &quot;natural </tspan></tspan><tspan
+             id="tspan8842">Optionally filter out &quot;natural </tspan></tspan><tspan
            x="356"
            y="57.278373"
-           id="tspan3478"><tspan
+           id="tspan8848"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3476">INDELs&quot; that occur in controls
+             id="tspan8846">INDELs&quot; that occur in controls
 </tspan></tspan></text>
     </g>
-    <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       id="rect61-1-8-6-4-7-4-9-4-1-8-6-3"
-       width="22.847828"
-       height="1.7127693"
-       x="186.1134"
-       y="77.870079" />
     <g
        id="g5338"
        transform="matrix(0.26358199,0,0,0.24368519,-58.965562,31.041397)"
@@ -736,6 +731,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -789,6 +786,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -869,6 +868,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -908,6 +909,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1008,6 +1011,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1061,6 +1066,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1124,6 +1131,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1169,6 +1178,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1186,21 +1197,21 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3480">Preprocessed<tspan
+               id="tspan8850">Preprocessed<tspan
    y="41"
-   id="tspan3482"> </tspan></tspan><tspan
+   id="tspan8852"> </tspan></tspan><tspan
                x="356"
                y="57.666625"
-               id="tspan3484">sequencing reads
+               id="tspan8854">sequencing reads
 </tspan><tspan
                x="356"
                y="74.333251"
-               id="tspan3486">(demultiplexed, filtered,<tspan
+               id="tspan8856">(demultiplexed, filtered,<tspan
    y="74.333251"
-   id="tspan3488"> </tspan></tspan><tspan
+   id="tspan8858"> </tspan></tspan><tspan
                x="356"
                y="90.999877"
-               id="tspan3490">UMI-collapsed)</tspan></text>
+               id="tspan8860">UMI-collapsed)</tspan></text>
         </switch>
       </g>
     </g>
@@ -1226,6 +1237,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1261,6 +1274,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1278,26 +1293,26 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3492">Divide reads into sub-</tspan><tspan
+               id="tspan8862">Divide reads into sub-</tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3494">groups acoording to<tspan
+               id="tspan8864">groups acoording to<tspan
    y="51.852227"
-   id="tspan3496"> </tspan></tspan><tspan
+   id="tspan8866"> </tspan></tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3498">tag occurrence via<tspan
+               id="tspan8868">tag occurrence via<tspan
    y="62.704453"
-   id="tspan3500"> </tspan></tspan><tspan
+   id="tspan8870"> </tspan></tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3502">&quot;BWA search&quot;</tspan></text>
+               id="tspan8872">&quot;BWA search&quot;</tspan></text>
         </switch>
       </g>
     </g>
     <g
        id="g5320-0-6-8-4-2-7"
-       transform="matrix(0.2438056,0,0,0.2438056,149.27554,259.92073)">
+       transform="matrix(0.2438056,0,0,0.2438056,149.27554,258.33322)">
       <g
          transform="translate(151.83876,-3.3712897)"
          id="g5318-9-9-9-7-6-8">
@@ -1322,6 +1337,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1334,16 +1351,16 @@
              font-size="10px"
              text-anchor="middle"
              id="text5314-1-9-3-2-3-6"
-             style="font-size:8.68178px;white-space:pre;inline-size:111.228;display:inline"
+             style="font-size:7.23482px;white-space:pre;inline-size:111.228;display:inline"
              transform="translate(-620.17261,-240.28109)"
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3504">Read_x:
+               id="tspan8874">Read_x:
 </tspan><tspan
                x="356"
-               y="51.852227"
-               id="tspan3506">Cigar2</tspan></text>
+               y="50.043527"
+               id="tspan8876">Cigar2</tspan></text>
         </switch>
       </g>
       <g
@@ -1365,6 +1382,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1415,6 +1434,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1432,12 +1453,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3508">Control<tspan
+               id="tspan8878">Control<tspan
    y="41"
-   id="tspan3510"> </tspan></tspan><tspan
+   id="tspan8880"> </tspan></tspan><tspan
                x="356"
                y="53.237263"
-               id="tspan3512">reads</tspan></text>
+               id="tspan8882">reads</tspan></text>
         </switch>
       </g>
       <g
@@ -1459,6 +1480,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1509,6 +1532,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1526,7 +1551,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3514">Natural INDEL</tspan></text>
+               id="tspan8884">Natural INDEL</tspan></text>
         </switch>
       </g>
       <g
@@ -1548,6 +1573,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1598,6 +1625,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1615,7 +1644,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3516">Real INDEL</tspan></text>
+               id="tspan8886">Real INDEL</tspan></text>
         </switch>
       </g>
       <g
@@ -1637,6 +1666,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -1687,6 +1718,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1704,12 +1737,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3518">Sample<tspan
+               id="tspan8888">Sample<tspan
    y="41"
-   id="tspan3520"> </tspan></tspan><tspan
+   id="tspan8890"> </tspan></tspan><tspan
                x="356"
                y="53.237263"
-               id="tspan3522">reads</tspan></text>
+               id="tspan8892">reads</tspan></text>
         </switch>
       </g>
       <g
@@ -1736,6 +1769,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1756,7 +1791,7 @@
     </g>
     <g
        id="g5320-0-6-8-4-2-7-6"
-       transform="matrix(0.2438056,0,0,0.2438056,149.27599,249.37976)">
+       transform="matrix(0.2438056,0,0,0.2438056,149.27599,252.02561)">
       <g
          transform="translate(151.83876,-3.3712897)"
          id="g5318-9-9-9-7-6-8-0">
@@ -1781,6 +1816,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1793,16 +1830,16 @@
              font-size="10px"
              text-anchor="middle"
              id="text5314-1-9-3-2-3-6-3"
-             style="font-size:8.68178px;white-space:pre;inline-size:111.228;display:inline"
+             style="font-size:7.23482px;white-space:pre;inline-size:111.228;display:inline"
              transform="translate(-620.17261,-240.28109)"
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3524">Read_x:
+               id="tspan8894">Read_x:
 </tspan><tspan
                x="356"
-               y="51.852227"
-               id="tspan3526">Cigar1</tspan></text>
+               y="50.043527"
+               id="tspan8896">Cigar1</tspan></text>
         </switch>
       </g>
       <g
@@ -1829,6 +1866,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1849,7 +1888,7 @@
     </g>
     <g
        id="g5320-0-6-8-4-2-7-8"
-       transform="matrix(0.18527949,0,0,0.18527949,142.34012,224.97317)">
+       transform="matrix(0.18527949,0,0,0.18527949,142.34012,225.50234)">
       <g
          transform="translate(151.83876,-3.3712897)"
          id="g5318-9-9-9-7-6-8-9">
@@ -1874,6 +1913,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1891,9 +1932,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3530">Cigar: <tspan
+               id="tspan8900">Cigar: <tspan
    style="font-size:8px"
-   id="tspan3528">unaligned    aligned</tspan></tspan></text>
+   id="tspan8898">unaligned    aligned</tspan></tspan></text>
         </switch>
       </g>
       <g
@@ -1920,6 +1961,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -1939,56 +1982,8 @@
       </g>
     </g>
     <g
-       id="g5320-0-6-3"
-       transform="matrix(0.2438056,0,0,0.2438056,85.555308,135.79891)">
-      <g
-         transform="translate(-0.5,-0.5)"
-         id="g5318-9-9-2">
-        <switch
-           id="switch5316-7-1-9"
-           transform="translate(0.47814766,-119.60712)">
-          <foreignObject
-             pointer-events="none"
-             width="100%"
-             height="100%"
-             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-             style="overflow: visible; text-align: left;">
-            <xhtml:div
-               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 82px; height: 1px; padding-top: 38px; margin-left: 315px;">
-              <xhtml:div
-                 data-drawio-colors="color: rgb(0, 0, 0); "
-                 style="box-sizing: border-box; font-size: 0px; text-align: center;">
-                <xhtml:div
-                   style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
-
-
-
-
-
-)</xhtml:div>
-              </xhtml:div>
-            </xhtml:div>
-          </foreignObject>
-          <text
-             x="356"
-             y="41"
-             fill="#000000"
-             font-family="Helvetica"
-             font-size="10px"
-             text-anchor="middle"
-             id="text5314-1-9-4"
-             style="font-size:7.23482px;text-align:start;text-anchor:start;white-space:pre;inline-size:264.798;display:inline"
-             transform="translate(56.267379,-161.33901)"
-             xml:space="preserve"><tspan
-               x="356"
-               y="41"
-               id="tspan3532">Reference (with tag)</tspan></text>
-        </switch>
-      </g>
-    </g>
-    <g
        id="g5320-0-6-3-5"
-       transform="matrix(0.2438056,0,0,0.2438056,104.43521,129.69699)">
+       transform="matrix(0.2438056,0,0,0.2438056,85.784614,140.13491)">
       <g
          transform="translate(-0.5,-0.5)"
          id="g5318-9-9-2-8">
@@ -2013,6 +2008,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2030,13 +2027,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3534">Tag</tspan></text>
+               id="tspan8902">Tag</tspan></text>
         </switch>
       </g>
     </g>
     <g
        id="g5320-0-6-3-5-9"
-       transform="matrix(0.2438056,0,0,0.2438056,87.634958,142.27324)">
+       transform="matrix(0.2438056,0,0,0.2438056,87.737643,135.52824)">
       <g
          transform="translate(-0.5,-0.5)"
          id="g5318-9-9-2-8-0">
@@ -2061,6 +2058,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2078,7 +2077,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3536">Aligment</tspan></text>
+               id="tspan8904">Aligment</tspan></text>
         </switch>
       </g>
     </g>
@@ -2109,6 +2108,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2126,23 +2127,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3540"><tspan
+               id="tspan8908"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3538">Read without tag 
+                 id="tspan8906">Read without tag 
 </tspan></tspan><tspan
                x="356"
                y="55.469624"
-               id="tspan3542">(tag does not appear in read)</tspan></text>
+               id="tspan8910">(tag does not appear in read)</tspan></text>
         </switch>
       </g>
     </g>
-    <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
-       id="rect61-1-8-6-4-7-4-9-4-1-8-8-2"
-       width="3.0860658"
-       height="1.7127699"
-       x="194.4512"
-       y="77.870079" />
     <rect
        style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-6-3-3"
@@ -2177,6 +2171,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2194,7 +2190,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3544">Reference (with tag) </tspan></text>
+               id="tspan8912">Reference (with tag) </tspan></text>
         </switch>
       </g>
     </g>
@@ -2225,6 +2221,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2242,19 +2240,19 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3546">Deletion in </tspan><tspan
+               id="tspan8914">Deletion in </tspan><tspan
                x="356"
                y="51"
-               id="tspan3548">aligned </tspan><tspan
+               id="tspan8916">aligned </tspan><tspan
                x="356"
                y="61"
-               id="tspan3550">segment</tspan></text>
+               id="tspan8918">segment</tspan></text>
         </switch>
       </g>
     </g>
     <g
        id="g5320-0-6-3-9-4"
-       transform="matrix(0.18527949,0,0,0.18527949,56.003436,185.46708)">
+       transform="matrix(0.18527949,0,0,0.18527949,56.003436,184.93791)">
       <g
          transform="translate(-0.5,-0.5)"
          id="g5318-9-9-2-7-7">
@@ -2279,6 +2277,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2296,7 +2296,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3552">Read</tspan></text>
+               id="tspan8920">Read</tspan></text>
         </switch>
       </g>
     </g>
@@ -2309,30 +2309,30 @@
        y="143.21225" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 188.393,84.88236 1e-5,0.63671"
+       d="m 188.49568,78.137355 1e-5,0.63671"
        id="path27503-7-2" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 188.93744,84.88236 1e-5,0.63671"
+       d="m 189.04012,78.137355 1e-5,0.63671"
        id="path27503-7-6-9" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 189.48188,84.88236 1e-5,0.63671"
+       d="m 189.58456,78.137355 1e-5,0.63671"
        id="path27503-7-7-4" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 190.02632,84.88236 1e-5,0.63671"
+       d="m 190.129,78.137355 1e-5,0.63671"
        id="path27503-7-6-0-3" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 190.57077,84.88236 1e-5,0.63671"
+       d="m 190.67345,78.137355 1e-5,0.63671"
        id="path27503-7-8-4" />
     <path
        style="fill:#000000;fill-opacity:0.35;stroke:#000000;stroke-width:0.138221;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:1.8;stroke-dasharray:0.138221, 0.138221;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 191.11521,84.88236 1e-5,0.63671"
+       d="m 191.21789,78.137355 10e-6,0.63671"
        id="path27503-7-6-6-1" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.14901961;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-6-5"
        width="22.847828"
        height="1.7127693"
@@ -2389,6 +2389,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2406,9 +2408,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3556"><tspan
+               id="tspan8924"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3554">Fastq file</tspan></tspan></text>
+                 id="tspan8922">Fastq file</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -2439,6 +2441,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2456,16 +2460,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3560"><tspan
+               id="tspan8928"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3558">Read with single tag 
+                 id="tspan8926">Read with single tag 
 </tspan></tspan><tspan
                x="356"
                y="55.469624"
-               id="tspan3562">(every tag segment only appears at </tspan><tspan
+               id="tspan8930">(every tag segment only appears at </tspan><tspan
                x="356"
                y="69.939247"
-               id="tspan3564">most one time in read)</tspan></text>
+               id="tspan8932">most one time in read)</tspan></text>
         </switch>
       </g>
     </g>
@@ -2474,8 +2478,8 @@
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-84-7-9-5"
        width="4.0590887"
        height="1.7127697"
-       x="205.05844"
-       y="71.768204" />
+       x="186.40785"
+       y="82.206123" />
     <rect
        style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.35;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-84-7-9-5-2"
@@ -2484,28 +2488,28 @@
        x="153.66731"
        y="80.190186" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-83"
        width="25.665794"
        height="1.7127693"
        x="161.14543"
        y="109.57262" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-51"
        width="3.0860658"
        height="1.7127699"
        x="171.33415"
        y="109.57262" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9"
        width="26.549608"
        height="1.7127693"
        x="161.14549"
        y="114.75912" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3"
        width="4.0590887"
        height="1.7127697"
@@ -2592,21 +2596,21 @@
        id="path27503-7-7-3-1-2-1-6-3-2"
        sodipodi:nodetypes="cc" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-4-7"
        width="25.665794"
        height="1.7127693"
        x="161.43919"
        y="119.94588" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-2-4-7"
        width="1.8474543"
        height="1.7127701"
        x="171.74416"
        y="119.94588" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-2-4-0-5"
        width="1.5177585"
        height="1.7127702"
@@ -2679,6 +2683,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2696,16 +2702,16 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3568"><tspan
+               id="tspan8936"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3566">Read with multiple tags 
+                 id="tspan8934">Read with multiple tags 
 </tspan></tspan><tspan
                x="356"
                y="55.469624"
-               id="tspan3570">(any tag segment appears more than </tspan><tspan
+               id="tspan8938">(any tag segment appears more than </tspan><tspan
                x="356"
                y="69.939247"
-               id="tspan3572">one time in read)</tspan></text>
+               id="tspan8940">one time in read)</tspan></text>
         </switch>
       </g>
       <path
@@ -2740,21 +2746,21 @@
          d="m 478.34654,-217.99078 4e-5,2.6115"
          id="path27503-7-8-3-7-0-2" />
       <rect
-         style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+         style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.14901961;stroke:#000000;stroke-width:0;stroke-dasharray:none"
          id="rect61-1-8-6-4-7-4-9-4-1-8-3-4"
          width="116.87857"
          height="7.0251431"
          x="420.50534"
          y="-225.05049" />
       <rect
-         style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+         style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
          id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-2-5"
          width="6.6287823"
          height="7.0251474"
          x="481.71613"
          y="-225.05049" />
       <rect
-         style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+         style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
          id="rect61-1-8-6-4-7-4-9-4-1-8-8-7-9"
          width="16.648874"
          height="7.0251451"
@@ -2811,6 +2817,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2830,9 +2838,9 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan3576"><tspan
+           id="tspan8944"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3574">Infer INDEL coordinates on the referecence via minimap2 mapping
+             id="tspan8942">Infer INDEL coordinates on the referecence via minimap2 mapping
 </tspan></tspan></text>
     </g>
     <g
@@ -2862,6 +2870,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2881,14 +2891,14 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan3580"><tspan
+           id="tspan8948"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3578">Split and quantify reads with </tspan></tspan><tspan
+             id="tspan8946">Split and quantify reads with </tspan></tspan><tspan
            x="356"
            y="57.278373"
-           id="tspan3584"><tspan
+           id="tspan8952"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3582">different SNPs
+             id="tspan8950">different SNPs
 </tspan></tspan></text>
     </g>
     <g
@@ -2921,6 +2931,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -2940,14 +2952,14 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan3588"><tspan
+           id="tspan8956"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3586">First infer INDEL like in Step2-1 </tspan></tspan><tspan
+             id="tspan8954">First infer INDEL like in Step2-1 </tspan></tspan><tspan
            x="356"
            y="57.278373"
-           id="tspan3592"><tspan
+           id="tspan8960"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3590">but map reads to WT with no tag
+             id="tspan8958">but map reads to WT with no tag
 </tspan></tspan></text>
     </g>
     <text
@@ -3003,6 +3015,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3020,22 +3034,22 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3596"><tspan
+               id="tspan8964"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3594">Read with precise tag
+                 id="tspan8962">Read with precise tag
 </tspan></tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3600"><tspan
+               id="tspan8968"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3598"> 
+                 id="tspan8966"> 
 </tspan></tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3602">(no INDEL detected in tag </tspan><tspan
+               id="tspan8970">(no INDEL detected in tag </tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3604">plus flanking region)</tspan></text>
+               id="tspan8972">plus flanking region)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3083,6 +3097,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3100,27 +3116,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3608"><tspan
+               id="tspan8976"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3606">Read with 5' INDEL
+                 id="tspan8974">Read with 5' INDEL
 </tspan></tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3612"><tspan
+               id="tspan8980"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3610"> 
+                 id="tspan8978"> 
 </tspan></tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3616"><tspan
+               id="tspan8984"><tspan
    style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-   id="tspan3614">(</tspan>INDEL detected from 5'-</tspan><tspan
+   id="tspan8982">(</tspan>INDEL detected from 5'-</tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3618">flanking region to the </tspan><tspan
+               id="tspan8986">flanking region to the </tspan><tspan
                x="356"
                y="84.408906"
-               id="tspan3620">middle of the tag)</tspan></text>
+               id="tspan8988">middle of the tag)</tspan></text>
         </switch>
       </g>
     </g>
@@ -3199,6 +3215,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3216,9 +3234,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3624"><tspan
+               id="tspan8992"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3622">Analytical step</tspan></tspan></text>
+                 id="tspan8990">Analytical step</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -3249,6 +3267,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3266,9 +3286,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3628"><tspan
+               id="tspan8996"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3626">Method description</tspan></tspan></text>
+                 id="tspan8994">Method description</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -3278,14 +3298,14 @@
        width="12.239706"
        height="1.3016151"
        x="132.34352"
-       y="141.44395" />
+       y="140.91479" />
     <rect
        style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.35;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-6-6"
        width="1.3303949"
        height="1.3016155"
        x="138.46335"
-       y="141.44395" />
+       y="140.91479" />
     <rect
        style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0"
@@ -3364,6 +3384,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3381,13 +3403,13 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3630">Insertion in </tspan><tspan
+               id="tspan8998">Insertion in </tspan><tspan
                x="356"
                y="51"
-               id="tspan3632">aligned </tspan><tspan
+               id="tspan9000">aligned </tspan><tspan
                x="356"
                y="61"
-               id="tspan3634">segment</tspan></text>
+               id="tspan9002">segment</tspan></text>
         </switch>
       </g>
     </g>
@@ -3418,6 +3440,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3435,17 +3459,17 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3636">Deletion </tspan><tspan
+               id="tspan9004">Deletion </tspan><tspan
                x="356"
                y="51"
-               id="tspan3638">inferred from 
+               id="tspan9006">inferred from 
 </tspan><tspan
                x="356"
                y="61"
-               id="tspan3640">all unaligned </tspan><tspan
+               id="tspan9008">all unaligned </tspan><tspan
                x="356"
                y="71"
-               id="tspan3642">segments</tspan></text>
+               id="tspan9010">segments</tspan></text>
         </switch>
       </g>
     </g>
@@ -3489,11 +3513,11 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#fb0000;fill-opacity:1;stroke:#000000;stroke-width:0.140053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.8;stroke-dasharray:0.280108, 0.280108;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 132.75081,145.84123 h 7.61321"
+       d="m 136.455,145.84123 h 7.61321"
        id="path56044-64" />
     <path
        style="fill:#fb0000;fill-opacity:1;stroke:#000000;stroke-width:0.140053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 140.54481,145.84123 h 7.08051"
+       d="m 144.249,145.84123 h 7.08051"
        id="path56044-6-2"
        sodipodi:nodetypes="cc" />
     <path
@@ -3556,6 +3580,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3575,9 +3601,9 @@
          xml:space="preserve"><tspan
            x="356"
            y="41"
-           id="tspan3646"><tspan
+           id="tspan9014"><tspan
              style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-             id="tspan3644">Obtain tag locations on read via BWA mapping
+             id="tspan9012">Obtain tag locations on read via BWA mapping
 </tspan></tspan></text>
     </g>
     <rect
@@ -3655,6 +3681,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3708,6 +3736,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -3771,6 +3801,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3824,6 +3856,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -3894,6 +3928,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -3947,6 +3983,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -4010,6 +4048,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4063,6 +4103,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -4130,6 +4172,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4147,9 +4191,9 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3650"><tspan
+               id="tspan9018"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3648">Result folder</tspan></tspan></text>
+                 id="tspan9016">Result folder</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -4227,6 +4271,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4266,6 +4312,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -4329,6 +4377,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4374,6 +4424,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4391,7 +4443,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3652">BWA</tspan></text>
+               id="tspan9020">BWA</tspan></text>
         </switch>
       </g>
       <g
@@ -4413,6 +4465,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -4463,6 +4517,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4480,7 +4536,7 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3654">Read</tspan></text>
+               id="tspan9022">Read</tspan></text>
         </switch>
       </g>
     </g>
@@ -4634,6 +4690,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4664,6 +4722,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4681,23 +4741,23 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3656">Further divide single-</tspan><tspan
+               id="tspan9024">Further divide single-</tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3658">tag reads into sub-</tspan><tspan
+               id="tspan9026">tag reads into sub-</tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3660">groups according to<tspan
+               id="tspan9028">groups according to<tspan
    y="62.704453"
-   id="tspan3662"> </tspan></tspan><tspan
+   id="tspan9030"> </tspan></tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3664">INDEL occurrence via<tspan
+               id="tspan9032">INDEL occurrence via<tspan
    y="73.55668"
-   id="tspan3666"> </tspan></tspan><tspan
+   id="tspan9034"> </tspan></tspan><tspan
                x="356"
                y="84.408906"
-               id="tspan3668">&quot;minimap2 search&quot;</tspan></text>
+               id="tspan9036">&quot;minimap2 search&quot;</tspan></text>
         </switch>
       </g>
     </g>
@@ -4811,6 +4871,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4841,6 +4903,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -4858,27 +4922,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3670">Further divide no-tag<tspan
+               id="tspan9038">Further divide no-tag<tspan
    y="41"
-   id="tspan3672"> </tspan></tspan><tspan
+   id="tspan9040"> </tspan></tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3674">reads into sub-groups<tspan
+               id="tspan9042">reads into sub-groups<tspan
    y="51.852227"
-   id="tspan3676"> </tspan></tspan><tspan
+   id="tspan9044"> </tspan></tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3678">according to INDEL<tspan
+               id="tspan9046">according to INDEL<tspan
    y="62.704453"
-   id="tspan3680"> </tspan></tspan><tspan
+   id="tspan9048"> </tspan></tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3682">occurrence via<tspan
+               id="tspan9050">occurrence via<tspan
    y="73.55668"
-   id="tspan3684"> </tspan></tspan><tspan
+   id="tspan9052"> </tspan></tspan><tspan
                x="356"
                y="84.408906"
-               id="tspan3686">&quot;minimap2 search&quot;</tspan></text>
+               id="tspan9054">&quot;minimap2 search&quot;</tspan></text>
         </switch>
       </g>
     </g>
@@ -4977,6 +5041,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5007,6 +5073,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5024,23 +5092,23 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3688">Further divide precise-</tspan><tspan
+               id="tspan9056">Further divide precise-</tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3690">tag reads into sub-</tspan><tspan
+               id="tspan9058">tag reads into sub-</tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3692">groups according to<tspan
+               id="tspan9060">groups according to<tspan
    y="62.704453"
-   id="tspan3694"> </tspan></tspan><tspan
+   id="tspan9062"> </tspan></tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3696">SNP by parsing<tspan
+               id="tspan9064">SNP by parsing<tspan
    y="73.55668"
-   id="tspan3698"> </tspan></tspan><tspan
+   id="tspan9066"> </tspan></tspan><tspan
                x="356"
                y="84.408906"
-               id="tspan3700">minimap2 BAM</tspan></text>
+               id="tspan9068">minimap2 BAM</tspan></text>
         </switch>
       </g>
     </g>
@@ -5132,6 +5200,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5149,27 +5219,27 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3704"><tspan
+               id="tspan9072"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3702">Read with 3' INDEL
+                 id="tspan9070">Read with 3' INDEL
 </tspan></tspan><tspan
                x="356"
                y="51.852227"
-               id="tspan3708"><tspan
+               id="tspan9076"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-                 id="tspan3706"> 
+                 id="tspan9074"> 
 </tspan></tspan><tspan
                x="356"
                y="62.704453"
-               id="tspan3712"><tspan
+               id="tspan9080"><tspan
    style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-   id="tspan3710">(</tspan>INDEL detected from </tspan><tspan
+   id="tspan9078">(</tspan>INDEL detected from </tspan><tspan
                x="356"
                y="73.55668"
-               id="tspan3714">the middleof the tag to </tspan><tspan
+               id="tspan9082">the middle of the tag to </tspan><tspan
                x="356"
                y="84.408906"
-               id="tspan3716">the 3'-flanking region)</tspan></text>
+               id="tspan9084">the 3'-flanking region)</tspan></text>
         </switch>
       </g>
     </g>
@@ -5186,27 +5256,27 @@
        xml:space="preserve"><tspan
          x="356"
          y="41"
-         id="tspan3720"><tspan
+         id="tspan9088"><tspan
            style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-           id="tspan3718">Read with any INDEL
+           id="tspan9086">Read with any INDEL
 </tspan></tspan><tspan
          x="356"
          y="51.852227"
-         id="tspan3724"><tspan
+         id="tspan9092"><tspan
            style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-           id="tspan3722"> 
+           id="tspan9090"> 
 </tspan></tspan><tspan
          x="356"
          y="62.704453"
-         id="tspan3728"><tspan
+         id="tspan9096"><tspan
    style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold'"
-   id="tspan3726">(</tspan>INDEL detected from </tspan><tspan
+   id="tspan9094">(</tspan>INDEL detected from </tspan><tspan
          x="356"
          y="73.55668"
-         id="tspan3730">any region on the </tspan><tspan
+         id="tspan9098">any region on the </tspan><tspan
          x="356"
          y="84.408906"
-         id="tspan3732">reference)</tspan></text>
+         id="tspan9100">reference)</tspan></text>
     <g
        id="g5338-7-0-0-0"
        transform="matrix(0.19154193,0,0,0.08659697,-58.975363,223.38442)"
@@ -5251,6 +5321,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5268,15 +5340,15 @@
              xml:space="preserve"><tspan
                x="403.24323"
                y="41"
-               id="tspan3736"><tspan
+               id="tspan9104"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3734">Read with INDEL
+                 id="tspan9102">Read with INDEL
 </tspan></tspan><tspan
                x="403.24323"
                y="51.852227"
-               id="tspan3740"><tspan
+               id="tspan9108"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3738">(INDEL detected)</tspan></tspan></text>
+                 id="tspan9106">(INDEL detected)</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -5324,6 +5396,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5341,20 +5415,20 @@
              xml:space="preserve"><tspan
                x="394.22867"
                y="41"
-               id="tspan3744"><tspan
+               id="tspan9112"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3742">Read with deletion
+                 id="tspan9110">Read with deletion
 </tspan></tspan><tspan
                x="394.22867"
                y="51.852227"
-               id="tspan3748"><tspan
+               id="tspan9116"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3746">(Only deletions are </tspan></tspan><tspan
+                 id="tspan9114">(Only deletions are </tspan></tspan><tspan
                x="394.22867"
                y="62.704453"
-               id="tspan3752"><tspan
+               id="tspan9120"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3750">detected)</tspan></tspan></text>
+                 id="tspan9118">detected)</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -5402,6 +5476,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5419,20 +5495,20 @@
              xml:space="preserve"><tspan
                x="403.24323"
                y="41"
-               id="tspan3756"><tspan
+               id="tspan9124"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3754">Read with insertion
+                 id="tspan9122">Read with insertion
 </tspan></tspan><tspan
                x="403.24323"
                y="51.852227"
-               id="tspan3760"><tspan
+               id="tspan9128"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3758">(Only insertions are </tspan></tspan><tspan
+                 id="tspan9126">(Only insertions are </tspan></tspan><tspan
                x="403.24323"
                y="62.704453"
-               id="tspan3764"><tspan
+               id="tspan9132"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3762">detected)</tspan></tspan></text>
+                 id="tspan9130">detected)</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -5480,6 +5556,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5497,20 +5575,20 @@
              xml:space="preserve"><tspan
                x="394.22867"
                y="41"
-               id="tspan3768"><tspan
+               id="tspan9136"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3766">Copmlex read
+                 id="tspan9134">Copmlex read
 </tspan></tspan><tspan
                x="394.22867"
                y="51.852227"
-               id="tspan3772"><tspan
+               id="tspan9140"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3770">(Both deletions and </tspan></tspan><tspan
+                 id="tspan9138">(Both deletions and </tspan></tspan><tspan
                x="394.22867"
                y="62.704453"
-               id="tspan3776"><tspan
+               id="tspan9144"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3774">insertions are detected)</tspan></tspan></text>
+                 id="tspan9142">insertions are detected)</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -5558,6 +5636,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5575,20 +5655,20 @@
              xml:space="preserve"><tspan
                x="394.22867"
                y="41"
-               id="tspan3780"><tspan
+               id="tspan9148"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3778">Read with WT SNP
+                 id="tspan9146">Read with WT SNP
 </tspan></tspan><tspan
                x="394.22867"
                y="51.852227"
-               id="tspan3784"><tspan
+               id="tspan9152"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3782">(WT base detected at </tspan></tspan><tspan
+                 id="tspan9150">(WT base detected at </tspan></tspan><tspan
                x="394.22867"
                y="62.704453"
-               id="tspan3788"><tspan
+               id="tspan9156"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3786">given SNP site)</tspan></tspan></text>
+                 id="tspan9154">given SNP site)</tspan></tspan></text>
         </switch>
       </g>
     </g>
@@ -5636,6 +5716,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5653,32 +5735,32 @@
              xml:space="preserve"><tspan
                x="394.22867"
                y="41"
-               id="tspan3792"><tspan
+               id="tspan9160"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
-                 id="tspan3790"> Read with mutant SNP
+                 id="tspan9158"> Read with mutant SNP
 </tspan></tspan><tspan
                x="394.22867"
                y="51.852227"
-               id="tspan3796"><tspan
+               id="tspan9164"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3794">(Mutatn SNP detected at </tspan></tspan><tspan
+                 id="tspan9162">(Mutant SNP detected at </tspan></tspan><tspan
                x="394.22867"
                y="62.704453"
-               id="tspan3800"><tspan
+               id="tspan9168"><tspan
                  style="text-align:center;text-anchor:middle"
-                 id="tspan3798">given SNP site)</tspan></tspan></text>
+                 id="tspan9166">given SNP site)</tspan></tspan></text>
         </switch>
       </g>
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6"
        width="24.646875"
        height="1.2657616"
        x="8.8540592"
        y="193.00127" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5"
        width="5.1114788"
        height="1.265763"
@@ -5700,14 +5782,14 @@
        id="path54983-1-3-6-3"
        sodipodi:nodetypes="cccccc" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-1"
        width="24.646875"
        height="1.2657616"
        x="8.854063"
        y="197.71523" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-5"
        width="5.1114788"
        height="1.265763"
@@ -5719,14 +5801,14 @@
        id="path54983-1-3-0"
        sodipodi:nodetypes="cccccc" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-2"
        width="24.646875"
        height="1.2657616"
        x="8.854063"
        y="205.07228" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-8"
        width="5.1114788"
        height="1.265763"
@@ -5748,14 +5830,14 @@
        id="path54983-1-3-0-9"
        sodipodi:nodetypes="cccccc" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-2-5"
        width="24.646875"
        height="1.2657616"
        x="8.854063"
        y="210.17523" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-8-8"
        width="5.1114788"
        height="1.265763"
@@ -5854,14 +5936,14 @@
        inkscape:transform-center-y="-0.0060889288"
        transform="matrix(0.26140673,0,0,0.26140673,0.1501848,169.73608)" />
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-0"
        width="5.1114788"
        height="1.265763"
        x="149.31279"
        y="207.51776" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-5-9"
        width="24.646875"
        height="1.2657616"
@@ -5893,6 +5975,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5912,14 +5996,14 @@
       </g>
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-0-8"
        width="5.1114788"
        height="1.265763"
        x="149.31279"
        y="209.56015" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-5-2"
        width="24.646875"
        height="1.2657616"
@@ -5951,6 +6035,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -5970,14 +6056,14 @@
       </g>
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-0-83"
        width="5.1114788"
        height="1.265763"
        x="149.31279"
        y="211.6799" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-5-7"
        width="24.646875"
        height="1.2657616"
@@ -6009,6 +6095,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6028,14 +6116,14 @@
       </g>
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-0-5"
        width="5.1114788"
        height="1.265763"
        x="149.31279"
        y="216.85043" />
     <rect
-       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.4;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#687b94;fill-opacity:0.15000001;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-85-9-6-4-9-0-6-6-5-5"
        width="24.646875"
        height="1.2657616"
@@ -6067,6 +6155,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6086,7 +6176,7 @@
       </g>
     </g>
     <rect
-       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       style="mix-blend-mode:normal;fill:#f2881a;fill-opacity:0.34999999;stroke:#000000;stroke-width:0;stroke-dasharray:none"
        id="rect61-1-8-6-4-7-4-9-4-1-8-8-5-3-9-3-2-2-0-5-0-87"
        width="5.1114788"
        height="1.265763"
@@ -6119,6 +6209,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6136,12 +6228,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3802">Reads with<tspan
+               id="tspan9170">Reads with<tspan
    y="41"
-   id="tspan3804"> </tspan></tspan><tspan
+   id="tspan9172"> </tspan></tspan><tspan
                x="356"
                y="53.237263"
-               id="tspan3806">WT SNP</tspan></text>
+               id="tspan9174">WT SNP</tspan></text>
         </switch>
       </g>
       <g
@@ -6163,6 +6255,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -6213,6 +6307,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6230,12 +6326,12 @@
              xml:space="preserve"><tspan
                x="356"
                y="41"
-               id="tspan3808">Reads with<tspan
+               id="tspan9176">Reads with<tspan
    y="41"
-   id="tspan3810"> </tspan></tspan><tspan
+   id="tspan9178"> </tspan></tspan><tspan
                x="356"
                y="53.237263"
-               id="tspan3812">mutant SNP</tspan></text>
+               id="tspan9180">mutant SNP</tspan></text>
         </switch>
       </g>
       <g
@@ -6257,6 +6353,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -6356,6 +6454,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6412,6 +6512,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -6478,6 +6580,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6534,6 +6638,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 
@@ -6600,6 +6706,8 @@
 
 
 
+
+
 )</xhtml:div>
               </xhtml:div>
             </xhtml:div>
@@ -6656,6 +6764,8 @@
                  style="box-sizing: border-box; font-size: 0px; text-align: center;">
                 <xhtml:div
                    style="display: inline-block; font-size: 10px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Sequencing data (<xhtml:b>.fastq.gz</xhtml:b>
+
+
 
 
 

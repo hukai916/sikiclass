@@ -29,18 +29,16 @@ process CLASSIFY_NO_TAG {
     """
     
     # Step1: map reads to ref_wt with minimap2
-    mkdir 03e_tmp_bam
-    minimap2 -ax map-pb $ref ${reads} | samtools sort --threads ${task.cpus} -o 03e_tmp_bam/${prefix}.bam
+    mkdir 03e_tmp_bam && minimap2 -ax map-pb $ref ${reads} | samtools sort --threads ${task.cpus} -o 03e_tmp_bam/${prefix}.bam
 
     # Step2: parse bam to extract indel positions
-    mkdir 03f_tmp_indel_pos
-    parse_bam_indel.py 03e_tmp_bam/${prefix}.bam $ref 03f_tmp_indel_pos/${prefix}.tem.tsv
+    mkdir 03f_tmp_indel_pos && parse_bam_indel.py 03e_tmp_bam/${prefix}.bam $ref 03f_tmp_indel_pos/${prefix}.tem.tsv
 
     # Step2-1: filter indel positions by range
     filter_indel_by_range.py 03f_tmp_indel_pos/${prefix}.tem.tsv "$indel_range_to_scan" 03f_tmp_indel_pos/${prefix}.tsv
 
     # Step3: split reads into indel, deletion, and insertion using #2 results
-    mkdir 03a_indel 03b_deletion_only 03c_insertion_only 03d_complex
+    mkdir 03a_indel 03b_deletion_only 03c_insertion_only 03d_complex && \
     classify_no_tag.py 03f_tmp_indel_pos/${prefix}.tsv $reads \
     $pam_start \
     03a_indel/${prefix}.fastq.gz \

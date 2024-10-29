@@ -1,0 +1,7 @@
+Sample_name,ep300a,ep300b,hey2,etv2,h3f3d
+"tag_start_coordinate_in_ref_with_precise_tag (1-based)					",1282,862,1090,952,1003
+"tag_end_coordinate_in_ref_with_precise_tag (1-based)					",1368,949,1177,1039,1089
+"coordinate_with_SNP_in_ref_with_precise_tag (1-based)					",1383,836,1087,1060,1116
+"SNP_WT					",G,T,T,T,A
+"SNP_MUT					",C,G,G,C,G
+"PAM_start_coordinate_in_ref_wt (1-based)					",1295,883,1091,967,1001

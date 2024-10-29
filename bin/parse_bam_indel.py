@@ -78,6 +78,8 @@ with pysam.AlignmentFile(bam, 'rb') as bam_file:
     for i, alignment in enumerate(bam_file):
         ref_pos  = alignment.reference_start
         ref_end  = alignment.reference_end
+        if ref_pos == -1:
+            continue
         
         if not ref_pos == 0 or not ref_end == len_ref:
             if not alignment.query_name in d_clip:
